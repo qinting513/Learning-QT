@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF83EF865BBED5F29F732F3C /* libPods-GameLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3242B8B6C8F2E23AAF5650 /* libPods-GameLive.a */; };
+		B7F065B71CC364B3001A48B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065B61CC364B3001A48B6 /* main.m */; };
+		B7F065BA1CC364B3001A48B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065B91CC364B3001A48B6 /* AppDelegate.m */; };
+		B7F065BD1CC364B3001A48B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065BC1CC364B3001A48B6 /* ViewController.m */; };
+		B7F065C01CC364B3001A48B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F065BE1CC364B3001A48B6 /* Main.storyboard */; };
+		B7F065C21CC364B3001A48B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F065C11CC364B3001A48B6 /* Assets.xcassets */; };
+		B7F065C51CC364B3001A48B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F065C31CC364B3001A48B6 /* LaunchScreen.storyboard */; };
+		B7F065E51CC3694C001A48B6 /* AppDelegate+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065CE1CC3694C001A48B6 /* AppDelegate+Custom.m */; };
+		B7F065E61CC3694C001A48B6 /* AppDelegate+System.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065D01CC3694C001A48B6 /* AppDelegate+System.m */; };
+		B7F065E71CC3694C001A48B6 /* NSObject+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065D21CC3694C001A48B6 /* NSObject+Networking.m */; };
+		B7F065E81CC3694C001A48B6 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065D41CC3694C001A48B6 /* UIView+HUD.m */; };
+		B7F065E91CC3694C001A48B6 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065D91CC3694C001A48B6 /* CategoryModel.m */; };
+		B7F065EA1CC3694C001A48B6 /* QTVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065DB1CC3694C001A48B6 /* QTVideoModel.m */; };
+		B7F065EB1CC3694C001A48B6 /* QTLiveNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F065DE1CC3694C001A48B6 /* QTLiveNetManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15F6F4A1D3E9FF9854483C01 /* Pods-GameLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameLive/Pods-GameLive.release.xcconfig"; sourceTree = "<group>"; };
+		373F4FC97C3DBBDD78E9DDC4 /* Pods-GameLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameLive/Pods-GameLive.debug.xcconfig"; sourceTree = "<group>"; };
+		B7F065B21CC364B3001A48B6 /* GameLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F065B61CC364B3001A48B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7F065B81CC364B3001A48B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7F065B91CC364B3001A48B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7F065BB1CC364B3001A48B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B7F065BC1CC364B3001A48B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7F065BF1CC364B3001A48B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7F065C11CC364B3001A48B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		B7F065C41CC364B3001A48B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7F065C61CC364B3001A48B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F065CD1CC3694C001A48B6 /* AppDelegate+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Custom.h"; sourceTree = "<group>"; };
+		B7F065CE1CC3694C001A48B6 /* AppDelegate+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Custom.m"; sourceTree = "<group>"; };
+		B7F065CF1CC3694C001A48B6 /* AppDelegate+System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+System.h"; sourceTree = "<group>"; };
+		B7F065D01CC3694C001A48B6 /* AppDelegate+System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+System.m"; sourceTree = "<group>"; };
+		B7F065D11CC3694C001A48B6 /* NSObject+Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Networking.h"; sourceTree = "<group>"; };
+		B7F065D21CC3694C001A48B6 /* NSObject+Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Networking.m"; sourceTree = "<group>"; };
+		B7F065D31CC3694C001A48B6 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		B7F065D41CC3694C001A48B6 /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		B7F065D61CC3694C001A48B6 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B7F065D81CC3694C001A48B6 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
+		B7F065D91CC3694C001A48B6 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		B7F065DA1CC3694C001A48B6 /* QTVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTVideoModel.h; sourceTree = "<group>"; };
+		B7F065DB1CC3694C001A48B6 /* QTVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTVideoModel.m; sourceTree = "<group>"; };
+		B7F065DD1CC3694C001A48B6 /* QTLiveNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTLiveNetManager.h; sourceTree = "<group>"; };
+		B7F065DE1CC3694C001A48B6 /* QTLiveNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTLiveNetManager.m; sourceTree = "<group>"; };
+		B7F065DF1CC3694C001A48B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EE3242B8B6C8F2E23AAF5650 /* libPods-GameLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GameLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7F065AF1CC364B3001A48B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF83EF865BBED5F29F732F3C /* libPods-GameLive.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F091505D2235E8347A2A406 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				373F4FC97C3DBBDD78E9DDC4 /* Pods-GameLive.debug.xcconfig */,
+				15F6F4A1D3E9FF9854483C01 /* Pods-GameLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7F065A91CC364B3001A48B6 = {
+			isa = PBXGroup;
+			children = (
+				B7F065B41CC364B3001A48B6 /* GameLive */,
+				B7F065B31CC364B3001A48B6 /* Products */,
+				6F091505D2235E8347A2A406 /* Pods */,
+				DD1D754C3B117A8E5D55E76B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7F065B31CC364B3001A48B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065B21CC364B3001A48B6 /* GameLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F065B41CC364B3001A48B6 /* GameLive */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065B81CC364B3001A48B6 /* AppDelegate.h */,
+				B7F065B91CC364B3001A48B6 /* AppDelegate.m */,
+				B7F065BB1CC364B3001A48B6 /* ViewController.h */,
+				B7F065BC1CC364B3001A48B6 /* ViewController.m */,
+				B7F065CC1CC3694C001A48B6 /* Category */,
+				B7F065D51CC3694C001A48B6 /* Define */,
+				B7F065D71CC3694C001A48B6 /* Model */,
+				B7F065DC1CC3694C001A48B6 /* NetManager */,
+				B7F065E01CC3694C001A48B6 /* Resources */,
+				B7F065E11CC3694C001A48B6 /* Vendor */,
+				B7F065E21CC3694C001A48B6 /* View */,
+				B7F065E31CC3694C001A48B6 /* ViewController */,
+				B7F065E41CC3694C001A48B6 /* ViewModel */,
+				B7F065B51CC364B3001A48B6 /* Supporting Files */,
+			);
+			path = GameLive;
+			sourceTree = "<group>";
+		};
+		B7F065B51CC364B3001A48B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065DF1CC3694C001A48B6 /* PrefixHeader.pch */,
+				B7F065C61CC364B3001A48B6 /* Info.plist */,
+				B7F065B61CC364B3001A48B6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7F065CC1CC3694C001A48B6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065CD1CC3694C001A48B6 /* AppDelegate+Custom.h */,
+				B7F065CE1CC3694C001A48B6 /* AppDelegate+Custom.m */,
+				B7F065CF1CC3694C001A48B6 /* AppDelegate+System.h */,
+				B7F065D01CC3694C001A48B6 /* AppDelegate+System.m */,
+				B7F065D11CC3694C001A48B6 /* NSObject+Networking.h */,
+				B7F065D21CC3694C001A48B6 /* NSObject+Networking.m */,
+				B7F065D31CC3694C001A48B6 /* UIView+HUD.h */,
+				B7F065D41CC3694C001A48B6 /* UIView+HUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B7F065D51CC3694C001A48B6 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065D61CC3694C001A48B6 /* Constant.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		B7F065D71CC3694C001A48B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065D81CC3694C001A48B6 /* CategoryModel.h */,
+				B7F065D91CC3694C001A48B6 /* CategoryModel.m */,
+				B7F065DA1CC3694C001A48B6 /* QTVideoModel.h */,
+				B7F065DB1CC3694C001A48B6 /* QTVideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7F065DC1CC3694C001A48B6 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065DD1CC3694C001A48B6 /* QTLiveNetManager.h */,
+				B7F065DE1CC3694C001A48B6 /* QTLiveNetManager.m */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		B7F065E01CC3694C001A48B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7F065BE1CC364B3001A48B6 /* Main.storyboard */,
+				B7F065C11CC364B3001A48B6 /* Assets.xcassets */,
+				B7F065C31CC364B3001A48B6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7F065E11CC3694C001A48B6 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B7F065E21CC3694C001A48B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7F065E31CC3694C001A48B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B7F065E41CC3694C001A48B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD1D754C3B117A8E5D55E76B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE3242B8B6C8F2E23AAF5650 /* libPods-GameLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7F065B11CC364B3001A48B6 /* GameLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F065C91CC364B3001A48B6 /* Build configuration list for PBXNativeTarget "GameLive" */;
+			buildPhases = (
+				6E06F87FD5065507DDC56B56 /* Check Pods Manifest.lock */,
+				B7F065AE1CC364B3001A48B6 /* Sources */,
+				B7F065AF1CC364B3001A48B6 /* Frameworks */,
+				B7F065B01CC364B3001A48B6 /* Resources */,
+				C6AF473EF38E2BDA4F894D81 /* Embed Pods Frameworks */,
+				427C38993E3C2F9C07991E97 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameLive;
+			productName = GameLive;
+			productReference = B7F065B21CC364B3001A48B6 /* GameLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7F065AA1CC364B3001A48B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Qinting;
+				TargetAttributes = {
+					B7F065B11CC364B3001A48B6 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = CW23JJ23BD;
+					};
+				};
+			};
+			buildConfigurationList = B7F065AD1CC364B3001A48B6 /* Build configuration list for PBXProject "GameLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7F065A91CC364B3001A48B6;
+			productRefGroup = B7F065B31CC364B3001A48B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7F065B11CC364B3001A48B6 /* GameLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7F065B01CC364B3001A48B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F065C51CC364B3001A48B6 /* LaunchScreen.storyboard in Resources */,
+				B7F065C21CC364B3001A48B6 /* Assets.xcassets in Resources */,
+				B7F065C01CC364B3001A48B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		427C38993E3C2F9C07991E97 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameLive/Pods-GameLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E06F87FD5065507DDC56B56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6AF473EF38E2BDA4F894D81 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameLive/Pods-GameLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7F065AE1CC364B3001A48B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F065E81CC3694C001A48B6 /* UIView+HUD.m in Sources */,
+				B7F065EA1CC3694C001A48B6 /* QTVideoModel.m in Sources */,
+				B7F065E91CC3694C001A48B6 /* CategoryModel.m in Sources */,
+				B7F065E61CC3694C001A48B6 /* AppDelegate+System.m in Sources */,
+				B7F065BD1CC364B3001A48B6 /* ViewController.m in Sources */,
+				B7F065E51CC3694C001A48B6 /* AppDelegate+Custom.m in Sources */,
+				B7F065EB1CC3694C001A48B6 /* QTLiveNetManager.m in Sources */,
+				B7F065E71CC3694C001A48B6 /* NSObject+Networking.m in Sources */,
+				B7F065BA1CC364B3001A48B6 /* AppDelegate.m in Sources */,
+				B7F065B71CC364B3001A48B6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7F065BE1CC364B3001A48B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F065BF1CC364B3001A48B6 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B7F065C31CC364B3001A48B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F065C41CC364B3001A48B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7F065C71CC364B3001A48B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7F065C81CC364B3001A48B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7F065CA1CC364B3001A48B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373F4FC97C3DBBDD78E9DDC4 /* Pods-GameLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = GameLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QT.GameLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7F065CB1CC364B3001A48B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F6F4A1D3E9FF9854483C01 /* Pods-GameLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = GameLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QT.GameLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7F065AD1CC364B3001A48B6 /* Build configuration list for PBXProject "GameLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F065C71CC364B3001A48B6 /* Debug */,
+				B7F065C81CC364B3001A48B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F065C91CC364B3001A48B6 /* Build configuration list for PBXNativeTarget "GameLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F065CA1CC364B3001A48B6 /* Debug */,
+				B7F065CB1CC364B3001A48B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7F065AA1CC364B3001A48B6 /* Project object */;
+}

@@ -1,0 +1,28 @@
+
+//
+//  PrefixHeader.pch
+//  QTGameLive
+//
+//  Created by Qinting on 16/4/16.
+//  Copyright © 2016年 Qinting. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/** 基础的这2个框架 写在pch文件中  */
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+/** 封装的类别 */
+#import "UIView+HUD.h"
+#import "NSObject+Networking.h"
+
+#import <MBProgressHUD.h>
+
+#import <AFNetworking.h>
+#import <UIKit+AFNetworking.h>
+
+#import <YYKit.h>
+
+#endif /* PrefixHeader_pch */
