@@ -1,0 +1,25 @@
+PODS:
+  - EaseMobSDKFull (2.2.6)
+  - MBProgressHUD (1.0.0)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
+
+DEPENDENCIES:
+  - EaseMobSDKFull
+  - MBProgressHUD
+  - SDWebImage
+  - YYKit
+
+SPEC CHECKSUMS:
+  EaseMobSDKFull: ea532260888e112f024d41cb6431e950d5d32d56
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
+
+PODFILE CHECKSUM: 85d4a4440533c0c6ae3d77601d3c2f11dee0547f
+
+COCOAPODS: 1.1.0.beta.1
