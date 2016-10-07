@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MeFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-jW-3bS">
+                    <rect key="frame" x="0.0" y="0.0" width="389" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="KV9-BA-zh6">
+                            <rect key="frame" x="20" y="50" width="80" height="81"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="81" id="4DX-2K-d98"/>
+                                <constraint firstAttribute="width" constant="80" id="ARq-l7-u7R"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KV9-BA-zh6" firstAttribute="top" secondItem="kb2-jW-3bS" secondAttribute="top" constant="50" id="4nS-fh-XR8"/>
+                        <constraint firstItem="KV9-BA-zh6" firstAttribute="leading" secondItem="kb2-jW-3bS" secondAttribute="leading" constant="20" id="WqV-iE-S19"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kb2-jW-3bS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ftd-ej-0wO"/>
+                <constraint firstAttribute="trailing" secondItem="kb2-jW-3bS" secondAttribute="trailing" id="aYN-a0-mgX"/>
+                <constraint firstAttribute="bottom" secondItem="kb2-jW-3bS" secondAttribute="bottom" id="vKv-IU-7NC"/>
+                <constraint firstItem="kb2-jW-3bS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="woZ-dL-Xul"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="KV9-BA-zh6" id="RVw-hl-6TR"/>
+            </connections>
+            <point key="canvasLocation" x="155.5" y="3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="5" width="700" height="1041"/>
+    </resources>
+</document>

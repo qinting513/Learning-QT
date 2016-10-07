@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChoseView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5I-It-Kfn">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drB-41-BYV">
+                    <rect key="frame" x="0.0" y="200" width="600" height="400"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmY-dp-Hj3">
+                            <rect key="frame" x="0.0" y="370" width="600" height="30"/>
+                            <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="f0K-K0-Fk7"/>
+                            </constraints>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lmY-dp-Hj3" secondAttribute="bottom" id="DCJ-Kf-PSy"/>
+                        <constraint firstItem="lmY-dp-Hj3" firstAttribute="leading" secondItem="drB-41-BYV" secondAttribute="leading" id="Ohz-SQ-A25"/>
+                        <constraint firstAttribute="height" constant="400" id="WoE-Kf-iRU"/>
+                        <constraint firstAttribute="trailing" secondItem="lmY-dp-Hj3" secondAttribute="trailing" id="fih-ex-5Ye"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Y5I-It-Kfn" secondAttribute="trailing" id="428-IU-aoU"/>
+                <constraint firstItem="drB-41-BYV" firstAttribute="top" secondItem="Y5I-It-Kfn" secondAttribute="bottom" id="Ubc-8I-HS9"/>
+                <constraint firstAttribute="bottom" secondItem="drB-41-BYV" secondAttribute="bottom" id="XcT-rp-nfl"/>
+                <constraint firstItem="Y5I-It-Kfn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZnV-Hz-LxN"/>
+                <constraint firstAttribute="trailing" secondItem="drB-41-BYV" secondAttribute="trailing" id="mq6-Ru-hr6"/>
+                <constraint firstItem="Y5I-It-Kfn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vpT-pr-cZN"/>
+                <constraint firstItem="drB-41-BYV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wDE-bx-LnE"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelButton" destination="Y5I-It-Kfn" id="NDv-Eh-csu"/>
+                <outlet property="sureButton" destination="lmY-dp-Hj3" id="74M-6e-owC"/>
+            </connections>
+        </view>
+    </objects>
+</document>
