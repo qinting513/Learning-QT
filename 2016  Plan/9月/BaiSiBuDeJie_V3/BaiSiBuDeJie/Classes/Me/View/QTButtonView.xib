@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QTButtonView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5WV-aG-P7s">
+                    <rect key="frame" x="5" y="5" width="90" height="84"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-xn-GJ0">
+                    <rect key="frame" x="0.0" y="89" width="100" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5WV-aG-P7s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="6vL-uB-tBp"/>
+                <constraint firstItem="5WV-aG-P7s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="CZk-WG-rcW"/>
+                <constraint firstItem="Dhf-xn-GJ0" firstAttribute="top" secondItem="5WV-aG-P7s" secondAttribute="bottom" id="IH3-h9-BFO"/>
+                <constraint firstAttribute="trailing" secondItem="5WV-aG-P7s" secondAttribute="trailing" constant="5" id="L3M-ms-C8B"/>
+                <constraint firstAttribute="bottom" secondItem="Dhf-xn-GJ0" secondAttribute="bottom" id="XGm-sR-3es"/>
+                <constraint firstItem="Dhf-xn-GJ0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZmG-Iz-sBL"/>
+                <constraint firstAttribute="trailing" secondItem="Dhf-xn-GJ0" secondAttribute="trailing" id="gXq-IT-D86"/>
+                <constraint firstItem="5WV-aG-P7s" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="lQ4-af-hVF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

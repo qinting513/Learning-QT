@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendTrendsViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="f92-jT-rIv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBJ-cj-hIr">
+                    <rect key="frame" x="0.0" y="175" width="600" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTB-3F-2eG">
+                            <rect key="frame" x="183" y="95" width="235" height="61"/>
+                            <string key="text">快快登录吧！关注百思最in牛人
+好友动态让你过把瘾～
+欧耶！～</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CG-lE-Ht6">
+                            <rect key="frame" x="178" y="182" width="245" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="02x-5o-fM4"/>
+                                <constraint firstAttribute="width" constant="245" id="Fkx-na-eX2"/>
+                            </constraints>
+                            <state key="normal" title="立即登录注册" backgroundImage="friendsTrend_login">
+                                <color key="titleColor" red="1" green="0.16653138570000001" blue="0.17867327229999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="friendsTrend_login_click">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginButtonClick:" destination="-1" eventType="touchUpInside" id="hKv-7Q-FEd"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ORc-3k-jqT">
+                            <rect key="frame" x="275" y="25" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Ge2-Nm-OvP"/>
+                                <constraint firstAttribute="height" constant="50" id="nwf-O9-EzU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ORc-3k-jqT" firstAttribute="centerX" secondItem="VBJ-cj-hIr" secondAttribute="centerX" id="1cR-BA-RUb"/>
+                        <constraint firstItem="cTB-3F-2eG" firstAttribute="top" secondItem="ORc-3k-jqT" secondAttribute="bottom" constant="20" id="9Va-JN-G1D"/>
+                        <constraint firstItem="cTB-3F-2eG" firstAttribute="centerX" secondItem="VBJ-cj-hIr" secondAttribute="centerX" id="DKw-jm-b3t"/>
+                        <constraint firstItem="5CG-lE-Ht6" firstAttribute="centerX" secondItem="VBJ-cj-hIr" secondAttribute="centerX" id="JoI-5I-An2"/>
+                        <constraint firstItem="5CG-lE-Ht6" firstAttribute="top" secondItem="cTB-3F-2eG" secondAttribute="bottom" constant="26" id="W61-Hc-yo9"/>
+                        <constraint firstItem="cTB-3F-2eG" firstAttribute="centerY" secondItem="VBJ-cj-hIr" secondAttribute="centerY" id="WYJ-3F-Hyx"/>
+                        <constraint firstAttribute="height" constant="250" id="gTm-uh-MeQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VBJ-cj-hIr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AHX-IT-tfD"/>
+                <constraint firstItem="VBJ-cj-hIr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Sbw-F9-2Ny"/>
+                <constraint firstAttribute="trailing" secondItem="VBJ-cj-hIr" secondAttribute="trailing" id="gAt-4t-DQo"/>
+                <constraint firstItem="VBJ-cj-hIr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ktj-jm-RkM"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login" width="243" height="48"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
+</document>
