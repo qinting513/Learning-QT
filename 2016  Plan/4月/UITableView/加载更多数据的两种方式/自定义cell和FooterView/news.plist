@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>联通被爆高危漏洞 或致用户通话记录等信息泄露</string>
+		<key>newsImage</key>
+		<string>n1.png</string>
+		<key>commentCount</key>
+		<string>1800</string>
+	</dict>
+    <dict>
+        <key>title</key>
+        <string>CES2015回顾：民用无人机来袭 中国公司占主导</string>
+        <key>newsImage</key>
+        <string>n2.png</string>
+        <key>commentCount</key>
+        <string>1670</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>中企征战CES：难寻颠覆性产品 未打通海外品牌渠道</string>
+        <key>newsImage</key>
+        <string>n3.png</string>
+        <key>commentCount</key>
+        <string>17</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>老话重提：“专车”是否是黑车？被查合不合法？</string>
+        <key>newsImage</key>
+        <string>n4.png</string>
+        <key>commentCount</key>
+        <string>172</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>马云告诫员工千万别碰京东：京东将会成悲剧</string>
+        <key>newsImage</key>
+        <string>n5.png</string>
+        <key>commentCount</key>
+        <string>4374</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>三星Q4营业利润47亿美元超预期：内存芯片需求利好</string>
+        <key>newsImage</key>
+        <string>n6.png</string>
+        <key>commentCount</key>
+        <string>6</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>索尼宣布PS4国行版延期上市 或因被举报不锁区</string>
+        <key>newsImage</key>
+        <string>n7.png</string>
+        <key>commentCount</key>
+        <string>3467</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>微众银行开业前夕推“信用付”临时核心与系统过度</string>
+        <key>newsImage</key>
+        <string>n8.png</string>
+        <key>commentCount</key>
+        <string>59</string>
+    </dict>
+</array>
+</plist>

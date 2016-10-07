@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>icon_0</string>
+		<key>name</key>
+		<string>safari</string>
+		<key>time</key>
+		<string>19:20</string>
+		<key>source</key>
+		<string>iphone 6s</string>
+		<key>content</key>
+		<string>这是第一条微博 这是一首简单的小情歌这是第一条微博 这是一首简单的小情歌这是第一条微博 这是一首简单的小情歌这是第一条微博 这是一首简单的小情歌这是第一条微博 这是一首简单的小情歌</string>
+		<key>image</key>
+		<string>0.png</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_1</string>
+		<key>name</key>
+		<string>简简单单的少于十五个字的微博名</string>
+		<key>time</key>
+		<string>2010-12-31</string>
+		<key>source</key>
+		<string>小米客户端</string>
+		<key>content</key>
+		<string>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+		<key>image</key>
+		<string>1.png</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_2</string>
+		<key>name</key>
+		<string>简单爱</string>
+		<key>time</key>
+		<string>昨晚1dian</string>
+		<key>source</key>
+		<string>小米4</string>
+		<key>content</key>
+		<string>我就这么随便，我随便起来不是人  简简单单的少于十五个字的微博名真的不只是十五个字的而已哦  简简单单的少于十五个字的微博名真的不只是十五个字的而已哦  简简单单的少于十五个字的微博名真的不只是十五个字的而已哦   简简单单的少于十五个字的微博名真的不只是十五个字的而已哦  简简单单的少于十五个字的微博名真的不只是十五个字的而已哦  简简单单的少于十五个字的微博名真的不只是十五个字的而已哦</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_3</string>
+		<key>name</key>
+		<string>没那么简单</string>
+		<key>time</key>
+		<string>昨晚3dian</string>
+		<key>source</key>
+		<string>小米3</string>
+		<key>content</key>
+		<string>男人不应该让女人流泪！男人不应该让女人流泪！男人不应该让女人流泪！男人不应该让女人流泪！男人不应该让女人流泪！</string>
+		<key>image</key>
+		<string>3.png</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_4</string>
+		<key>name</key>
+		<string>简单爱</string>
+		<key>time</key>
+		<string>昨晚1dian</string>
+		<key>source</key>
+		<string>小米4</string>
+		<key>content</key>
+		<string>女人不应该让男人太累！</string>
+		<key>image</key>
+		<string>4.png</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_5</string>
+		<key>name</key>
+		<string>陈小春</string>
+		<key>time</key>
+		<string>21：08</string>
+		<key>source</key>
+		<string>小米 2s</string>
+		<key>content</key>
+		<string>陈小春 &lt;独家记忆&gt; 陈小春 &lt;独家记忆&gt; 陈小春 &lt;独家记忆&gt; 陈小春 &lt;独家记忆&gt; 陈小春 &lt;独家记忆&gt; 陈小春 &lt;独家记忆&gt;</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_6</string>
+		<key>name</key>
+		<string>简单</string>
+		<key>time</key>
+		<string>20:10</string>
+		<key>source</key>
+		<string>微博客户端</string>
+		<key>content</key>
+		<string>123木头人</string>
+		<key>image</key>
+		<string>5.png</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_7</string>
+		<key>name</key>
+		<string>简222</string>
+		<key>time</key>
+		<string>00：04</string>
+		<key>source</key>
+		<string>qq</string>
+		<key>content</key>
+		<string>阿红搞好那个不闹；来回是佛过年啦；看是否能够；拉黑你舍得放；两个；拉克是否都弄GIA结束了；fkngoiuae</string>
+		<key>image</key>
+		<string>6.png</string>
+	</dict>
+</array>
+</plist>

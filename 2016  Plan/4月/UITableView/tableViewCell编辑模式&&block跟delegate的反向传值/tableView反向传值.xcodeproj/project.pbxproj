@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7E7C81B1CC4CB2800919051 /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7E7C81A1CC4CB2800919051 /* City.plist */; };
+		DB0430D91BFACC4800205078 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0430D81BFACC4800205078 /* main.m */; };
+		DB0430DC1BFACC4800205078 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0430DB1BFACC4800205078 /* AppDelegate.m */; };
+		DB0430E41BFACC4800205078 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0430E31BFACC4800205078 /* Images.xcassets */; };
+		DB0430E71BFACC4800205078 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0430E51BFACC4800205078 /* LaunchScreen.xib */; };
+		DB0430F31BFACC4800205078 /* tableView____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0430F21BFACC4800205078 /* tableView____Tests.m */; };
+		DB0431011BFACCD100205078 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0430FD1BFACCD100205078 /* CityTableViewController.m */; };
+		DB0431021BFACCD100205078 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0430FF1BFACCD100205078 /* City.m */; };
+		DB0431031BFACCD100205078 /* CityTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0431001BFACCD100205078 /* CityTableViewController.xib */; };
+		DB0431071BFACEC400205078 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0431051BFACEC400205078 /* InputViewController.m */; };
+		DB0431081BFACEC400205078 /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0431061BFACEC400205078 /* InputViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB0430ED1BFACC4800205078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB0430CB1BFACC4800205078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB0430D21BFACC4800205078;
+			remoteInfo = "tableView反向传值";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7E7C81A1CC4CB2800919051 /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
+		DB0430D31BFACC4800205078 /* tableView反向传值.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tableView反向传值.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0430D71BFACC4800205078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB0430D81BFACC4800205078 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB0430DA1BFACC4800205078 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB0430DB1BFACC4800205078 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB0430E31BFACC4800205078 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB0430E61BFACC4800205078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DB0430EC1BFACC4800205078 /* tableView反向传值Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tableView反向传值Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0430F11BFACC4800205078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB0430F21BFACC4800205078 /* tableView____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "tableView____Tests.m"; sourceTree = "<group>"; };
+		DB0430FC1BFACCD100205078 /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		DB0430FD1BFACCD100205078 /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		DB0430FE1BFACCD100205078 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		DB0430FF1BFACCD100205078 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		DB0431001BFACCD100205078 /* CityTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewController.xib; sourceTree = "<group>"; };
+		DB0431041BFACEC400205078 /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		DB0431051BFACEC400205078 /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		DB0431061BFACEC400205078 /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB0430D01BFACC4800205078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0430E91BFACC4800205078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB0430CA1BFACC4800205078 = {
+			isa = PBXGroup;
+			children = (
+				DB0430D51BFACC4800205078 /* tableView反向传值 */,
+				DB0430EF1BFACC4800205078 /* tableView反向传值Tests */,
+				DB0430D41BFACC4800205078 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB0430D41BFACC4800205078 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB0430D31BFACC4800205078 /* tableView反向传值.app */,
+				DB0430EC1BFACC4800205078 /* tableView反向传值Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB0430D51BFACC4800205078 /* tableView反向传值 */ = {
+			isa = PBXGroup;
+			children = (
+				DB0430DA1BFACC4800205078 /* AppDelegate.h */,
+				DB0430DB1BFACC4800205078 /* AppDelegate.m */,
+				DB0430E31BFACC4800205078 /* Images.xcassets */,
+				DB0430E51BFACC4800205078 /* LaunchScreen.xib */,
+				DB0430FC1BFACCD100205078 /* CityTableViewController.h */,
+				DB0430FD1BFACCD100205078 /* CityTableViewController.m */,
+				DB0431041BFACEC400205078 /* InputViewController.h */,
+				DB0431051BFACEC400205078 /* InputViewController.m */,
+				DB0431061BFACEC400205078 /* InputViewController.xib */,
+				DB0430FE1BFACCD100205078 /* City.h */,
+				DB0430FF1BFACCD100205078 /* City.m */,
+				B7E7C81A1CC4CB2800919051 /* City.plist */,
+				DB0431001BFACCD100205078 /* CityTableViewController.xib */,
+				DB0430D61BFACC4800205078 /* Supporting Files */,
+			);
+			path = "tableView反向传值";
+			sourceTree = "<group>";
+		};
+		DB0430D61BFACC4800205078 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB0430D71BFACC4800205078 /* Info.plist */,
+				DB0430D81BFACC4800205078 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB0430EF1BFACC4800205078 /* tableView反向传值Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DB0430F21BFACC4800205078 /* tableView____Tests.m */,
+				DB0430F01BFACC4800205078 /* Supporting Files */,
+			);
+			path = "tableView反向传值Tests";
+			sourceTree = "<group>";
+		};
+		DB0430F01BFACC4800205078 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB0430F11BFACC4800205078 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB0430D21BFACC4800205078 /* tableView反向传值 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0430F61BFACC4800205078 /* Build configuration list for PBXNativeTarget "tableView反向传值" */;
+			buildPhases = (
+				DB0430CF1BFACC4800205078 /* Sources */,
+				DB0430D01BFACC4800205078 /* Frameworks */,
+				DB0430D11BFACC4800205078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tableView反向传值";
+			productName = "tableView反向传值";
+			productReference = DB0430D31BFACC4800205078 /* tableView反向传值.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB0430EB1BFACC4800205078 /* tableView反向传值Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0430F91BFACC4800205078 /* Build configuration list for PBXNativeTarget "tableView反向传值Tests" */;
+			buildPhases = (
+				DB0430E81BFACC4800205078 /* Sources */,
+				DB0430E91BFACC4800205078 /* Frameworks */,
+				DB0430EA1BFACC4800205078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB0430EE1BFACC4800205078 /* PBXTargetDependency */,
+			);
+			name = "tableView反向传值Tests";
+			productName = "tableView反向传值Tests";
+			productReference = DB0430EC1BFACC4800205078 /* tableView反向传值Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB0430CB1BFACC4800205078 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tarena01;
+				TargetAttributes = {
+					DB0430D21BFACC4800205078 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					DB0430EB1BFACC4800205078 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = DB0430D21BFACC4800205078;
+					};
+				};
+			};
+			buildConfigurationList = DB0430CE1BFACC4800205078 /* Build configuration list for PBXProject "tableView反向传值" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB0430CA1BFACC4800205078;
+			productRefGroup = DB0430D41BFACC4800205078 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB0430D21BFACC4800205078 /* tableView反向传值 */,
+				DB0430EB1BFACC4800205078 /* tableView反向传值Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB0430D11BFACC4800205078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0430E71BFACC4800205078 /* LaunchScreen.xib in Resources */,
+				B7E7C81B1CC4CB2800919051 /* City.plist in Resources */,
+				DB0431031BFACCD100205078 /* CityTableViewController.xib in Resources */,
+				DB0430E41BFACC4800205078 /* Images.xcassets in Resources */,
+				DB0431081BFACEC400205078 /* InputViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0430EA1BFACC4800205078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB0430CF1BFACC4800205078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0431011BFACCD100205078 /* CityTableViewController.m in Sources */,
+				DB0430DC1BFACC4800205078 /* AppDelegate.m in Sources */,
+				DB0431021BFACCD100205078 /* City.m in Sources */,
+				DB0431071BFACEC400205078 /* InputViewController.m in Sources */,
+				DB0430D91BFACC4800205078 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0430E81BFACC4800205078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0430F31BFACC4800205078 /* tableView____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB0430EE1BFACC4800205078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB0430D21BFACC4800205078 /* tableView反向传值 */;
+			targetProxy = DB0430ED1BFACC4800205078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB0430E51BFACC4800205078 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB0430E61BFACC4800205078 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB0430F41BFACC4800205078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB0430F51BFACC4800205078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB0430F71BFACC4800205078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "tableView反向传值/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB0430F81BFACC4800205078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "tableView反向传值/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB0430FA1BFACC4800205078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "tableView反向传值Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tableView反向传值.app/tableView反向传值";
+			};
+			name = Debug;
+		};
+		DB0430FB1BFACC4800205078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "tableView反向传值Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tableView反向传值.app/tableView反向传值";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB0430CE1BFACC4800205078 /* Build configuration list for PBXProject "tableView反向传值" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0430F41BFACC4800205078 /* Debug */,
+				DB0430F51BFACC4800205078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0430F61BFACC4800205078 /* Build configuration list for PBXNativeTarget "tableView反向传值" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0430F71BFACC4800205078 /* Debug */,
+				DB0430F81BFACC4800205078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0430F91BFACC4800205078 /* Build configuration list for PBXNativeTarget "tableView反向传值Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0430FA1BFACC4800205078 /* Debug */,
+				DB0430FB1BFACC4800205078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB0430CB1BFACC4800205078 /* Project object */;
+}
