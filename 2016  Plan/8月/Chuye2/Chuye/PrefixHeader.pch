@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  Chuye
+//
+//  Created by Qinting on 16/8/16.
+//  Copyright © 2016年 Qinting. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kUserDefault [NSUserDefaults standardUserDefaults]
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+
+#import <MBProgressHUD.h>
+#import "UIScrollView+Refresh.h"
+#import "NSObject+AFNetworking.h"
+
+#import "NSObject+Parse.h"
+#import "UIView+HUD.h"
+
+
+#endif /* PrefixHeader_pch */

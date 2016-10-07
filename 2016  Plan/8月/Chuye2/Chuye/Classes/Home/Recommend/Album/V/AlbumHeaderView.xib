@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlbumHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BpG-io-a1v">
+                    <rect key="frame" x="10" y="10" width="3" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="m3R-Fc-rJP"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FV2-lt-CxT">
+                    <rect key="frame" x="18" y="5" width="154" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pao-Bk-mzE">
+                    <rect key="frame" x="182" y="5" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="9bN-E5-Xis"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="更多 &gt;">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pao-Bk-mzE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="3Mm-Rq-SxE"/>
+                <constraint firstItem="FV2-lt-CxT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="G8g-Xm-avL"/>
+                <constraint firstAttribute="trailing" secondItem="pao-Bk-mzE" secondAttribute="trailing" constant="10" id="HQN-qc-0hO"/>
+                <constraint firstItem="pao-Bk-mzE" firstAttribute="leading" secondItem="FV2-lt-CxT" secondAttribute="trailing" constant="10" id="MQ9-qA-CXd"/>
+                <constraint firstItem="BpG-io-a1v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="NGs-Ad-e3s"/>
+                <constraint firstAttribute="bottom" secondItem="pao-Bk-mzE" secondAttribute="bottom" constant="5" id="PKJ-0g-oyB"/>
+                <constraint firstAttribute="bottom" secondItem="BpG-io-a1v" secondAttribute="bottom" constant="10" id="bqe-H0-tHW"/>
+                <constraint firstAttribute="bottom" secondItem="FV2-lt-CxT" secondAttribute="bottom" constant="5" id="lxL-cu-KG7"/>
+                <constraint firstItem="FV2-lt-CxT" firstAttribute="leading" secondItem="BpG-io-a1v" secondAttribute="trailing" constant="5" id="mjd-lF-tC5"/>
+                <constraint firstItem="BpG-io-a1v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="udy-Qm-1Eu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="FV2-lt-CxT" id="162-9Q-5uR"/>
+                <outlet property="moreButton" destination="pao-Bk-mzE" id="2xb-FM-1Yp"/>
+            </connections>
+            <point key="canvasLocation" x="-108" y="-803.5"/>
+        </view>
+    </objects>
+</document>
