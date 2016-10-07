@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7D0A4EC1CFAA7A000AED524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D0A4EB1CFAA7A000AED524 /* main.m */; };
+		B7D0A4EF1CFAA7A000AED524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D0A4EE1CFAA7A000AED524 /* AppDelegate.m */; };
+		B7D0A4F21CFAA7A000AED524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D0A4F11CFAA7A000AED524 /* ViewController.m */; };
+		B7D0A4F51CFAA7A000AED524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D0A4F31CFAA7A000AED524 /* Main.storyboard */; };
+		B7D0A4F71CFAA7A100AED524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D0A4F61CFAA7A100AED524 /* Assets.xcassets */; };
+		B7D0A4FA1CFAA7A100AED524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D0A4F81CFAA7A100AED524 /* LaunchScreen.storyboard */; };
+		B7D0A5031CFAAA1B00AED524 /* QTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D0A5021CFAAA1B00AED524 /* QTTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7D0A4E71CFAA7A000AED524 /* Runtime_setTextFieldPlaceholderColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime_setTextFieldPlaceholderColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D0A4EB1CFAA7A000AED524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7D0A4ED1CFAA7A000AED524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7D0A4EE1CFAA7A000AED524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7D0A4F01CFAA7A000AED524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B7D0A4F11CFAA7A000AED524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7D0A4F41CFAA7A000AED524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7D0A4F61CFAA7A100AED524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7D0A4F91CFAA7A100AED524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7D0A4FB1CFAA7A100AED524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D0A5011CFAAA1B00AED524 /* QTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTTextField.h; sourceTree = "<group>"; };
+		B7D0A5021CFAAA1B00AED524 /* QTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7D0A4E41CFAA7A000AED524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7D0A4DE1CFAA7A000AED524 = {
+			isa = PBXGroup;
+			children = (
+				B7D0A4E91CFAA7A000AED524 /* Runtime_setTextFieldPlaceholderColor */,
+				B7D0A4E81CFAA7A000AED524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7D0A4E81CFAA7A000AED524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7D0A4E71CFAA7A000AED524 /* Runtime_setTextFieldPlaceholderColor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7D0A4E91CFAA7A000AED524 /* Runtime_setTextFieldPlaceholderColor */ = {
+			isa = PBXGroup;
+			children = (
+				B7D0A4ED1CFAA7A000AED524 /* AppDelegate.h */,
+				B7D0A4EE1CFAA7A000AED524 /* AppDelegate.m */,
+				B7D0A4F01CFAA7A000AED524 /* ViewController.h */,
+				B7D0A4F11CFAA7A000AED524 /* ViewController.m */,
+				B7D0A5011CFAAA1B00AED524 /* QTTextField.h */,
+				B7D0A5021CFAAA1B00AED524 /* QTTextField.m */,
+				B7D0A4F31CFAA7A000AED524 /* Main.storyboard */,
+				B7D0A4F61CFAA7A100AED524 /* Assets.xcassets */,
+				B7D0A4F81CFAA7A100AED524 /* LaunchScreen.storyboard */,
+				B7D0A4FB1CFAA7A100AED524 /* Info.plist */,
+				B7D0A4EA1CFAA7A000AED524 /* Supporting Files */,
+			);
+			path = Runtime_setTextFieldPlaceholderColor;
+			sourceTree = "<group>";
+		};
+		B7D0A4EA1CFAA7A000AED524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7D0A4EB1CFAA7A000AED524 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7D0A4E61CFAA7A000AED524 /* Runtime_setTextFieldPlaceholderColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D0A4FE1CFAA7A100AED524 /* Build configuration list for PBXNativeTarget "Runtime_setTextFieldPlaceholderColor" */;
+			buildPhases = (
+				B7D0A4E31CFAA7A000AED524 /* Sources */,
+				B7D0A4E41CFAA7A000AED524 /* Frameworks */,
+				B7D0A4E51CFAA7A000AED524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runtime_setTextFieldPlaceholderColor;
+			productName = Runtime_setTextFieldPlaceholderColor;
+			productReference = B7D0A4E71CFAA7A000AED524 /* Runtime_setTextFieldPlaceholderColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7D0A4DF1CFAA7A000AED524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Qinting;
+				TargetAttributes = {
+					B7D0A4E61CFAA7A000AED524 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = CW23JJ23BD;
+					};
+				};
+			};
+			buildConfigurationList = B7D0A4E21CFAA7A000AED524 /* Build configuration list for PBXProject "Runtime_setTextFieldPlaceholderColor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7D0A4DE1CFAA7A000AED524;
+			productRefGroup = B7D0A4E81CFAA7A000AED524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7D0A4E61CFAA7A000AED524 /* Runtime_setTextFieldPlaceholderColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7D0A4E51CFAA7A000AED524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D0A4FA1CFAA7A100AED524 /* LaunchScreen.storyboard in Resources */,
+				B7D0A4F71CFAA7A100AED524 /* Assets.xcassets in Resources */,
+				B7D0A4F51CFAA7A000AED524 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7D0A4E31CFAA7A000AED524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D0A4F21CFAA7A000AED524 /* ViewController.m in Sources */,
+				B7D0A4EF1CFAA7A000AED524 /* AppDelegate.m in Sources */,
+				B7D0A5031CFAAA1B00AED524 /* QTTextField.m in Sources */,
+				B7D0A4EC1CFAA7A000AED524 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7D0A4F31CFAA7A000AED524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D0A4F41CFAA7A000AED524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7D0A4F81CFAA7A100AED524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D0A4F91CFAA7A100AED524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7D0A4FC1CFAA7A100AED524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7D0A4FD1CFAA7A100AED524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7D0A4FF1CFAA7A100AED524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Runtime_setTextFieldPlaceholderColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "QT.Runtime-setTextFieldPlaceholderColor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7D0A5001CFAA7A100AED524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Runtime_setTextFieldPlaceholderColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "QT.Runtime-setTextFieldPlaceholderColor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7D0A4E21CFAA7A000AED524 /* Build configuration list for PBXProject "Runtime_setTextFieldPlaceholderColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D0A4FC1CFAA7A100AED524 /* Debug */,
+				B7D0A4FD1CFAA7A100AED524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D0A4FE1CFAA7A100AED524 /* Build configuration list for PBXNativeTarget "Runtime_setTextFieldPlaceholderColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D0A4FF1CFAA7A100AED524 /* Debug */,
+				B7D0A5001CFAA7A100AED524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7D0A4DF1CFAA7A000AED524 /* Project object */;
+}
