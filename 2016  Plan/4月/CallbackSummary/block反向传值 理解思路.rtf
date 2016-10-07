@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14100\viewh10280\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs30 \cf0 \'c0\'ed\'bd\'e2\'cb\'bc\'c2\'b7\'a3\'a8\'d3\'eb\'b4\'fa\'c0\'ed\'b6\'d4\'b1\'c8\'a3\'a9\'a3\'ba\
+\cf2 \'a3\'af\'a3\'af \'b1\'be\'d6\'ca\'a3\'ba\
+/\'a3\'af  \'ce\'af\'cd\'d0\'ca\'c7\'b4\'ab\'b9\'fd\'c0\'b4 \'d2\'bb\'b8\'f6\'b4\'fa\'c0\'ed\'b6\'d4\'cf\'f3\'a3\'ac\'cd\'a8\'b9\'fd\'b4\'fa\'c0\'ed\'b6\'d4\'cf\'f3\'d6\'b4\'d0\'d0\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\
+\'a3\'af/  block \'ca\'c7\'b4\'ab\'b9\'fd\'c0\'b4\'d2\'bb\'b8\'f6\'d6\'b4\'d0\'d0\'b7\'bd\'b7\'a8\'a3\'ac\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'d6\'b4\'d0\'d0\
+
+\f1 \cf0 \
+B
+\f0 \'c0\'e0\'d6\'d0\'a3\'ba
+\f1 \
+1.
+\f0 \'b8\'f8b
+\f1 lock
+\f0 \'c0\'e0\'d0\'cd\'c6\'f0\'b1\'f0\'c3\'fb\
+int a;
+\f1 \
+typedef void(^AddBlock)(City 
+\f0 *city
+\f1 ); //
+\f0 \'b8\'f8\'d5\'e2\'b8\'f6
+\f1 block
+\f0 \'c6\'f0\'b1\'f0\'c3\'fb\'bd\'d0
+\f1 AddBlock,
+\f0 \'b4\'ab\'d6\'b5\'a3\'a8\'d5\'e2\'b8\'f6\'d6\'b5\'ca\'c7city\'a3\'a9\'bb\'d8\'c8\'a5\'a3\'ac\'b4\'cb\'d0\'d0\'b8\'fa\'c9\'f9\'c3\'f7\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'d2\'bb\'d1\'f9\'a3\'ac
+\f1 \
+
+\f0 block\'b1\'be\'d6\'ca\'ca\'c7C\'b5\'c4\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb int (*)func;\
+\
+2.\'cc\'ed\'bc\'d3block\'ca\'f4\'d0\'d4  //ARC\'cf\'c2\'d3\'c3strong  MRC\'cf\'c2\'d3\'c3copy\
+@property (nonatomic, strong) AddBlock block;\
+//\'c0\'e0\'cb\'c6  @property (nonatomic,assign) int a;\
+\
+3.\'d4\'da\'ca\'ca\'b5\'b1\'b5\'c4\'ca\'b1\'ba\'f2\'b5\'f7\'d3\'c3block\'b4\'ab\'d6\'b5\'a3\'ac\'bd\'ab\'d2\'aa\'b4\'ab\'b5\'c4\'d6\'b5 \'b4\'ab\'bb\'d8\'c8\'a5\
+           block(aCity);\
+\
+A\'c0\'e0\'d6\'d0\'a3\'ba\
+\'c9\'e8\'d6\'c3block\'ca\'f4\'d0\'d4\'a3\'a8\'d3\'eb\'c9\'e8\'d6\'c3\'b4\'fa\'c0\'ed\'c4\'c7\'c0\'ef \'cd\'ac\'c9\'e8\'d6\'c3\'a3\'a9\
+addVC.delegate = self; \
+\'ce\'b1\'b4\'fa\'c2\'eb\'a3\'ba\
+\'a1\'aa>  addVC.block = test; //\'b0\'d1test\'ba\'af\'ca\'fd\'b5\'c4\'b5\'d8\'d6\'b7\'b8\'f8block\'a3\'ac\'b5\'ab\'ca\'c7oc\'b2\'bb\'d4\'ca\'d0\'ed\'d6\'b1\'bd\'d3\'b4\'ab\'b5\'d8\'d6\'b7\'a3\'ac\'d2\'aa\'d0\'b4\'b3\'c9block\'d5\'e2\'d1\'f9\
+-(void)test:(City *city)\{\
+\}\
+\'bd\'f8\'d2\'bb\'b2\'bd\'d3\'c5\'bb\'af\'b3\'c9\'ca\'b5\'bc\'ca\'d0\'b4\'b5\'c4\'a3\'ba\
+\'a1\'aa\'a1\'aa>>  addVC.block = ^(City *city)\{\
+//\'b0\'d1\'d3\'d2\'b1\'df\'b5\'b1\'d7\'f7\'d2\'bb\'b8\'f6\'c3\'bb\'d3\'d0\'c3\'fb\'d7\'d6\'b5\'c4\'ba\'af\'ca\'fd\'a3\'ac\'b0\'d1\'d5\'e2\'b8\'f6\'c4\'e4\'c3\'fb\'ba\'af\'ca\'fd\'b4\'ab\'b8\'f8block\
+\}\
+\
+OC\'ca\'c7\'c3\'e6\'cf\'f2\'b6\'d4\'cf\'f3\'d3\'ef\'d1\'d4\'a3\'acswift\'ca\'c7\'c3\'e6\'cf\'f2\'ba\'af\'ca\'fd\'d3\'ef\'d1\'d4\'a3\'ac\'c3\'e6\'cf\'f2\'ba\'af\'ca\'fd\'b4\'f3\'c1\'bf\'d3\'c3\'b5\'bd\'b4\'ab\'b5\'dd\'ba\'af\'ca\'fd\'a3\'acC\'ba\'cdswift\'d6\'d0\'ba\'af\'ca\'fd\'bf\'c9\'d2\'d4\'d7\'f7\'ce\'aa\'b2\'ce\'ca\'fd\
+\
+\'c7\'eb\'c7\'f3\'b3\'c9\'b9\'a6\'a3\'ac\'ca\'a7\'b0\'dc\'a3\'ac\'cd\'f8\'c2\'e7\'b4\'ed\'ce\'f3 \'a1\'aa> \'cd\'ac\'d2\'bb\'b8\'f6\'ca\'c2\'bc\'fe\'b4\'a6\'c0\'ed\'a3\'ac\'d3\'c3\'d2\'bb\'b8\'f6\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'bc\'b4\'bf\'c9\'a3\'ac\'b2\'bb\'d3\'c3\'d0\'b43\'b8\'f6block\'a3\'ac\'cb\'f9\'d2\'d4\'b8\'f7\'d3\'d0\'d3\'c5\'ca\'c6\'b8\'f7\'d3\'d0\'cc\'d8\'b5\'e3}
