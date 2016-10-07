@@ -1,0 +1,183 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 Verdana;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\froman\fcharset0 Times-Roman;
+\f3\fnil\fcharset134 STSongti-SC-Regular;\f4\fnil\fcharset0 HelveticaNeue;\f5\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red92\green38\blue153;\red170\green13\blue145;
+\red11\green42\blue127;\red29\green29\blue29;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17300\viewh12720\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+{{\NeXTGraphic 2012051922153763.jpg \width13020 \height7920 \noorient
+}¬}\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \kerning1\expnd0\expndtw0 1. UITabBarController  \'d1\'a1\'cf\'ee\'bf\'a8\'bf\'d8\'d6\'c6\'c6\'f7  \'a3\'a8\'bc\'cc\'b3\'d0\'d3\'daUIViewController\'a3\'a9\cf0 \
+     1> viewControllers  \'cd\'a8\'b9\'fd\'ca\'fd\'d7\'e9\'ca\'f4\'d0\'d4\'c0\'b4\'b9\'dc\'c0\'ed\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\
+     2> UITabBar     \'c8\'e7\'c9\'cf\'cd\'bc\'c4\'c7\'d2\'bb\'c0\'b8\'a3\'acUITabBar\'bc\'cc\'b3\'d0UIView\
+\
+\cf2 2. UITabBar   \'a3\'a8\'bc\'cc\'b3\'d0\'d3\'daUIView\'a3\'a9\cf0 \
+     1> 
+\f2 \cf3 \CocoaLigature0 NSArray\cf0 <\cf3 UITabBarItem\cf0  *> *items;    
+\f3 \'cd\'a8\'b9\'fd
+\f2 items
+\f3 \'b9\'dc\'c0\'ed\'b8\'f7\'b8\'f6
+\f2 \cf3 TabBarItem\cf0 \
+        2> \cf3 UITabBarItem\cf0  *selectedItem;                
+\f3 \'b5\'b1\'c7\'b0\'d1\'a1\'d4\'f1\'b5\'c4
+\f2 item\
+\
+
+\fs30 \cf2 3. UITabBarItem     
+\f3 \'a3\'a8\'bc\'cc\'b3\'d0\'d3\'da
+\f2 UIBarItem
+\f3 \'a3\'a9
+\f2\fs28 \cf3 \
+	1>  
+\f3 \'b3\'a3\'d3\'c3
+\f2 2
+\f3 \'b8\'f6\'b7\'bd\'b7\'a8\'a3\'ac\'d3\'c3\'d3\'da\'b4\'b4\'bd\'a8
+\f2 UITabBarItem\
+ \cf0 - (\cf4 instancetype\cf0 )initWithTitle:(\cf4 nullable\cf0  \cf3 NSString\cf0  *)title image:(\cf4 nullable\cf0  \cf3 UIImage\cf0  *)image selectedImage:(\cf4 nullable\cf0  \cf3 UIImage\cf0  *)selectedImage \
+\pard\tx240\pardeftab240\pardirnatural\partightenfactor0
+\cf0 - (\cf4 instancetype\cf0 )initWithTabBarSystemItem:(\cf3 UITabBarSystemItem\cf0 )systemItem tag:(\cf3 NSInteger\cf0 )tag;\
+		2
+\f3 > 
+\f2 \cf3  
+\f3 \cf3 \'b3\'a3\'d3\'c3
+\f2 \cf3 2
+\f3 \cf3 \'b8\'f6\'ca\'f4\'d0\'d4
+\f2 \cf0     \cf3 UIImage\cf0  *selectedImage   
+\f3 \'a1\'a2
+\f2 \cf3 NSString\cf0  *badgeValue;  \
+       3> 
+\f3 \'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'b4\'b4\'bd\'a8\'cf\'b5\'cd\'b3\'d1\'f9\'ca\'bd\'b5\'c4tabBarItem\
+            
+\f2\fs24   UITabBarSystemItemContacts,\
+                UITabBarSystemItemHistory,\
+   			    UITabBarSystemItemBookmarks\
+
+\f3\fs28 \
+
+\fs30 \cf2 4.
+\f2\fs26 UIBarButtonItem   
+\f3\fs30 \'a3\'a8\'b8\'fa
+\f2 UITabBarItem 
+\f3 \'b6\'bc\'ca\'c7\'bc\'cc\'b3\'d0\'d3\'da
+\f2 UIBarItem
+\f3 \'a3\'a9\
+Description:\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1            A bar button item is a button specialized for placement on a {\field{\*\fldinst{HYPERLINK "file:///Applications/Xcode.app/Contents/Developer/Documentation/DocSets/com.apple.adc.documentation.iOS.docset/Contents/Resources/Documents/documentation/UIKit/Reference/UIToolbar_Class/index.html#//apple_ref/occ/cl/UIToolbar"}}{\fldrslt \cf5 UIToolbar}} or {\field{\*\fldinst{HYPERLINK "file:///Applications/Xcode.app/Contents/Developer/Documentation/DocSets/com.apple.adc.documentation.iOS.docset/Contents/Resources/Documents/documentation/UIKit/Reference/UINavigationBar_Class/index.html#//apple_ref/occ/cl/UINavigationBar"}}{\fldrslt \cf5 UINavigationBar}} object. It inherits basic button behavior from its abstract superclass, {\field{\*\fldinst{HYPERLINK "file:///Applications/Xcode.app/Contents/Developer/Documentation/DocSets/com.apple.adc.documentation.iOS.docset/Contents/Resources/Documents/documentation/UIKit/Reference/UIBarItem_Class/index.html#//apple_ref/occ/cl/UIBarItem"}}{\fldrslt \cf5 UIBarItem}}. The {\field{\*\fldinst{HYPERLINK "file:///Applications/Xcode.app/Contents/Developer/Documentation/DocSets/com.apple.adc.documentation.iOS.docset/Contents/Resources/Documents/documentation/UIKit/Reference/UIBarButtonItem_Class/index.html#//apple_ref/occ/cl/UIBarButtonItem"}}{\fldrslt \cf5 UIBarButtonItem}} defines additional initialization methods and properties for use on toolbars and navigation bars.\
+
+\f3\fs28 \cf3 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\tx240\pardeftab240\pardirnatural\partightenfactor0
+\cf3     1> \'b4\'b4\'bd\'a8\
+
+\f2\fs24 \cf0 - (\cf4 instancetype\cf0 )initWithTitle:(\cf4 nullable\cf0  \cf3 NSString\cf0  *)title style:(\cf3 UIBarButtonItemStyle\cf0 )style target:(\cf4 nullable\cf0  \cf4 id\cf0 )target action:(\cf4 nullable\cf0  \cf4 SEL\cf0 )action;\
+- (\cf4 instancetype\cf0 )initWithBarButtonSystemItem:(\cf3 UIBarButtonSystemItem\cf0 )systemItem target:(\cf4 nullable\cf0  \cf4 id\cf0 )target action:(\cf4 nullable\cf0  \cf4 SEL\cf0 )action;\
+\cf2 - (instancetype)initWithCustomView:(UIView *)customView
+\f3 \'a3\'bb
+\f2 \cf0 \
+
+\f3\fs28 \cf3     2> \'b3\'a3\'d3\'c3\'b5\'c42\'b8\'f6\'ca\'f4\'d0\'d4\'a3\'ba 
+\f2\fs24 \cf0  \cf3 UIView\cf0   *customView;     \cf3 UIBarButtonItemStyle\cf0  style
+\f3 \'a3\'a8\'c1\'d0\'be\'d9\'b5\'c4\'c8\'e7\'cf\'c2\'bc\'b8\'b8\'f6\'a3\'a9
+\f2    
+\f3\fs28 \cf3 \
+
+\f2\fs24 \cf0     UIBarButtonSystemItemEdit,  \
+    UIBarButtonSystemItemSave,  \
+    UIBarButtonSystemItemAdd,
+\f3\fs28 \cf3 \
+
+\f2\fs24 \cf0     UIBarButtonSystemItemStop,\
+    UIBarButtonSystemItemCamera,\
+    UIBarButtonSystemItemTrash,\
+    UIBarButtonSystemItemPlay,\
+    UIBarButtonSystemItemPause,\
+(
+\f3 \'cc\'d8\'b1\'f0\'d7\'a2\'d2\'e2\'b5\'c4\'d5\'e2\'c1\'bd\'b8\'f6\'a3\'ba
+\f2 )\
+  \cf2   UIBarButtonSystemItemFlexibleSpace,\
+    UIBarButtonSystemItemFixedSpace\
+\
+
+\f3\fs28 \cf3 \
+
+\fs30 \cf2 5.UIBarItem   (\'bc\'cc\'b3\'d0\'d3\'daNSObject)
+\fs28 \cf3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\partightenfactor0
+
+\f2 \cf6 \expnd0\expndtw0\kerning0
+\CocoaLigature1 	   UIBarItem
+\f3 \'ca\'c7\'d2\'bb\'b8\'f6\'b3\'e9\'cf\'f3\'b5\'c4\'b3\'ac\'c0\'e0\'d3\'c3\'c0\'b4\'d4\'da\'c6\'c1\'c4\'bb\'b5\'c4\'b6\'a5\'b2\'bf\'a1\'a2\'b5\'d7\'b2\'bf\'b8\'f8\'cf\'ee\'c4\'bf\'bc\'d3\'c9\'cf\'d2\'bb\'c0\'b8\'a1\'a3\'b4\'f8\'c0\'b8\'b5\'c4\'cc\'f5\'c4\'bf\'c0\'e0\'cb\'c6\'d3\'da\'d2\'bb\'b8\'f6\'b0\'b4\'c5\'a5\'b5\'c4\'b7\'bd\'ca\'bd\'a1\'a3\'cb\'fb\'c3\'c7\'d3\'d0\'b1\'ea\'cc\'e2\'a3\'ac\'d3\'d0\'cd\'bc\'c6\'ac\'a3\'ac\'b6\'af\'d7\'f7\'ba\'cd\'c4\'bf\'b1\'ea\'a1\'a3\'c4\'e3\'bf\'c9\'d2\'d4\'d4\'da\'cf\'ee\'c4\'bf\'d6\'d0\'c6\'f4\'d3\'c3\'ba\'cd\'bd\'fb\'d3\'c3\'d2\'bb\'b8\'f6\'b4\'f8\'c0\'b8\'cc\'f5\'c4\'bf\'a1\'a3\cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\tx240\pardeftab240\pardirnatural\partightenfactor0
+
+\fs24 \cf0              \'b3\'a3\'d3\'c3
+\f2 3
+\f3 \'b8\'f6\'ca\'f4\'d0\'d4\'a3\'ba
+\f2   \cf3 NSString\cf0     *title;           \cf3 UIImage\cf0      *image;     \cf3 UIEdgeInsets\cf0  imageInsets; \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f5 \cf0 \CocoaLigature1 {{\NeXTGraphic EC751F89-B9E6-4BF9-94EC-9F20E30C3601.png \width12720 \height9700
+}¬}
+\f2 \CocoaLigature0 \
+\pard\tx240\pardeftab240\pardirnatural\partightenfactor0
+\cf0 \
+\
+6.
+\f1\fs28 \cf2 \CocoaLigature1  UIToolbar   \'a3\'a8\'bc\'cc\'b3\'d0\'d3\'daUIView\'a3\'a9
+\f3 \cf0 \CocoaLigature0 \
+        1> 
+\f2\fs24 \cf3 NSArray\cf0 <\cf3 UIBarButtonItem\cf0  *> *items;  //
+\f3 \'cd\'a8\'b9\'fd
+\f2 \cf3 UIBarButtonItem\cf0 \
+         2> \cf3 UIColor\cf0  *barTintColor \
+		 3> \cf4 BOOL\cf0  translucent
+\f3\fs28 \
+
+\f1 \CocoaLigature1       \'c8\'e7\'ba\'ce\'c9\'e8\'d6\'c3\'bc\'e4\'be\'e0\'a3\'bf\
+\
+
+\fs32 \cf2 7.
+\f2\fs28 \CocoaLigature0 UINavigationBar  
+\f1\fs32 \CocoaLigature1 \'a3\'a8\'bc\'cc\'b3\'d0\'d3\'daUIView\'a3\'a9
+\fs28 \
+
+\f2\fs24 \cf3 \CocoaLigature0           1> NSArray\cf0 <\cf3 UINavigationItem\cf0  *> *items;     
+\f3 \'cd\'a8\'b9\'fd
+\f2 items
+\f3 \'ca\'fd\'d7\'e9\'b9\'dc\'c0\'ed\'d2\'bb\'b8\'f6\'b8\'f6\'b5\'c4
+\f2 \cf3 UINavigationItem\
+\
+
+\fs28 \cf2 8.UINavigationItem    
+\f3\fs34 (\'bc\'cc\'b3\'d0\'d3\'daNSObject)
+\fs30 \
+
+\f2\fs24 \cf3 			1
+\f3 \cf3 > 
+\f2 \cf3 NSString\cf0         *title;            \
+\cf3 			2> UIView\cf0           *titleView;   
+\f3\fs30 \cf2 \
+
+\f2\fs24 \cf0 			3>  \cf3 NSArray\cf0 <\cf3 UIBarButtonItem\cf0  *> *leftBarButtonItems 
+\f3 \'a1\'a2
+\f2 \cf3 NSArray\cf0 <\cf3 UIBarButtonItem\cf0  *> *rightBarButtonItems 
+\f3 \
+
+\f2 			4> \cf3 UIBarButtonItem\cf0  *leftBarButtonItem;    \cf3 UIBarButtonItem\cf0  *rightBarButtonItem;\
+\
+\
+\
+\
+\
+}

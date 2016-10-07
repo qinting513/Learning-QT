@@ -1,0 +1,902 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset134 STHeitiSC-Light;\f5\fnil\fcharset0 Verdana;
+\f6\froman\fcharset0 Times-Roman;\f7\fnil\fcharset134 STSongti-SC-Regular;\f8\fmodern\fcharset0 CourierNewPSMT;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red83\green104\blue112;\red244\green244\blue244;
+\red37\green146\blue134;\red165\green119\blue5;\red255\green46\blue57;\red180\green0\blue98;\red77\green0\blue158;
+\red92\green38\blue153;\red46\green13\blue110;\red0\green11\blue255;\red29\green133\blue25;\red187\green0\blue17;
+\red239\green51\blue42;\red63\green110\blue116;\red0\green116\blue0;\red196\green26\blue22;\red28\green0\blue207;
+\red170\green13\blue145;\red255\green22\blue37;\red255\green22\blue37;\red12\green71\blue164;\red242\green242\blue242;
+\red107\green0\blue1;\red107\green0\blue109;\red0\green0\blue255;\red15\green112\blue1;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17540\viewh13080\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 UITabBarController  \'d1\'a1\'cf\'ee\'bf\'a8\'bf\'d8\'d6\'c6\'c6\'f7\
+			\'d7\'f7\'d3\'c3\'a3\'ba\'d2\'d4\'ba\'e1\'cf\'f2\'b2\'a2\'c1\'d0\'bf\'a8\'c6\'ac\'ca\'bd\'a3\'ac\'c0\'b4\'b9\'dc\'c0\'ed\'b6\'e0\'b8\'f6\'bf\'d8\'d6\'c6\'c6\'f7\'a3\'ac\'b2\'a2\'ca\'b5\'cf\'d6\'b5\'e3\'bb\'f7\'ba\'f3\'b5\'c4\'c7\'d0\'bb\'bb\'a3\'ac\'ba\'cdUINavigationController\'b2\'bb\'cd\'ac\'a3\'ac\'cb\'fc\'b5\'c4\'b9\'dc\'c0\'ed\'ca\'c7\'ba\'e1\'cf\'f2\'b5\'c4\'a3\'ac\'b6\'f8\'b2\'bb\'ca\'c7\'cf\'f1\'b5\'bc\'ba\'bd\'bf\'d8\'d6\'c6\'c6\'f7\'b2\'e3\'b2\'e3\'cd\'c6\'bd\'f8\'b5\'c4, UITabBarController\'b3\'a3\'d3\'c32\'b8\'f6\'ca\'f4\'d0\'d4\'a3\'acviewControllers\'ba\'cdUITabBar\
+			\'c8\'e7\'ba\'ce\'b9\'dc\'c0\'ed\'b6\'e0\'b8\'f6\'bf\'d8\'d6\'c6\'c6\'f7\
+					\'bd\'e8\'d6\'fa\'d3\'daviewControllers\'ca\'fd\'d7\'e9\'ca\'f4\'d0\'d4\'c0\'b4\'b9\'dc\'c0\'ed\
+			\'b0\'fc\'ba\'ac\'b5\'c4\'b2\'bf\'b7\'d6\'a3\'ba\
+					1. viewControllers  >>>\'b9\'dc\'c0\'ed\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\
+					2.UITabBar \'b0\'fc\'ba\'ac\'b5\'c4\'b6\'e0\'b8\'f6\'b0\'b4\'bc\'fc\'a3\'ac\'c0\'e0\'d0\'cd\'b6\'bc\'ca\'c7UITabBarButton\'a3\'ac\'ca\'c7\'cf\'b5\'cd\'b3\'b5\'c4\'cb\'bd\'d3\'d0API\'a3\'ac\'b2\'bb\'c4\'dc\'b9\'bb\'d6\'b1\'bd\'d3\'b4\'b4\'bd\'a8\'bb\'f2\'ca\'b9\'d3\'c3\
+					3.TabBar\'d6\'d0\'b5\'c4\'c3\'bf\'b8\'f6\'b0\'b4\'bc\'fc\'d6\'bb\'c4\'dc\'bf\'d8\'d6\'c6\'cb\'fc\'cb\'f9\'b6\'d4\'d3\'a6\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'bf\'c9\'d2\'d4\'d0\'de\'b8\'c4\'b0\'b4\'bc\'fc\'b5\'c4\'ca\'f4\'d0\'d4\'bd\'f8\'d0\'d0\'c9\'e8\'d6\'c3\
+						\
+                            \'cd\'a8\'b9\'fd\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4 UITabBarItem \'bd\'f8\'d0\'d0\'d0\'de\'b8\'c4\
+									tabBarItem.title  \'c9\'e8\'d6\'c3\'b1\'ea\'cc\'e2\
+									tabBarItem.image \'c9\'e8\'d6\'c3\'c3\'bb\'d3\'d0\'d1\'a1\'d6\'d0\'b5\'c4\'cd\'bc\'c6\'ac\
+									tabBarItem.selectedImage  \'c9\'e8\'d6\'c3\'d1\'a1\'d6\'d0\'ca\'b1\'cd\'bc\'c6\'ac\
+									tabBarItem.badgeValue \'bb\'d5\'d5\'c2\'d6\'b5\
+\
+						\'ce\'aaTabBarController\'cc\'ed\'bc\'d3\'d7\'d3\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'b7\'bd\'ca\'bd:\
+							1.\'ce\'aa viewContronllers\'ca\'fd\'d7\'e9\'ca\'f4\'d0\'d4\'b8\'b3\'d6\'b5  \
+							2.\'b5\'f7\'d3\'c3  addChildViewController \'b7\'bd\'b7\'a8\'cc\'ed\'bc\'d3 \'d7\'d3\'bf\'d8\'d6\'c6\'c6\'f7\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 {{\NeXTGraphic 716948F0-81F7-4825-8C3E-81AE2A1D686D.png \width11904 \height3120
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \
+\pard\pardeftab720\sl340\partightenfactor0
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+\'ce\'b4\'b6\'c1\'cf\'fb\'cf\'a2
+\f2\fs28 \
+\pard\pardeftab720\sl320\sa280\partightenfactor0
+
+\f0 \cf2 \'cd\'e2\'b2\'bf\'b5\'c4\'bd\'c7\'b1\'ea\'b4\'fa\'c2\'eb\'ca\'c7\'d5\'e2\'d1\'f9\'b5\'c4\'a3\'ba
+\f2  \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\fs24 \cf3 \cb4     [UIApplicationsharedApplication].applicationIconBadgeNumber = 2333;\
+\
+\
+\pard\pardeftab720\sl320\sa280\partightenfactor0
+
+\f0\fs28 \cf2 \cb1 \'d5\'e2\'b8\'f6
+\f2  Tabbar 
+\f0 \'b5\'c4\'bd\'c7\'b1\'ea\'a3\'a8\'bb\'f2\'d5\'df\'bd\'d0\'bb\'d5\'d5\'c2\'d6\'b5\'a3\'a9\'ca\'c7\'d5\'e2\'d1\'f9\'c9\'e8\'d6\'c3\'b5\'c4\'a3\'ba
+\f2  \
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f3\fs26 \cf0 \cb4 UITabBarItem\'a0*item\'a0=\'a0[[UITabBarItem\'a0alloc]\'a0initWithTitle:\cf5 @\'93
+\f0 \'cd\'e8\'b0\'e9
+\f3 \'94\cf0 \'a0image:nil\'a0tag:\cf5 0\cf0 ];\
+\pard\pardeftab720\sl300\partightenfactor0
+\cf3 customItem1\cf6 .badgeValue\cf3 \'a0=\'a0\cf5 @"2333"\cf3 ;\'a0\cf0 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\
+
+\fs34 \cf7 1 \'a1\'a3\'cd\'a8\'b9\'fd\'cf\'b5\'cd\'b3\'b5\'c4Tabbar\'bb\'f1\'b5\'c3TabbarItem\'bd\'f8\'d0\'d0\'c9\'e8\'d6\'c3\'cd\'bc\'c6\'ac\'a3\'ba
+\fs28 \cf0 \
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f3\fs26 \cf8 \expnd0\expndtw0\kerning0
+@implementation
+\f2\fs28 \cf0  
+\f3\fs26 RMMainTabBarVC\
+\
+- (\cf8 void\cf0 ) viewDidLoad\
+\{\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf9 UITabBar
+\f2\fs28 \cf0  
+\f3\fs26 *tabBar =
+\f2\fs28  
+\f3\fs26 \cf8 self\cf0 .\cf10 tabBar\cf0 ;\
+\'a0\'a0\'a0 [[\cf9 UITabBar
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 appearance\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 setShadowImage\cf0 :[[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 alloc\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 init\cf0 ]];\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf8 self\cf0 .\cf10 tabBar\cf0 .\cf10 translucent
+\f2\fs28 \cf0  
+\f3\fs26 =
+\f2\fs28  
+\f3\fs26 \cf8 NO\cf0 ;\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf9 UITabBarItem
+\f2\fs28 \cf0  
+\f3\fs26 *item0 = [tabBar.\cf10 items
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 objectAtIndex\cf0 :\cf12 0\cf0 ];\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf9 UITabBarItem
+\f2\fs28 \cf0  
+\f3\fs26 *item1 = [tabBar.\cf10 items
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 objectAtIndex\cf0 :\cf12 1\cf0 ];\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf9 UITabBarItem
+\f2\fs28 \cf0  
+\f3\fs26 *item2 = [tabBar.\cf10 items
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 objectAtIndex\cf0 :\cf12 2\cf0 ];\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf9 UITabBarItem
+\f2\fs28 \cf0  
+\f3\fs26 *item3 = [tabBar.\cf10 items
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 objectAtIndex\cf0 :\cf12 3\cf0 ];\
+\pard\pardeftab720\sl300\partightenfactor0
+\cf13 //\'a0\'a0\'a0 UITabBarItem *item4 = [tabBar.items objectAtIndex:4];\cf0 \
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf13 //
+\f2\fs28 \cf0  
+\f0\fs26 \AppleTypeServices\AppleTypeServicesF65539 \cf13 \'b6\'d4
+\f3 \AppleTypeServices item
+\f0 \AppleTypeServices\AppleTypeServicesF65539 \'c9\'e8\'d6\'c3\'cf\'e0\'d3\'a6\'b5\'d8\'cd\'bc\'c6\'ac
+\f3 \AppleTypeServices \cf0 \
+\'a0\'a0\
+\'a0\'a0\'a0 item0.\cf10 image
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"unSelectContact"\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\'a0\'a0\'a0 item0.\cf10 selectedImage
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"selectContact"\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\'a0\'a0\'a0\
+\'a0\'a0\'a0 item1.\cf10 selectedImage
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"
+\f0 \AppleTypeServices\AppleTypeServicesF65539 \'cf\'fb\'cf\'a2\'d1\'a1\'d6\'d0
+\f3 \AppleTypeServices "\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\'a0\'a0\'a0 item1.\cf10 image
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"
+\f0 \AppleTypeServices\AppleTypeServicesF65539 \'cf\'fb\'cf\'a2\'d5\'fd\'b3\'a3
+\f3 \AppleTypeServices "\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\'a0\'a0\'a0\
+\'a0\'a0\'a0 item2.\cf10 selectedImage
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"sportCircle"\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\'a0\'a0\'a0 item2.\cf10 image
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"unselectSportCircle"\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\'a0\'a0\'a0\
+\'a0\'a0\'a0 item3.\cf10 selectedImage
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"
+\f0 \AppleTypeServices\AppleTypeServicesF65539 \'b7\'a2\'cf\'d6\'d1\'a1\'d6\'d0
+\f3 \AppleTypeServices "\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\'a0\'a0\'a0 item3.\cf10 image
+\f2\fs28 \cf0  
+\f3\fs26 = [[\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"
+\f0 \AppleTypeServices\AppleTypeServicesF65539 \'b7\'a2\'cf\'d6\'d5\'fd\'b3\'a3
+\f3 \AppleTypeServices "\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 imageWithRenderingMode\cf0 :\cf11 UIImageRenderingModeAlwaysOriginal\cf0 ];\
+\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf13 //
+\f2\fs28 \cf0  
+\f0\fs26 \AppleTypeServices\AppleTypeServicesF65539 \cf13 \'c9\'e8\'d6\'c3\'cf\'d4\'ca\'be\'b5\'c4\'d1\'d5\'c9\'ab
+\f3 \AppleTypeServices \'a0 UITextAttributeTextColor --- NSForegroundColorAttributeName\cf0 \
+\'a0\'a0\'a0 [[\cf9 UITabBarItem
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 appearance\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 setTitleTextAttributes\cf0 :[\cf9 NSDictionary
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 dictionaryWithObjectsAndKeys\cf0 :[\cf9 UIColor
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 whiteColor\cf0 ],\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf10 NSForegroundColorAttributeName\cf0 ,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf8 nil\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 forState\cf0 :\cf11 UIControlStateNormal\cf0 ];\
+\'a0\'a0\'a0 [[\cf9 UITabBarItem
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 appearance\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 setTitleTextAttributes\cf0 :[\cf9 NSDictionary
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 dictionaryWithObjectsAndKeys\cf0 :[\cf9 UIColor
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 purpleColor\cf0 ],\cf10 NSForegroundColorAttributeName
+\f2\fs28 \cf0  
+\f3\fs26 ,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf8 nil\cf0 ]
+\f2\fs28  
+\f3\fs26 \cf11 forState\cf0 :\cf11 UIControlStateSelected\cf0 ];\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf8 self\cf0 .\cf10 tabBar\cf0 .\cf10 backgroundImage
+\f2\fs28 \cf0  
+\f3\fs26 = [\cf9 UIImage
+\f2\fs28 \cf0  
+\f3\fs26 \cf11 imageNamed\cf0 :\cf14 @"
+\f0 \AppleTypeServices\AppleTypeServicesF65539 \'b5\'d7\'b2\'bf\'c0\'b8
+\f3 \AppleTypeServices "\cf0 ];\
+\'a0\'a0\'a0
+\f2\fs28  
+\f3\fs26 \cf8 self\cf0 .\cf10 selectedIndex
+\f2\fs28 \cf0  
+\f3\fs26 =
+\f2\fs28  
+\f3\fs26 \cf12 2\cf0 ;\
+\}\
+\
+\pard\pardeftab720\sl300\partightenfactor0
+\cf8 @end
+\f2\fs28 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\tx866\pardeftab866\pardirnatural\partightenfactor0
+
+\f3\fs36 \cf15 \CocoaLigature0 2.UITabBarController
+\f0 \'cd\'a8\'b9\'fd\'ca\'fd\'d7\'e9
+\f3 viewControllers
+\f0 \'c0\'b4\'b9\'dc\'c0\'ed\'bf\'d8\'d6\'c6\'c6\'f7
+\f3 \cf0 \
+\
+
+\f4 \'b4\'b4\'bd\'a8\'b6\'e0\'b8\'f6\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7,\'b7\'c5\'b5\'bdUITabBarController\'d6\'d0
+\f3 \
+    \cf16 TRViewController1\cf0 * vc1 = [[\cf16 TRViewController1\cf0  \cf11 alloc\cf0 ]\cf11 init\cf0 ];\
+    \cf10 UINavigationController\cf0 * nav1 = [[\cf10 UINavigationController\cf0  \cf11 alloc\cf0 ]\cf11 initWithRootViewController\cf0 :vc1];\
+    \cf16 TRViewController2\cf0 * vc2 = [[\cf16 TRViewController2\cf0  \cf11 alloc\cf0 ]\cf11 init\cf0 ];\
+    \cf10 UINavigationController\cf0 * nav2 = [[\cf10 UINavigationController\cf0  \cf11 alloc\cf0 ]\cf11 initWithRootViewController\cf0 :vc2];\
+    \cf16 TRViewController3\cf0 * vc3 = [[\cf16 TRViewController3\cf0  \cf11 alloc\cf0 ]\cf11 init\cf0 ];\
+    \cf10 UINavigationController\cf0 * nav3 = [[\cf10 UINavigationController\cf0  \cf11 alloc\cf0 ]\cf11 initWithRootViewController\cf0 :vc3];\
+\
+    \cf17 // 
+\f4 \'c9\'f9\'c3\'f7\'d2\'bb\'b8\'f6
+\f3 UITabBarController\
+
+\f4 \cf0 \'b3\'f5\'ca\'bc\'bb\'aftabbarController
+\f3 \
+    \cf10 UITabBarController\cf0 * tbc = [[\cf10 UITabBarController\cf0  \cf11 alloc\cf0 ]\cf11 init\cf0 ];\
+
+\f4 \cf17 \
+\'b1\'ea\'cc\'e2
+\f3 \cf0 \
+    nav1.\cf10 title\cf0  = \cf18 @\'931\'94\cf0 ;\
+    nav2.\cf10 title\cf0  = \cf18 @"2"\cf0 ;\
+
+\f4 \'cd\'bc\'c6\'ac
+\f3 \
+    nav1.\cf10 tabBarItem\cf0 .\cf10 image\cf0  = [\cf10 UIImage\cf0  \cf11 imageNamed\cf0 :\cf18 @"singleicon.png"\cf0 ];\
+    nav2.\cf10 tabBarItem\cf0 .\cf10 image\cf0  = [\cf10 UIImage\cf0  \cf11 imageNamed\cf0 :\cf18 @"doubleicon.png\'94\cf0 ];\
+    \cf17 // 
+\f4 \'bd\'ab
+\f3 nav
+\f4 \'b7\'c5\'bd\'f8
+\f3 tbc
+\f4 \'b5\'c4\'ca\'f4\'d0\'d4
+\f3 \cf10 viewControllers
+\f4 \cf17 \'c0\'ef,\'d3\'c9\'d5\'e2\'b8\'f6\'ca\'fd\'d7\'e9\'b9\'dc\'c0\'ed
+\f3 \cf0 \
+    tbc.\cf10 viewControllers\cf0  = \cf19 @[\cf0 nav1,nav2,nav3\cf19 ]\cf0 ;\
+    \cf20 self\cf0 .\cf16 window\cf0 .\cf10 rootViewController\cf0  = tbc;\
+\
+\}\
+\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f5\fs26 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf21 UITabBarController
+\f0 \'ca\'c7\'bc\'cc\'b3\'d0
+\f5 UI ViewController
+\f0 \'a3\'ac\'cb\'fc\'cd\'a8\'b3\'a3\'d7\'f7\'ce\'aa\'d5\'fb\'b8\'f6\'b3\'cc\'d0\'f2\'b5\'c4
+\f5 rootViewController
+\f0 \'a3\'ac\'b6\'f8\'c7\'d2\'b2\'bb\'c4\'dc\'cc\'ed\'bc\'d3\'b5\'bd\'b1\'f0\'b5\'c4
+\f5 container viewController
+\f0 \'d6\'d0\'a1\'a3
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf21 \'a1\'a1\'a1\'a1\'ca\'d7\'cf\'c8\'ce\'d2\'c3\'c7\'bf\'b4\'d2\'bb\'cf\'c2\'cb\'fc\'b5\'c4
+\f5 view
+\f0 \'b2\'e3\'bc\'b6\'cd\'bc\'a3\'baTabBar\'bc\'cc\'b3\'d0UIView(\'cd\'a8\'b9\'fd\'ca\'fd\'d7\'e9 
+\f6\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 NSArray<UITabBarItem *> *items
+\f7 \'c0\'b4\'b9\'dc\'c0\'ed\'b8\'f7\'b8\'f6tabBarItem\'a3\'ac UIT\cf22 abBarItem \'bc\'cc\'b3\'d0\'d3\'da
+\f6 \cf10 UIBarItem\cf21  
+\f0\fs26 \expnd0\expndtw0\kerning0
+\CocoaLigature1 )
+\f5 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 {{\NeXTGraphic 2012051922153763.jpg \width13020 \height7920 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'d2\'bb\'a1\'a2\'ca\'d6\'b6\'af\'b4\'b4\'bd\'a8
+\f5 UITabBarController
+\b0\fs26 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'a1\'a1\'a1\'a1\'d7\'ee\'b3\'a3\'bc\'fb\'b5\'c4\'b4\'b4\'bd\'a8
+\f5 UITabBarController
+\f0 \'b5\'c4\'b5\'d8\'b7\'bd\'be\'cd\'ca\'c7\'d4\'da
+\f5 application delegate
+\f0 \'d6\'d0\'b5\'c4
+\f5 \'a0{\field{\*\fldinst{HYPERLINK "applewebdata://D2A0B0A8-251E-463E-B6FF-250741EA38EB/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UIApplicationDelegate/applicationDidFinishLaunching:"}}{\fldrslt \cf23 \ul \ulc23 applicationDidFinishLaunching:}}
+\f0 \'b7\'bd\'b7\'a8\'a3\'ac\'d2\'f2\'ce\'aa
+\f5 UITabBarController
+\f0 \'cd\'a8\'b3\'a3\'ca\'c7\'d7\'f7\'ce\'aa\'d5\'fb\'b8\'f6\'b3\'cc\'d0\'f2\'b5\'c4
+\f5 rootViewController
+\f0 \'b5\'c4\'a3\'ac\'ce\'d2\'c3\'c7\'d0\'e8\'d2\'aa\'d4\'da\'b3\'cc\'d0\'f2\'b5\'c4
+\f5 window
+\f0 \'cf\'d4\'ca\'be\'d6\'ae\'c7\'b0\'be\'cd\'b4\'b4\'bd\'a8\'ba\'c3\'cb\'fc\'a3\'ac\'be\'df\'cc\'e5\'b2\'bd\'d6\'e8\'c8\'e7\'cf\'c2\'a3\'ba
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1
+\f5 1
+\f0 \'a1\'a2\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6
+\f5 UITabBarController
+\f0 \'b6\'d4\'cf\'f3
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1
+\f5 2
+\f0 \'a1\'a2\'b4\'b4\'bd\'a8
+\f5 tabbarcontroller
+\f0 \'d6\'d0\'c3\'bf\'d2\'bb\'b8\'f6
+\f5 tab
+\f0 \'b6\'d4\'d3\'a6\'b5\'c4\'d2\'aa\'cf\'d4\'ca\'be\'b5\'c4\'b6\'d4\'cf\'f3
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1
+\f5 3
+\f0 \'a1\'a2\'cd\'a8\'b9\'fd
+\f5 UITabBarController
+\f0 \'b5\'c4
+\f5 viewController
+\f0 \'ca\'f4\'d0\'d4\'bd\'ab\'d2\'aa\'cf\'d4\'ca\'be\'b5\'c4\'cb\'f9\'d3\'d0
+\f5 content viewcontroller
+\f0 \'cc\'ed\'bc\'d3\'b5\'bd
+\f5 UITabBarController
+\f0 \'d6\'d0
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1
+\f5 4
+\f0 \'a1\'a2\'cd\'a8\'b9\'fd\'c9\'e8\'d6\'c3
+\f5 UITabBarController
+\f0 \'b6\'d4\'cf\'f3\'ce\'aa
+\f5 window.rootViewController
+\f0 \'a3\'ac\'c8\'bb\'ba\'f3\'cf\'d4\'ca\'be
+\f5 window\
+
+\f0 \'a1\'a1\'a1\'a1\'cf\'c2\'c3\'e6\'bf\'b4\'d2\'bb\'b8\'f6\'bc\'f2\'b5\'a5\'b5\'c4\'c0\'fd\'d7\'d3\'a3\'ba
+\f5 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt 
+\f8\fs24 \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+
+\f8\fs24 \cf0 \cb24 \
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions\
+\{\
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];\
+    // Override point for customization after application launch.\
+    \cb1 \
+
+\f0 \cb24 \'a1\'a1\'a1\'a1
+\f8  SvTabBarFirstViewController *viewController1, *viewController2;\
+    viewController1 = [[SvTabBarFirstViewController alloc] initWithNibName:nil bundle:nil];\
+    viewController1.title = @"First";\
+    \
+    viewController2 = [[SvTabBarFirstViewController alloc] initWithNibName:nil bundle:nil];\
+    viewController2.title = @"Second";\
+    \
+    self.tabBarController = [[[UITabBarController alloc] init] autorelease];\
+    self.tabBarController.delegate = self;\
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];\
+    [viewController1 release];\
+    [viewController2 release];\
+    \
+    self.window.rootViewController = self.tabBarController;\
+    [self.window makeKeyAndVisible];\
+    \
+    return YES;\
+\}\cb1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+\cf0 \cb24 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf0 \cb1 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'b6\'fe\'a1\'a2
+\f5 UITabBarItem
+\b0\fs26 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'a1\'a1\'a1\'a1
+\f5 UITabBar
+\f0 \'c9\'cf\'c3\'e6\'cf\'d4\'ca\'be\'b5\'c4\'c3\'bf\'d2\'bb\'b8\'f6
+\f5 Tab
+\f0 \'b6\'bc\'b6\'d4\'d3\'a6\'d7\'c5\'d2\'bb\'b8\'f6
+\f5 ViewController
+\f0 \'a3\'ac\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'c9\'e8\'d6\'c3
+\f5 viewcontroller.tabBarItem
+\f0 \'ca\'f4\'d0\'d4\'c0\'b4\'b8\'c4\'b1\'e4
+\f5 tabbar
+\f0 \'c9\'cf\'b6\'d4\'d3\'a6\'b5\'c4
+\f5 tab
+\f0 \'cf\'d4\'ca\'be\'c4\'da\'c8\'dd\'a1\'a3\'b7\'f1\'d4\'f2\'cf\'b5\'cd\'b3\'bd\'ab\'bb\'e1\'b8\'f9\'be\'dd
+\f5 viewController
+\f0 \'b5\'c4
+\f5 title
+\f0 \'d7\'d4\'b6\'af\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'a3\'ac\'b8\'c3
+\f5 tabBarItem
+\f0 \'d6\'bb\'cf\'d4\'ca\'be\'ce\'c4\'d7\'d6\'a3\'ac\'c3\'bb\'d3\'d0\'cd\'bc\'cf\'f1\'a1\'a3\'b5\'b1\'ce\'d2\'c3\'c7\'d7\'d4\'bc\'ba\'b4\'b4\'bd\'a8
+\f5 UITabBarItem
+\f0 \'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'cf\'d4\'ca\'be\'b5\'c4\'d6\'b8\'b6\'a8\'cf\'d4\'ca\'be\'b5\'c4\'cd\'bc\'cf\'f1\'ba\'cd\'b6\'d4\'d3\'a6\'b5\'c4\'ce\'c4\'d7\'d6\'c3\'e8\'ca\'f6\'a1\'a3\'b5\'b1\'c8\'bb\'bb\'b9\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd
+\f5 setFinishedSelectedImage:withFinishedUnselectedImage:
+\f0 \'b7\'bd\'b7\'a8\'b8\'f8\'d1\'a1\'d6\'d0\'d7\'b4\'cc\'ac\'ba\'cd\'b7\'c9\'d1\'a1\'d6\'d0\'d7\'b4\'cc\'ac\'d6\'b8\'b6\'a8\'b2\'bb\'cd\'ac\'b5\'c4\'cd\'bc\'c6\'ac\'a1\'a3\'cf\'c2\'c3\'e6\'bf\'b4\'b8\'f6\'d7\'d4\'bc\'ba\'b4\'b4\'bd\'a8
+\f5 UITabBarItem
+\f0 \'b5\'c4\'d0\'a1\'c0\'fd\'d7\'d3\'a3\'ba
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f8\fs24 \cf0 \cb24 UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:\cf25 @"Second"\cf0  image:nil tag:\cf26 2\cf0 ];\
+[item setFinishedSelectedImage:[UIImage imageNamed:\cf25 @"second.png"\cf0 ] \
+   withFinishedUnselectedImage:[UIImage imageNamed:\cf25 @"first.png"\cf0 ]];\
+viewController2.tabBarItem = item;\
+[item release];\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \'a1\'a1\'a1\'a1\'b4\'cb\'cd\'e2
+\f5 UITabBarItem
+\f0 \'bb\'b9\'d3\'d0\'d2\'bb\'b8\'f6\'ca\'f4\'d0\'d4
+\f5 badgeValue
+\f0 \'a3\'ac\'cd\'a8\'b9\'fd\'c9\'e8\'d6\'c3\'b8\'c3\'ca\'f4\'d0\'d4\'bf\'c9\'d2\'d4\'d4\'da\'c6\'e4\'d3\'d2\'c9\'cf\'bd\'c7\'cf\'d4\'ca\'be\'d2\'bb\'b8\'f6\'d0\'a1\'b5\'c4\'bd\'c7\'b1\'ea\'a3\'ac\'cd\'a8\'b3\'a3\'d3\'c3\'d3\'da\'cc\'e1\'ca\'be\'d3\'c3\'bb\'a7\'d3\'d0\'d0\'c2\'b5\'c4\'cf\'fb\'cf\'a2\'a3\'ac\'ca\'b9\'d3\'c3\'ba\'dc\'bc\'f2\'b5\'a5\'a3\'ac\'ba\'f3\'c3\'e6\'d3\'d0\'c0\'fd\'d7\'d3\'a1\'a3
+\f5 \
+\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'c8\'fd\'a1\'a2
+\f5 moreNavigationController
+\b0\fs26 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'a1\'a1\'a1\'a1
+\f5 UITabBar
+\f0 \'c9\'cf\'d7\'ee\'b6\'e0\'bf\'c9\'d2\'d4\'cf\'d4\'ca\'be
+\f5 5
+\f0 \'b8\'f6
+\f5 Tab
+\f0 \'a3\'ac\'b5\'b1\'ce\'d2\'c3\'c7\'cd\'f9
+\f5 UITabBarController
+\f0 \'d6\'d0\'cc\'ed\'bc\'d3\'b3\'ac\'b9\'fd\'b5\'c4
+\f5 viewController
+\f0 \'b3\'ac\'b9\'fd
+\f5 5
+\f0 \'b8\'f6\'ca\'b1\'ba\'f2\'a3\'ac\'d7\'ee\'ba\'f3\'d2\'bb\'b8\'f6\'d2\'bb\'b8\'f6\'be\'cd\'bb\'e1\'d7\'d4\'b6\'af\'b1\'e4\'b3\'c9
+\f5 {{\NeXTGraphic 2012051923012097.jpg \width1180 \height960 \noorient
+}¬}
+\f0 \'a3\'ac\'b0\'b4\'d5\'d5\'c9\'e8\'d6\'c3\'b5\'c4
+\f5 viewControlles
+\f0 \'b5\'c4\'cb\'b3\'d0\'f2\'a3\'ac\'cf\'d4\'ca\'be\'c7\'b0\'cb\'c4\'b8\'f6
+\f5 viewController
+\f0 \'b5\'c4
+\f5 tabBarItem
+\f0 \'a3\'ac\'ba\'f3\'c3\'e6\'b5\'c4
+\f5 tabBarItem
+\f0 \'bd\'ab\'b2\'bb\'d4\'d9\'cf\'d4\'ca\'be\'a1\'a3\'b5\'b1\'b5\'e3\'bb\'f7
+\f5 more
+\f0 \'ca\'b1\'ba\'f2\'bd\'ab\'bb\'e1\'b5\'af\'b3\'f6\'d2\'bb\'b8\'f6\'b1\'ea\'d7\'bc\'b5\'c4
+\f5 navigationViewController
+\f0 \'a3\'ac\'c0\'ef\'c3\'e6\'b7\'c5\'d3\'d0\'c6\'e4\'cb\'fc\'ce\'b4\'cf\'d4\'ca\'be\'b5\'c4\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'b2\'a2\'c7\'d2\'b4\'f8\'d3\'d0\'d2\'bb\'b8\'f6
+\f5 edit
+\f0 \'b0\'b4\'c5\'a5\'a3\'ac\'cd\'a8\'b9\'fd\'b5\'e3\'bb\'f7\'b8\'c3\'b0\'b4\'c5\'a5\'bf\'c9\'d2\'d4\'bd\'f8\'c8\'eb\'c0\'e0\'cb\'c6\'d3\'eb
+\f5 ipod
+\f0 \'b3\'cc\'d0\'f2\'d6\'d0\'c9\'e8\'d6\'c3
+\f5 tabBar
+\f0 \'b5\'c4\'b1\'e0\'bc\'ad\'bd\'e7\'c3\'e6\'a1\'a3\'b1\'e0\'bc\'ad\'bd\'e7\'c3\'e6\'d6\'d0\'c4\'ac\'c8\'cf\'cb\'f9\'d3\'d0\'b5\'c4
+\f5 viewController
+\f0 \'b6\'bc\'ca\'c7\'bf\'c9\'d2\'d4\'b1\'e0\'bc\'ad\'b5\'c4\'a3\'ac\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'c9\'e8\'d6\'c3
+\f5 UITabBarController
+\f0 \'b5\'c4
+\f5 customizableViewControllers
+\f0 \'ca\'f4\'d0\'d4\'c0\'b4\'d6\'b8\'b6\'a8
+\f5 viewControllers
+\f0 \'b5\'c4\'d2\'bb\'b8\'f6\'d7\'d3\'bc\'af\'a3\'ac\'bc\'b4\'d6\'bb\'d4\'ca\'d0\'ed\'d2\'bb\'b2\'bf\'b7\'d6
+\f5 viewController
+\f0 \'ca\'c7\'bf\'c9\'d2\'d4\'b7\'c5\'b5\'bd
+\f5 tabBar
+\f0 \'d6\'d0\'cf\'d4\'ca\'be\'b5\'c4\'a1\'a3\'b5\'ab\'ca\'c7\'d5\'e2\'bf\'e9\'b6\'f9\'d2\'aa\'d7\'a2\'d2\'e2\'d2\'bb\'b8\'f6\'ce\'ca\'cc\'e2\'be\'cd\'ca\'c7\'c3\'bf\'b5\'b1
+\f5 UITabBarController
+\f0 \'b5\'c4
+\f5 viewControllers
+\f0 \'ca\'f4\'d0\'d4\'b7\'a2\'c9\'fa\'b1\'e4\'bb\'af\'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac
+\f5 customizableViewControllers
+\f0 \'be\'cd\'bb\'e1\'d7\'d4\'b6\'af\'c9\'e8\'d6\'c3\'b3\'c9\'b8\'fa
+\f5 viewControllers
+\f0 \'d2\'bb\'d6\'c2\'a3\'ac\'bc\'b4\'c4\'ac\'c8\'cf\'b5\'c4\'cb\'f9\'d3\'d0\'b5\'c4
+\f5 viewController
+\f0 \'b6\'bc\'ca\'c7\'bf\'c9\'d2\'d4\'b1\'e0\'bc\'ad\'b5\'c4\'a3\'ac\'c8\'e7\'b9\'fb\'ce\'d2\'c3\'c7\'d2\'aa\'ca\'bc\'d6\'d5\'cf\'de\'d6\'c6\'d6\'bb\'ca\'c7\'c4\'b3\'d2\'bb\'b2\'bf\'b7\'d6\'bf\'c9\'b1\'e0\'bc\'ad\'b5\'c4\'bb\'b0\'a3\'ac\'bc\'c7\'b5\'c3\'d4\'da\'c3\'bf\'b4\'ce
+\f5 viewControlles
+\f0 \'b7\'a2\'c9\'fa\'b8\'c4\'b1\'e4\'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac\'d6\'d8\'d0\'c2\'c9\'e8\'d6\'c3\'d2\'bb\'b4\'ce
+\f5 customizableViewControllers
+\f0 \'a1\'a3
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'cb\'c4\'a1\'a2
+\f5 UITabBarController
+\f0 \'b5\'c4
+\f5 Rotation
+\b0\fs26 \
+
+\f0\b\fs32 \'a1\'a1
+\fs24 \'a1\'a1
+\f5\b0\fs26 UITabBarController
+\f0 \'c4\'ac\'c8\'cf\'d6\'bb\'d6\'a7\'b3\'d6\'ca\'fa\'c6\'c1\'a3\'ac\'b5\'b1\'c9\'e8\'b1\'b8\'b7\'bd\'cf\'f2\'b7\'c5\'c9\'fa\'b1\'e4\'bb\'af\'ca\'b1\'ba\'f2\'a3\'ac\'cb\'fc\'bb\'e1\'b2\'e9\'d1\'af
+\f5 viewControllers
+\f0 \'d6\'d0\'b0\'fc\'ba\'ac\'b5\'c4\'cb\'f9\'d3\'d0
+\f5 ViewController
+\f0 \'a3\'ac\'bd\'f6\'b5\'b1\'cb\'f9\'d3\'d0\'b5\'c4
+\f5 viewController
+\f0 \'b6\'bc\'d6\'a7\'b3\'d6\'b8\'c3\'b7\'bd\'cf\'f2\'ca\'b1\'a3\'ac
+\f5 UITabBarController
+\f0 \'b2\'c5\'bb\'e1\'b7\'a2\'c9\'fa\'d0\'fd\'d7\'aa\'a3\'ac\'b7\'f1\'d4\'f2\'c4\'ac\'c8\'cf\'b5\'c4\'ca\'fa\'cf\'f2\'a1\'a3
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'a1\'a1\'a1\'a1\'b4\'cb\'b4\'a6\'d0\'e8\'d2\'aa\'d7\'a2\'d2\'e2\'b5\'b1
+\f5 UITabBarController
+\f0 \'d6\'a7\'b3\'d6\'d0\'fd\'d7\'aa\'a3\'ac\'b6\'f8\'c7\'d2\'b7\'a2\'c9\'fa\'d0\'fd\'d7\'aa\'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac\'d6\'bb\'d3\'d0\'b5\'b1\'c7\'b0\'cf\'d4\'ca\'be\'b5\'c4
+\f5 viewController
+\f0 \'bb\'e1\'bd\'d3\'ca\'d5\'b5\'bd\'d0\'fd\'d7\'aa\'b5\'c4\'cf\'fb\'cf\'a2\'a1\'a3
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \'a0
+\fs26 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'ce\'e5\'a1\'a2
+\f5 UITabBar
+\b0\fs26 \
+\'a0
+\f0 \'a1\'a1\'a1\'a1
+\f5 UITabBar
+\f0 \'d7\'d4\'bc\'ba\'d3\'d0\'d2\'bb\'d0\'a9\'b7\'bd\'b7\'a8\'ca\'c7\'bf\'c9\'d2\'d4\'b8\'c4\'b1\'e4\'d7\'d4\'c9\'ed\'d7\'b4\'cc\'ac\'a3\'ac\'b5\'ab\'ca\'c7\'b6\'d4\'d3\'da
+\f5 UITabBarController
+\f0 \'d7\'d4\'b4\'f8\'b5\'c4
+\f5 tabBar
+\f0 \'a3\'ac\'ce\'d2\'c3\'c7\'b2\'bb\'c4\'dc\'d6\'b1\'bd\'d3\'c8\'a5\'d0\'de\'b8\'c4\'c6\'e4\'d7\'b4\'cc\'ac\'a1\'a3\'c8\'ce\'ba\'ce\'d6\'b1\'bd\'d3\'d0\'de\'b8\'c4
+\f5 tabBar
+\f0 \'b5\'c4\'b2\'d9\'d7\'f7\'bd\'ab\'bb\'e1\'c5\'d7\'b3\'f6\'d2\'ec\'b3\'a3\'a3\'ac\'cf\'c2\'c3\'e6\'bf\'b4\'d2\'bb\'b8\'f6\'c5\'d7\'b3\'f6\'d2\'ec\'b3\'a3\'b5\'c4\'d0\'a1\'c0\'fd\'d7\'d3\'a3\'ba
+\f5 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt 
+\f8\fs24 \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+
+\f8\fs24 \cf0 \cb24 \
+self.tabBarController = [[[UITabBarController alloc] init] autorelease];\
+self.tabBarController.\cf27 delegate\cf0  = self;\
+self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, nil];\
+    \
+self.window.rootViewController = self.tabBarController;\
+[self.window makeKeyAndVisible];\
+    \
+self.tabBarController.tabBar.selectedItem = nil;\cb1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+\cf0 \cb24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \cb1 \'a1\'a1\'a1\'a1\'c9\'cf\'c3\'e6\'b4\'fa\'c2\'eb\'b5\'c4\'d7\'ee\'ba\'f3\'d2\'bb\'d0\'d0\'d6\'b1\'bd\'d3\'d0\'de\'b8\'c4\'c1\'cb
+\f5 tabBar
+\f0 \'b5\'c4\'d7\'b4\'cc\'ac\'a3\'ac\'d4\'cb\'d0\'d0\'b3\'cc\'d0\'f2\'bb\'d8\'b5\'c3\'b5\'bd\'c8\'e7\'cf\'c2\'bd\'e1\'b9\'fb\'a3\'ba
+\f5 \
+\pard\pardeftab720\partightenfactor0
+\cf0 {{\NeXTGraphic 2012051923552145.png \width12320 \height2940 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 \
+\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'c1\'f9\'a1\'a2
+\f5 Change Selected Viewcontroller
+\b0\fs26 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \'a1\'a1\'a1\'a1
+\b0 \'b8\'c4\'b1\'e4
+\f5 UITabBarController
+\f0 \'d6\'d0\'b5\'b1\'c7\'b0\'cf\'d4\'ca\'be\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'d2\'bb\'cf\'c2\'c1\'bd\'d6\'d6\'b7\'bd\'b7\'a8\'a3\'ba
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'a1\'a1\'a1\'a1
+\f5 1
+\f0 \'a1\'a2
+\f5 selectedIndex
+\f0 \'ca\'f4\'d0\'d4
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1\'cd\'a8\'b9\'fd\'b8\'c3\'ca\'f4\'d0\'d4\'bf\'c9\'d2\'d4\'bb\'f1\'b5\'c3\'b5\'b1\'c7\'b0\'d1\'a1\'d6\'d0\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'c9\'e8\'d6\'c3\'b8\'c3\'ca\'f4\'d0\'d4\'a3\'ac\'bf\'c9\'d2\'d4\'cf\'d4\'ca\'be
+\f5 viewControllers
+\f0 \'d6\'d0\'b6\'d4\'d3\'a6\'b5\'c4
+\f5 index
+\f0 \'b5\'c4
+\f5 viewController
+\f0 \'a1\'a3\'c8\'e7\'b9\'fb\'b5\'b1\'c7\'b0\'d1\'a1\'d6\'d0\'b5\'c4\'ca\'c7
+\f5 MoreViewController
+\f0 \'b5\'c4\'bb\'b0\'a3\'ac\'b8\'c3\'ca\'f4\'d0\'d4\'bb\'f1\'c8\'a1\'b3\'f6\'c0\'b4\'b5\'c4\'d6\'b5\'ca\'c7
+\f5 NSNotFound
+\f0 \'a3\'ac\'b6\'f8\'c7\'d2\'cd\'a8\'b9\'fd\'b8\'c3\'ca\'f4\'d0\'d4\'d2\'b2\'b2\'bb\'c4\'dc\'c9\'e8\'d6\'c3\'d1\'a1\'d6\'d0
+\f5 MoreViewController
+\f0 \'a1\'a3\'c9\'e8\'d6\'c3
+\f5 index
+\f0 \'b3\'ac\'b3\'f6
+\f5 viewControllers
+\f0 \'b5\'c4\'b7\'b6\'ce\'a7\'a3\'ac\'bd\'ab\'bb\'e1\'b1\'bb\'ba\'f6\'c2\'d4\'a1\'a3
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1
+\f5 2
+\f0 \'a1\'a2
+\f5 selectedViewController
+\f0 \'ca\'f4\'d0\'d4
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1\'cd\'a8\'b9\'fd\'b8\'c3\'ca\'f4\'d0\'d4\'bf\'c9\'d2\'d4\'bb\'f1\'c8\'a1\'b5\'bd\'b5\'b1\'c7\'b0\'cf\'d4\'ca\'be\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'cd\'a8\'b9\'fd\'c9\'e8\'d6\'c3\'b8\'c3\'ca\'f4\'d0\'d4\'bf\'c9\'d2\'d4\'c9\'e8\'d6\'c3\'b5\'b1\'c7\'b0\'d1\'a1\'d6\'d0\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'cd\'ac\'ca\'b1\'b8\'fc\'d0\'c2
+\f5 selectedIndex
+\f0 \'a1\'a3\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'b8\'f8\'b8\'c3\'ca\'f4\'d0\'d4\'b8\'b3\'d6\'b5
+\f5 \
+tabBarController.moreNavigationController
+\f0 \'bf\'c9\'d2\'d4\'d1\'a1\'d6\'d0
+\f5 moreViewController
+\f0 \'a1\'a3
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1
+\f5 3
+\f0 \'a1\'a2
+\f5 viewControllers
+\f0 \'ca\'f4\'d0\'d4
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1\'c9\'e8\'d6\'c3
+\f5 viewControllers
+\f0 \'ca\'f4\'d0\'d4\'d2\'b2\'bb\'e1\'d3\'b0\'cf\'ec\'b5\'b1\'c7\'b0\'d1\'a1\'d6\'d0\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'c9\'e8\'d6\'c3\'b8\'c3\'ca\'f4\'d0\'d4\'ca\'b1
+\f5 UITabBarController
+\f0 \'ca\'d7\'cf\'c8\'bb\'e1\'c7\'e5\'bf\'d5\'cb\'f9\'d3\'d0\'be\'c9\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'c8\'bb\'ba\'f3\'b2\'bf\'ca\'f0\'d0\'c2\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'bd\'d3\'d7\'c5\'b3\'a2\'ca\'d4\'d6\'d8\'d0\'c2\'d1\'a1\'d6\'d0\'c9\'cf\'d2\'bb\'b4\'ce\'cf\'d4\'ca\'be\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'c8\'e7\'b9\'fb\'b8\'c3
+\f5 viewController
+\f0 \'d2\'d1\'be\'ad\'b2\'bb\'b4\'e6\'d4\'da\'b5\'c4\'bb\'b0\'a3\'ac\'bb\'e1\'bd\'d3\'d7\'c5\'b3\'a2\'ca\'d4\'d1\'a1\'d6\'d0
+\f5 index
+\f0 \'ba\'cd
+\f5 selectedIndex
+\f0 \'cf\'e0\'cd\'ac\'b5\'c4
+\f5 viewController
+\f0 \'a3\'ac\'c8\'e7\'b9\'fb\'b8\'c3
+\f5 index
+\f0 \'ce\'de\'d0\'a7\'b5\'c4\'bb\'b0\'a3\'ac\'d4\'f2\'c4\'ac\'c8\'cf\'d1\'a1\'d6\'d0\'b5\'da\'d2\'bb\'b8\'f6
+\f5 viewController
+\f0 \'a1\'a3
+\f5 \
+\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'c6\'df\'a1\'a2
+\f5 UITabBarControllerDelegate
+\b0\fs26 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'a1\'a1\'a1\'a1\'cd\'a8\'b9\'fd\'b4\'fa\'c0\'ed\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'bc\'e0\'b2\'e2
+\f5 UITabBarController
+\f0 \'b5\'c4\'b5\'b1\'c7\'b0\'d1\'a1\'d6\'d0
+\f5 viewController
+\f0 \'b5\'c4\'b1\'e4\'bb\'af\'a3\'ac\'d2\'d4\'bc\'b0
+\f5 moreViewController
+\f0 \'d6\'d0\'b6\'d4\'b1\'e0\'bc\'ad\'cb\'f9\'d3\'d0
+\f5 viewController
+\f0 \'b5\'c4\'b1\'e0\'bc\'ad\'a1\'a3\'cd\'a8\'b9\'fd\'ca\'b5\'cf\'d6\'cf\'c2\'c3\'e6\'b7\'bd\'b7\'a8\'a3\'ba
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f8\fs24 \cf0 \cb24 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+\f0 \'a3\'bb
+\f8 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \'a1\'a1\'a1\'a1\'b8\'c3\'b7\'bd\'b7\'a8\'d3\'c3\'d3\'da\'bf\'d8\'d6\'c6
+\f5 TabBarItem
+\f0 \'c4\'dc\'b2\'bb\'c4\'dc\'d1\'a1\'d6\'d0\'a3\'ac\'b7\'b5\'bb\'d8
+\f5 NO
+\f0 \'a3\'ac\'bd\'ab\'bd\'fb\'d6\'b9\'d3\'c3\'bb\'a7\'b5\'e3\'bb\'f7\'c4\'b3\'d2\'bb\'b8\'f6
+\f5 TabBarItem
+\f0 \'b1\'bb\'d1\'a1\'d6\'d0\'a1\'a3\'b5\'ab\'ca\'c7\'b3\'cc\'d0\'f2\'c4\'da\'b2\'bf\'bb\'b9\'ca\'c7\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'d6\'b1\'bd\'d3
+\f5 setSelectedIndex
+\f0 \'d1\'a1\'d6\'d0\'b8\'c3
+\f5 TabBarItem
+\f0 \'a1\'a3
+\f5 \
+
+\f0 \'a1\'a1\'a1\'a1\'cf\'c2\'c3\'e6\'d5\'e2\'c8\'fd\'b8\'f6\'b7\'bd\'b7\'a8\'d6\'f7\'d2\'aa\'d3\'c3\'d3\'da\'bc\'e0\'b2\'e2\'b6\'d4
+\f5 moreViewController
+\f0 \'d6\'d0\'b6\'d4
+\f5 view controller
+\f0 \'b5\'c4
+\f5 edit
+\f0 \'b2\'d9\'d7\'f7
+\f5 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt 
+\f8\fs24 \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+
+\f8\fs24 \cf0 \cb24 \
+- (\cf27 void\cf0 )tabBarController:(UITabBarController *)tabBarController willBeginCustomizingViewControllers:(NSArray *)viewControllers;\
+\
+- (\cf27 void\cf0 )tabBarController:(UITabBarController *)tabBarController willEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed;\
+\
+- (\cf27 void\cf0 )tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed;\cb1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+\cf0 \cb24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \cb1 \'a1\'a1\'a1\'a1
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs32 \cf0 \'c6\'df\'a1\'a2\'b8\'bd\'bc\'fe
+\f5 UITabBarController
+\f0 \'b2\'e2\'ca\'d4\'b3\'cc\'d0\'f2\'d4\'b4\'c2\'eb
+\f5\b0\fs26 \
+
+\b\fs32 \'a0
+\b0\fs26 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 SvTabBarAppDelegate.h\'d5\'e2\'b8\'f6\'cd\'b7\'ce\'c4\'bc\'fe\'a3\'ac\'d5\'db\'b5\'fe\'ba\'f3\'bc\'d3\'bd\'f8\'c8\'a5\'a3\'ac\'d7\'dc\'ca\'c7\'ce\'de\'b7\'a8\'d5\'b9\'bf\'aa\'a3\'ac\'cd\'fb\'b4\'f3\'bc\'d2\'bc\'fb\'c1\'c2\'a3\'a1\
+\pard\pardeftab720\partightenfactor0
+
+\f5 \cf0 \'a0\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt 
+\f8\fs24 \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+
+\f8\fs24 \cf0 \cb24 \
+\pard\pardeftab720\partightenfactor0
+\cf28 //\cf0 \
+\cf28 //  SvTabBarAppDelegate.h\
+//  SvTabBarControllerSample\
+//\cf0 \
+\cf28 //  Created by maple on 5/19/12.\
+//  Copyright (c) 2012 smileEvday. All rights reserved.\
+//\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf27 #import\cf0  <UIKit/UIKit.h>\
+\
+\cf27 @interface\cf0  SvTabBarAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>\
+\
+@property (strong, nonatomic) UIWindow *window;\
+\
+@property (strong, nonatomic) UITabBarController *tabBarController;\
+\
+\cf27 @end\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "javascript:void(0);"}}{\fldrslt \cf23 \cb24 {{\NeXTGraphic copycode.gif \width400 \height400 \noorient
+}¬}}}\pard\pardeftab720\partightenfactor0
+\cf0 \cb24 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf0 \cb1 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f8\fs24 \cf0 {{\NeXTGraphic ContractedBlock.gif \width220 \height320 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 SvTabBarAppDelegate.m\cb24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 {{\NeXTGraphic ContractedBlock.gif \width220 \height320 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 SvTabBarFirstViewController.h\cb24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 {{\NeXTGraphic ContractedBlock.gif \width220 \height320 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 SvTabBarFirstViewController.m\cb24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 {{\NeXTGraphic ContractedBlock.gif \width220 \height320 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 SvTabBarSecondViewController.h\cb24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 {{\NeXTGraphic ContractedBlock.gif \width220 \height320 \noorient
+}¬}\pard\pardeftab720\partightenfactor0
+\cf0 SvTabBarSecondViewController.m\cb24 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf0 \cb1 \'a0\
+\'a0\
+\'a0\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+}
