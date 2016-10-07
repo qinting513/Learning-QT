@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>杂项</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'><style type='text/css'>html, body {overflow-x: initial !important;}.CodeMirror { height: auto; }
+.CodeMirror-scroll { overflow-y: hidden; overflow-x: auto; }
+.CodeMirror-lines { padding: 4px 0px; }
+.CodeMirror pre { }
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { background-color: white; }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-color: rgb(247, 247, 247); white-space: nowrap; }
+.CodeMirror-linenumbers { }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.CodeMirror div.CodeMirror-cursor { border-left-width: 1px; border-left-style: solid; border-left-color: black; z-index: 3; }
+.CodeMirror div.CodeMirror-secondarycursor { border-left-width: 1px; border-left-style: solid; border-left-color: silver; }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: 0px; background-color: rgb(119, 238, 119); z-index: 1; background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite { }
+.cm-tab { display: inline-block; }
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property { color: rgb(217, 79, 138); }
+.cm-s-typora-default pre.cm-header1:not(.cm-atom) :not(.cm-overlay) { font-size: 2rem; line-height: 2rem; }
+.cm-s-typora-default pre.cm-header2:not(.cm-atom) :not(.cm-overlay) { font-size: 1.4rem; line-height: 1.4rem; }
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number { color: rgb(149, 132, 134); }
+.cm-s-typora-default .cm-table-row, .cm-s-typora-default .cm-block-start { font-family: monospace; }
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code { color: rgb(74, 90, 159); font-family: monospace; }
+.cm-s-typora-default .cm-tag { color: rgb(169, 68, 66); }
+.cm-s-typora-default .cm-string { color: rgb(126, 134, 169); }
+.cm-s-typora-default .cm-link { color: rgb(196, 122, 15); text-decoration: underline; }
+.cm-s-typora-default .cm-variable-2, .cm-s-typora-default .cm-variable-1 { color: inherit; }
+.cm-s-typora-default .cm-overlay { font-size: 1rem; font-family: monospace; }
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor { border-left-width: 3px; border-left-style: solid; border-left-color: rgb(228, 98, 154); }
+.cm-s-typora-default .CodeMirror-activeline-background { left: -60px; right: -30px; background-color: rgba(204, 204, 204, 0.2); background-position: initial initial; background-repeat: initial initial; }
+.cm-s-typora-default .CodeMirror-gutters { border-right-style: none; background-color: inherit; }
+.cm-s-typora-default .cm-trailing-space-new-line::after, .cm-startspace::after, .cm-starttab .cm-tab::after { content: '•'; position: absolute; left: 0px; opacity: 0; font-family: LetterGothicStd, monospace; }
+.os-windows .cm-startspace::after, .os-windows .cm-starttab .cm-tab::after { left: -0.1em; }
+.cm-starttab .cm-tab::after { content: ' '; }
+.cm-startspace, .cm-tab, .cm-starttab, .cm-trailing-space-a, .cm-trailing-space-b, .cm-trailing-space-new-line { font-family: monospace; position: relative; }
+.cm-s-typora-default .cm-trailing-space-new-line::after { content: '↓'; opacity: 0.3; }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: black; }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-property { color: black; }
+.cm-s-inner .cm-operator { color: black; }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: blue; }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: bold; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: rgb(255, 0, 0); }
+.cm-invalidchar { color: rgb(255, 0, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; padding-right: 30px; height: 100%; outline: none; position: relative; box-sizing: content-box; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow-x: hidden; overflow-y: scroll; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow-y: hidden; overflow-x: scroll; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; background-color: transparent; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: -webkit-fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-widget { }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.CodeMirror-selected { background-color: rgb(217, 217, 217); background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror-focused .CodeMirror-selected { background-color: rgb(215, 212, 240); background-position: initial initial; background-repeat: initial initial; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+.CodeMirror span { }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+html { font-size: 14px; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem; line-height: 1.42857143; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow-x: hidden; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background-color: rgb(181, 214, 252); text-shadow: none; background-position: initial initial; background-repeat: initial initial; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+img { max-width: 100%; }
+input, button, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+tr { page-break-inside: avoid; page-break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; page-break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; page-break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.footnotes { color: rgb(136, 136, 136); font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background-color: transparent; text-decoration: none; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; background-position: initial initial; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print { 
+  html, body { height: 100%; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { page-break-after: avoid; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0mm; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { color: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; text-decoration: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: '.'; }
+.md-tag { opacity: 0.5; }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-header-anchor.md-print-anchor { border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background-color: transparent !important; text-shadow: initial !important; background-position: initial initial !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-width: 0px; min-height: 0px; width: 100%; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { -webkit-transition: none; transition: none; }
+
+
+@include-when-export url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/**
+ * css forked from https://github.com/GitbookIO/gitbook 
+ * www.gitbook.com
+ * Apache License
+ * https://github.com/GitbookIO/gitbook/blob/master/LICENSE
+ **/
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/jiyingxin/Library/Application%20Support/abnerworks.Typora/themes/./github/400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/jiyingxin/Library/Application%20Support/abnerworks.Typora/themes/./github/400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/jiyingxin/Library/Application%20Support/abnerworks.Typora/themes/./github/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/jiyingxin/Library/Application%20Support/abnerworks.Typora/themes/./github/700i.woff') format('woff')
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write{
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 20px 30px 40px 30px;
+	padding-top: 20px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/jiyingxin/Library/Application%20Support/abnerworks.Typora/themes/../../images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ddd;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dddddd;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+}
+table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #ddd;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.task-list{
+	padding-left: 0;
+}
+
+.task-list-item {
+	padding-left:32px;
+}
+
+.task-list-item input {
+  top: 3px;
+  left: 8px;
+}
+
+@media screen and (min-width: 914px) {
+    /*body {
+        width: 854px;
+        margin: 0 auto;
+    }*/
+}
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag{
+	color: inherit;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+
+</style>
+</head>
+<body class='typora-export ' >
+<div  id='write'  class = 'is-mac'><p><img src='http://bj.tedu.cn/images/logo.jpg' alt='' /></p><h1><a name='header-c7' class='md-header-anchor '></a>杂项</h1><blockquote><p>2016年07月27日</p></blockquote><blockquote><p>达内教育 纪老师</p></blockquote><blockquote><blockquote><p><a href='https://github.com/jiyingxin'>GitHub</a> </p></blockquote></blockquote><blockquote><blockquote><p><a href='http://blog.csdn.net/jiyingxin'>CSDN博客</a> </p></blockquote></blockquote><blockquote><blockquote><p>新浪微博: <a href='http://weibo.com/3783175923/profile'>小新-iOS讲师</a></p></blockquote></blockquote><pre class='md-fences mock-cm' style='display:block;position:relative'>Linus Torvalds: Talk is cheap. Show me the code.</pre><p></p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="c7"><a class="md-toc-inner" href="#header-c7">杂项</a></span><span class="md-toc-item md-toc-h2" data-ref="c30"><a class="md-toc-inner" href="#header-c30">蓝牙</a></span><span class="md-toc-item md-toc-h2" data-ref="c33"><a class="md-toc-inner" href="#header-c33">国际化</a></span><span class="md-toc-item md-toc-h3" data-ref="c46"><a class="md-toc-inner" href="#header-c46">普通国际化操作</a></span><span class="md-toc-item md-toc-h3" data-ref="c53"><a class="md-toc-inner" href="#header-c53">特殊国际化操作</a></span><span class="md-toc-item md-toc-h3" data-ref="c61"><a class="md-toc-inner" href="#header-c61">针对应用配置的国际化操作</a></span><span class="md-toc-item md-toc-h2" data-ref="c78"><a class="md-toc-inner" href="#header-c78">OpenURL</a></span><span class="md-toc-item md-toc-h3" data-ref="c79"><a class="md-toc-inner" href="#header-c79">拉起原生应用</a></span><span class="md-toc-item md-toc-h3" data-ref="c95"><a class="md-toc-inner" href="#header-c95">拉起第三方应用</a></span><span class="md-toc-item md-toc-h4" data-ref="c111"><a class="md-toc-inner" href="#header-c111">为应用设置跳转标识</a></span><span class="md-toc-item md-toc-h4" data-ref="c118"><a class="md-toc-inner" href="#header-c118">接受其他进程的参数</a></span><span class="md-toc-item md-toc-h2" data-ref="c122"><a class="md-toc-inner" href="#header-c122">二维码</a></span><span class="md-toc-item md-toc-h3" data-ref="c123"><a class="md-toc-inner" href="#header-c123">创建二维码</a></span><span class="md-toc-item md-toc-h3" data-ref="c125"><a class="md-toc-inner" href="#header-c125">扫描二维码</a></span><span class="md-toc-item md-toc-h4" data-ref="c126"><a class="md-toc-inner" href="#header-c126">开始扫描</a></span><span class="md-toc-item md-toc-h4" data-ref="c128"><a class="md-toc-inner" href="#header-c128">扫描到结果</a></span><span class="md-toc-item md-toc-h2" data-ref="c132"><a class="md-toc-inner" href="#header-c132">拍照与相册</a></span><span class="md-toc-item md-toc-h2" data-ref="c139"><a class="md-toc-inner" href="#header-c139">XML解析</a></span><span class="md-toc-item md-toc-h2" data-ref="c144"><a class="md-toc-inner" href="#header-c144">推送</a></span><span class="md-toc-item md-toc-h2" data-ref="c177"><a class="md-toc-inner" href="#header-c177">NSUserDefaults</a></span><span class="md-toc-item md-toc-h2" data-ref="c186"><a class="md-toc-inner" href="#header-c186">Archive</a></span><span class="md-toc-item md-toc-h2" data-ref="c193"><a class="md-toc-inner" href="#header-c193">Runtime</a></span></p></div><h2><a name='header-c30' class='md-header-anchor '></a>蓝牙</h2><p><a href='http://www.cnblogs.com/kenshincui/p/4220402.html'>参考资料</a></p><h2><a name='header-c33' class='md-header-anchor '></a>国际化</h2><p>开启国际化</p><p><img src='http://upload-images.jianshu.io/upload_images/941675-4ea27d3a216910af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240' alt='' /></p><p></p><p>创建国际化文件</p><p><img src='http://upload-images.jianshu.io/upload_images/941675-a4b62988311d1027.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240' alt='' /></p><p></p><h3><a name='header-c46' class='md-header-anchor '></a>普通国际化操作</h3><p>随意创建一个Strings文件, 如下图操作. 使用<code>NSLocalizedStringFromTable()</code>方法让系统自动根据语言, 使用对应的字符串.</p><p><img src='http://o6jq9sifi.bkt.clouddn.com/%E5%9B%BD%E9%99%85%E5%8C%96.gif' alt='' /></p><p></p><h3><a name='header-c53' class='md-header-anchor '></a>特殊国际化操作</h3><p>对于名字是<code>Localizable.strings</code>这个名称的文件,  有专门的国际化方法<code>NSLocalizedString</code></p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">UILabel</span> <span class="cm-operator">*</span><span class="cm-variable">label</span> <span class="cm-operator">=</span> [[<span class="cm-variable">UILabel</span> <span class="cm-variable">alloc</span>] <span class="cm-variable">initWithFrame</span>:<span class="cm-variable">CGRectMake</span>(<span class="cm-number">20</span>, <span class="cm-number">20</span>, <span class="cm-number">100</span>, <span class="cm-number">40</span>)];</span></pre></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">label</span>.<span class="cm-variable">text</span> <span class="cm-operator">=</span> <span class="cm-variable">NSLocalizedString</span>(<span class="cm-keyword">@</span><span class="cm-string">"key"</span>, <span class="cm-keyword">nil</span>);</span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-variable">label</span> <span class="cm-variable">sizeToFit</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-keyword">self</span>.<span class="cm-variable">view</span> <span class="cm-variable">addSubview</span>:<span class="cm-variable">label</span>];<span class="cm-tab">   </span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 88px;"></div></div></div></pre><p><img src='http://upload-images.jianshu.io/upload_images/941675-fb4e7c436cc2670b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240' alt='' /></p><p></p><h3><a name='header-c61' class='md-header-anchor '></a>针对应用配置的国际化操作</h3><p>让应用根据语言, 显示不同的桌面名称. 创建<code>InfoPlist.strings</code>，查看右边的属性，在Localizable栏添加语言。</p><p>通过设置<code>CFBundleDisplayName</code>这个特殊的key, 就可以实现不同的桌面语言名称了.</p><p><img src='http://upload-images.jianshu.io/upload_images/941675-b4336fc67b487ebe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240' alt='' /></p><p>效果: 中文环境下</p><p><img src='http://upload-images.jianshu.io/upload_images/941675-7382c73d823ccf3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240' alt='' /></p><p>把系统语言切换为英文以后:</p><p><img src='http://upload-images.jianshu.io/upload_images/941675-8cf0b47821e871c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240' alt='' /></p><p></p><h2><a name='header-c78' class='md-header-anchor '></a>OpenURL</h2><h3><a name='header-c79' class='md-header-anchor '></a>拉起原生应用</h3><p>在开发某些应用时可能希望能够调用iOS系统内置的电话、短信、邮件、浏览器应用，此时你可以直接使用<strong>UIApplication</strong>的<strong>OpenURL:</strong>方法指定特定的协议来打开不同的系统应用。常用的协议如下：</p><p>打电话：tel:或者tel://、telprompt:或telprompt://(拨打电话前有提示)</p><p>发短信：sms:或者sms://</p><p>发送邮件：mailto:或者mailto://</p><p>启动浏览器：http:或者http://</p><p></p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//打电话</span></span></pre></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">callClicK</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">phoneNumber</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"10086"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp;  NSString *url=[NSString stringWithFormat:@"tel://%@",phoneNumber];//这种方式会直接拨打电话</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSString</span> <span class="cm-variable">stringWithFormat</span>:<span class="cm-keyword">@</span><span class="cm-string">"telprompt://%@"</span>, <span class="cm-variable">phoneNumber</span>];<span class="cm-comment">//这种方式会提示用户确认是否拨打电话</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//发送短信</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">sendMessageClick</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">phoneNumber</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"10086"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSString</span> <span class="cm-variable">stringWithFormat</span>:<span class="cm-keyword">@</span><span class="cm-string">"sms://%@"</span>, <span class="cm-variable">phoneNumber</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//发送邮件</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">sendEmailClick</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">mailAddress</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"10086@qq.com"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSString</span> <span class="cm-variable">stringWithFormat</span>:<span class="cm-keyword">@</span><span class="cm-string">"mailto://%@"</span>, <span class="cm-variable">mailAddress</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//浏览网页</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">browserClick</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"http://www.baidu.com"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//通过URL协议打开其他进程</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span>(<span class="cm-variable-3">void</span>)<span class="cm-variable">openUrl</span>:(<span class="cm-variable">NSString</span> <span class="cm-operator">*</span>)<span class="cm-variable">urlStr</span>{</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">//注意url中包含协议名称，iOS根据协议确定调用哪个应用，例如发送短信是“sms://”其中“//”可以省略写成“sms:”(其他协议也是如此)</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSURL</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSURL</span> <span class="cm-variable">URLWithString</span>:<span class="cm-variable">urlStr</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">UIApplication</span> <span class="cm-operator">*</span><span class="cm-variable">application</span><span class="cm-operator">=</span>[<span class="cm-variable">UIApplication</span> <span class="cm-variable">sharedApplication</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-keyword">if</span>(<span class="cm-operator">!</span>[<span class="cm-variable">application</span> <span class="cm-variable">canOpenURL</span>:<span class="cm-variable">url</span>]){</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">NSLog</span>(<span class="cm-keyword">@</span><span class="cm-string">"无法打开\"%@\"，请确保此应用已经正确安装."</span>,<span class="cm-variable">url</span>);</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-keyword">return</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  }</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [[<span class="cm-variable">UIApplication</span> <span class="cm-variable">sharedApplication</span>] <span class="cm-variable">openURL</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-keyword">@end</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 968px;"></div></div></div></pre><p></p><h3><a name='header-c95' class='md-header-anchor '></a>拉起第三方应用</h3><p>在开发某些应用时可能希望能够调用iOS系统内置的电话、短信、邮件、浏览器应用，此时你可以直接使用UIApplication的OpenURL:方法指定特定的协议来打开不同的系统应用。常用的协议如下：</p><p>打电话：<code>tel:</code>或者<code>tel://</code>、<code>telprompt:</code>或<code>telprompt://</code>(拨打电话前有提示)</p><p>发短信：<code>sms:</code>或者<code>sms://</code></p><p>发送邮件：<code>mailto:</code>或者<code>mailto://</code></p><p>启动浏览器：<code>http:</code>或者<code>http://</code></p><p>下面以一个简单的demo演示如何调用上面几种系统应用：</p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//打电话</span></span></pre></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">callClicK</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">phoneNumber</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"18500138888"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp;  NSString *url=[NSString stringWithFormat:@"tel://%@",phoneNumber];//这种方式会直接拨打电话</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSString</span> <span class="cm-variable">stringWithFormat</span>:<span class="cm-keyword">@</span><span class="cm-string">"telprompt://%@"</span>,<span class="cm-variable">phoneNumber</span>];<span class="cm-comment">//这种方式会提示用户确认是否拨打电话</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//发送短信</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">sendMessageClick</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">phoneNumber</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"18500138888"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSString</span> <span class="cm-variable">stringWithFormat</span>:<span class="cm-keyword">@</span><span class="cm-string">"sms://%@"</span>,<span class="cm-variable">phoneNumber</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//发送邮件</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">sendEmailClick</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">mailAddress</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"kenshin@hotmail.com"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSString</span> <span class="cm-variable">stringWithFormat</span>:<span class="cm-keyword">@</span><span class="cm-string">"mailto://%@"</span>,<span class="cm-variable">mailAddress</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//浏览网页</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">browserClick</span>:(<span class="cm-variable">UIButton</span> <span class="cm-operator">*</span>)<span class="cm-variable">sender</span> {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span><span class="cm-keyword">@</span><span class="cm-string">"http://www.cnblogs.com/kenshincui"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">openUrl</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-meta">#pragma mark - 私有方法</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span>(<span class="cm-variable-3">void</span>)<span class="cm-variable">openUrl</span>:(<span class="cm-variable">NSString</span> <span class="cm-operator">*</span>)<span class="cm-variable">urlStr</span>{</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">//注意url中包含协议名称，iOS根据协议确定调用哪个应用，例如发送邮件是“sms://”其中“//”可以省略写成“sms:”(其他协议也是如此)</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSURL</span> <span class="cm-operator">*</span><span class="cm-variable">url</span><span class="cm-operator">=</span>[<span class="cm-variable">NSURL</span> <span class="cm-variable">URLWithString</span>:<span class="cm-variable">urlStr</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">UIApplication</span> <span class="cm-operator">*</span><span class="cm-variable">application</span><span class="cm-operator">=</span>[<span class="cm-variable">UIApplication</span> <span class="cm-variable">sharedApplication</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-keyword">if</span>(<span class="cm-operator">!</span>[<span class="cm-variable">application</span> <span class="cm-variable">canOpenURL</span>:<span class="cm-variable">url</span>]){</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">NSLog</span>(<span class="cm-keyword">@</span><span class="cm-string">"无法打开\"%@\"，请确保此应用已经正确安装."</span>,<span class="cm-variable">url</span>);</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-keyword">return</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  }</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [[<span class="cm-variable">UIApplication</span> <span class="cm-variable">sharedApplication</span>] <span class="cm-variable">openURL</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 924px;"></div></div></div></pre><p></p><h4><a name='header-c111' class='md-header-anchor '></a>为应用设置跳转标识</h4><p>如下图设置应用的跳转标识. 则我们可以在其他应用中通过 <code>myID://</code> 来进行<code>openURL</code>跳转.</p><p><img src='http://o6jq9sifi.bkt.clouddn.com/QQ20160731-0@2x.png' alt='' /></p><p></p><h4><a name='header-c118' class='md-header-anchor '></a>接受其他进程的参数</h4><p>就像调用系统应用一样，协议后面可以传递一些参数（例如上面传递的myparams），这样一来在应用中可以在<code>AppDelegate的-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation</code>代理方法中接收参数并解析。</p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span>(<span class="cm-keyword">BOOL</span>)<span class="cm-variable">application</span>:(<span class="cm-variable">UIApplication</span> <span class="cm-operator">*</span>)<span class="cm-variable">application</span> <span class="cm-variable">openURL</span>:(<span class="cm-variable">NSURL</span> <span class="cm-operator">*</span>)<span class="cm-variable">url</span> <span class="cm-variable">sourceApplication</span>:(<span class="cm-variable">NSString</span> <span class="cm-operator">*</span>)<span class="cm-variable">sourceApplication</span> <span class="cm-variable">annotation</span>:(<span class="cm-keyword">id</span>)<span class="cm-variable">annotation</span>{</span></pre></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">str</span><span class="cm-operator">=</span>[<span class="cm-variable">NSString</span> <span class="cm-variable">stringWithFormat</span>:<span class="cm-keyword">@</span><span class="cm-string">"url:%@,source application:%@,params:%@"</span>,<span class="cm-variable">url</span>,<span class="cm-variable">sourceApplication</span>,[<span class="cm-variable">url</span> <span class="cm-variable">host</span>]];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSLog</span>(<span class="cm-keyword">@</span><span class="cm-string">"%@"</span>,<span class="cm-variable">str</span>);</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-keyword">return</span> <span class="cm-atom">YES</span>;<span class="cm-comment">//是否打开</span></span></pre><pre class=""><span style="padding-right: 0.1px;">}<span class="cm-tab">   </span><span class="cm-tab">    </span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 154px;"></div></div></div></pre><h2><a name='header-c122' class='md-header-anchor '></a>二维码</h2><h3><a name='header-c123' class='md-header-anchor '></a>创建二维码</h3><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//二维码就是把字符串按照一定的规则转换为了图片</span></span></pre></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//字符串越长 图片越复杂</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">msg</span> <span class="cm-operator">=</span> <span class="cm-keyword">@</span><span class="cm-string">"http://www.baidu.com"</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//1. 字符串转Data 二进制</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">NSData</span> <span class="cm-operator">*</span><span class="cm-variable">data</span> <span class="cm-operator">=</span> [<span class="cm-variable">msg</span> <span class="cm-variable">dataUsingEncoding</span>:<span class="cm-variable">NSUTF8StringEncoding</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//2. 二进制转成图片 CoreImage(核心图片)</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">CIFilter</span> <span class="cm-operator">*</span><span class="cm-variable">filter</span> <span class="cm-operator">=</span> [<span class="cm-variable">CIFilter</span> <span class="cm-variable">filterWithName</span>:<span class="cm-keyword">@</span><span class="cm-string">"CIQRCodeGenerator"</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//把要修改的元数据放入过滤器</span></span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-variable">filter</span> <span class="cm-variable">setValue</span>:<span class="cm-variable">data</span> <span class="cm-variable">forKey</span>:<span class="cm-keyword">@</span><span class="cm-string">"inputMessage"</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//获取过滤之后的结果</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">CIImage</span> <span class="cm-operator">*</span><span class="cm-variable">ciIMG</span> <span class="cm-operator">=</span> <span class="cm-variable">filter</span>.<span class="cm-variable">outputImage</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">UIImage</span> <span class="cm-operator">*</span><span class="cm-variable">img</span> <span class="cm-operator">=</span> [[<span class="cm-variable">UIImage</span> <span class="cm-variable">alloc</span>] <span class="cm-variable">initWithCIImage</span>:<span class="cm-variable">ciIMG</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">UIImageView</span> <span class="cm-operator">*</span><span class="cm-variable">imageView</span> <span class="cm-operator">=</span> [[<span class="cm-variable">UIImageView</span> <span class="cm-variable">alloc</span>] <span class="cm-variable">initWithFrame</span>:<span class="cm-variable">CGRectMake</span>(<span class="cm-number">20</span>, <span class="cm-number">100</span>, <span class="cm-number">200</span>, <span class="cm-number">200</span>)];</span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-keyword">self</span>.<span class="cm-variable">view</span> <span class="cm-variable">addSubview</span>:<span class="cm-variable">imageView</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">imageView</span>.<span class="cm-variable">image</span> <span class="cm-operator">=</span> <span class="cm-variable">img</span>;</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 374px;"></div></div></div></pre><h3><a name='header-c125' class='md-header-anchor '></a>扫描二维码</h3><h4><a name='header-c126' class='md-header-anchor '></a>开始扫描</h4><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//扫描二维码的逻辑</span></span></pre></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//1.打开后置摄像头</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//1.1 获取后置摄像头的控制权, 指针</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">AVCaptureDevice</span> <span class="cm-operator">*</span><span class="cm-variable">device</span> <span class="cm-operator">=</span> [<span class="cm-variable">AVCaptureDevice</span> <span class="cm-variable">defaultDeviceWithMediaType</span>:<span class="cm-variable">AVMediaTypeVideo</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//2.读取后置摄像头传入的数据流, 输入流</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">NSError</span> <span class="cm-operator">*</span><span class="cm-variable">error</span> <span class="cm-operator">=</span> <span class="cm-keyword">nil</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">AVCaptureDeviceInput</span> <span class="cm-operator">*</span><span class="cm-variable">input</span> <span class="cm-operator">=</span> [<span class="cm-variable">AVCaptureDeviceInput</span> <span class="cm-variable">deviceInputWithDevice</span>:<span class="cm-variable">device</span> <span class="cm-variable">error</span>:<span class="cm-operator">&amp;</span><span class="cm-variable">error</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">error</span>) {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSLog</span>(<span class="cm-keyword">@</span><span class="cm-string">"%@"</span>, <span class="cm-variable">error</span>);</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-keyword">return</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//3.需要一条管道, 把输入流导入到屏幕上</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">AVCaptureMetadataOutput</span> <span class="cm-operator">*</span><span class="cm-variable">output</span> <span class="cm-operator">=</span> [<span class="cm-variable">AVCaptureMetadataOutput</span> <span class="cm-variable">new</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">_session</span> <span class="cm-operator">=</span> [<span class="cm-variable">AVCaptureSession</span> <span class="cm-variable">new</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//设置管道的传输质量</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">_session</span>.<span class="cm-variable">sessionPreset</span> <span class="cm-operator">=</span> <span class="cm-variable">AVCaptureSessionPresetHigh</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//4.导入屏幕的数据流, 输入流</span></span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-variable">_session</span> <span class="cm-variable">addInput</span>:<span class="cm-variable">input</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-variable">_session</span> <span class="cm-variable">addOutput</span>:<span class="cm-variable">output</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//5.输入数据的同时, 不断检测是否有二维码存在. 一旦检测到. 则通过代理通知我们</span></span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-variable">output</span> <span class="cm-variable">setMetadataObjectsDelegate</span>:<span class="cm-keyword">self</span> <span class="cm-variable">queue</span>:<span class="cm-variable">dispatch_get_main_queue</span>()];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//设置要监听的数据类型. 此行代码必须在管道搭建完毕后编写</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">output</span>.<span class="cm-variable">metadataObjectTypes</span> <span class="cm-operator">=</span> <span class="cm-keyword">@</span>[<span class="cm-variable">AVMetadataObjectTypeQRCode</span>, <span class="cm-variable">AVMetadataObjectTypeEAN13Code</span>, <span class="cm-variable">AVMetadataObjectTypeEAN8Code</span>, <span class="cm-variable">AVMetadataObjectTypeCode128Code</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//把图像显示在页面上</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">_layer</span> <span class="cm-operator">=</span> [<span class="cm-variable">AVCaptureVideoPreviewLayer</span> <span class="cm-variable">layerWithSession</span>:<span class="cm-variable">_session</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//显示内容的区域大小</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">_layer</span>.<span class="cm-variable">frame</span> <span class="cm-operator">=</span> <span class="cm-keyword">self</span>.<span class="cm-variable">view</span>.<span class="cm-variable">bounds</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//设置内容模式为 保持比例填满</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">_layer</span>.<span class="cm-variable">videoGravity</span> <span class="cm-operator">=</span> <span class="cm-variable">AVLayerVideoGravityResizeAspectFill</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-keyword">self</span>.<span class="cm-variable">view</span>.<span class="cm-variable">layer</span> <span class="cm-variable">addSublayer</span>:<span class="cm-variable">_layer</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//启动管道</span></span></pre><pre class=""><span style="padding-right: 0.1px;">[<span class="cm-variable">_session</span> <span class="cm-variable">startRunning</span>];<span class="cm-tab">    </span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 814px;"></div></div></div></pre><h4><a name='header-c128' class='md-header-anchor '></a>扫描到结果</h4><p>通过<code>AVCaptureMetadataOutputObjectsDelegate</code>代理中的方法, 来进行扫描到结果后的操作.</p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable-3">void</span>)<span class="cm-variable">captureOutput</span>:(<span class="cm-variable">AVCaptureOutput</span> <span class="cm-operator">*</span>)<span class="cm-variable">captureOutput</span> <span class="cm-variable">didOutputMetadataObjects</span>:(<span class="cm-variable">NSArray</span> <span class="cm-operator">*</span>)<span class="cm-variable">metadataObjects</span> <span class="cm-variable">fromConnection</span>:(<span class="cm-variable">AVCaptureConnection</span> <span class="cm-operator">*</span>)<span class="cm-variable">connection</span>{</span></pre></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-keyword">if</span> (<span class="cm-variable">metadataObjects</span>.<span class="cm-variable">count</span> <span class="cm-operator">&gt;</span> <span class="cm-number">0</span>) {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">AVMetadataMachineReadableCodeObject</span> <span class="cm-operator">*</span><span class="cm-variable">obj</span> <span class="cm-operator">=</span> <span class="cm-variable">metadataObjects</span>.<span class="cm-variable">firstObject</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">NSString</span> <span class="cm-operator">*</span><span class="cm-variable">code</span>  <span class="cm-operator">=</span> <span class="cm-variable">obj</span>.<span class="cm-variable">stringValue</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">NSLog</span>(<span class="cm-keyword">@</span><span class="cm-string">"%@"</span>, <span class="cm-variable">code</span>);</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  [<span class="cm-variable">_session</span> <span class="cm-variable">stopRunning</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  [<span class="cm-variable">_layer</span> <span class="cm-variable">removeFromSuperlayer</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-comment">//判断扫描到的二维码是不是可以进行应用跳转</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">NSURL</span> <span class="cm-operator">*</span><span class="cm-variable">url</span> <span class="cm-operator">=</span> [<span class="cm-variable">NSURL</span> <span class="cm-variable">URLWithString</span>:<span class="cm-variable">code</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-keyword">if</span> ([[<span class="cm-variable">UIApplication</span> <span class="cm-variable">sharedApplication</span>] <span class="cm-variable">canOpenURL</span>:<span class="cm-variable">url</span>]) {</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [[<span class="cm-variable">UIApplication</span> <span class="cm-variable">sharedApplication</span>] <span class="cm-variable">openURL</span>:<span class="cm-variable">url</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  }</span></pre><pre class=""><span style="padding-right: 0.1px;">}<span class="cm-tab">   </span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 330px;"></div></div></div></pre><h2><a name='header-c132' class='md-header-anchor '></a>拍照与相册</h2><p>拉起摄像头或者相册</p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">getPicFromCamera</span>:(<span class="cm-keyword">id</span>)<span class="cm-variable">sender</span> { <span class="cm-comment">//拍照</span></span></pre></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">UIImagePickerController</span> <span class="cm-operator">*</span><span class="cm-variable">vc</span> <span class="cm-operator">=</span> [<span class="cm-variable">UIImagePickerController</span> <span class="cm-variable">new</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">//设置获取图片的源类型</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">vc</span>.<span class="cm-variable">sourceType</span> <span class="cm-operator">=</span> <span class="cm-variable">UIImagePickerControllerSourceTypeCamera</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">//允许对图片进行编辑</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">vc</span>.<span class="cm-variable">allowsEditing</span> <span class="cm-operator">=</span> <span class="cm-atom">YES</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">vc</span>.<span class="cm-variable">delegate</span> <span class="cm-operator">=</span> <span class="cm-keyword">self</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">presentViewController</span>:<span class="cm-variable">vc</span> <span class="cm-variable">animated</span>:<span class="cm-atom">YES</span> <span class="cm-variable">completion</span>:<span class="cm-keyword">nil</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable">IBAction</span>)<span class="cm-variable">getPicFromAlbum</span>:(<span class="cm-keyword">id</span>)<span class="cm-variable">sender</span> { <span class="cm-comment">//从相册</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">UIImagePickerController</span> <span class="cm-operator">*</span><span class="cm-variable">vc</span> <span class="cm-operator">=</span> [<span class="cm-variable">UIImagePickerController</span> <span class="cm-variable">new</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">//设置获取图片的源类型</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">vc</span>.<span class="cm-variable">sourceType</span> <span class="cm-operator">=</span> <span class="cm-variable">UIImagePickerControllerSourceTypePhotoLibrary</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">//允许对图片进行编辑</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">vc</span>.<span class="cm-variable">allowsEditing</span> <span class="cm-operator">=</span> <span class="cm-atom">YES</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">vc</span>.<span class="cm-variable">delegate</span> <span class="cm-operator">=</span> <span class="cm-keyword">self</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-keyword">self</span> <span class="cm-variable">presentViewController</span>:<span class="cm-variable">vc</span> <span class="cm-variable">animated</span>:<span class="cm-atom">YES</span> <span class="cm-variable">completion</span>:<span class="cm-keyword">nil</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 396px;"></div></div></div></pre><p>通过代理方法获知取得的图片信息, 注意要遵循两个代理<code>UINavigationControllerDelegate</code>, <code>UIImagePickerControllerDelegate</code></p><pre class="md-fences md-end-block" lang=""> <div class="CodeMirror cm-s-inner CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 4px;"></div><div class="CodeMirror-hscrollbar" style="left: 0px; min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-height: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">//当选择了某张图片时, 触发</span></span></pre></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-operator">-</span> (<span class="cm-variable-3">void</span>)<span class="cm-variable">imagePickerController</span>:(<span class="cm-variable">UIImagePickerController</span> <span class="cm-operator">*</span>)<span class="cm-variable">picker</span> <span class="cm-variable">didFinishPickingMediaWithInfo</span>:(<span class="cm-variable">NSDictionary</span><span class="cm-operator">&lt;</span><span class="cm-variable">NSString</span> <span class="cm-operator">*</span>,<span class="cm-keyword">id</span><span class="cm-operator">&gt;</span> <span class="cm-operator">*</span>)<span class="cm-variable">info</span>{</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">NSLog</span>(<span class="cm-keyword">@</span><span class="cm-string">"%@"</span>, <span class="cm-variable">info</span>);</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">UIImage</span> <span class="cm-operator">*</span><span class="cm-variable">image</span> <span class="cm-operator">=</span> <span class="cm-variable">info</span>[<span class="cm-variable">UIImagePickerControllerOriginalImage</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">//获取编辑以后的图片, 要使用对应的key</span></span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">image</span> <span class="cm-operator">=</span> <span class="cm-variable">info</span>[<span class="cm-variable">UIImagePickerControllerEditedImage</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  </span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-variable">_imageView</span>.<span class="cm-variable">image</span> <span class="cm-operator">=</span> <span class="cm-variable">image</span>;</span></pre><pre class=""><span style="padding-right: 0.1px;"> &nbsp;  [<span class="cm-variable">picker</span> <span class="cm-variable">dismissViewControllerAnimated</span>:<span class="cm-atom">YES</span> <span class="cm-variable">completion</span>:<span class="cm-keyword">nil</span>];</span></pre><pre class=""><span style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 0px;"></div><div class="CodeMirror-gutters" style="display: none; height: 242px;"></div></div></div></pre><h2><a name='header-c139' class='md-header-anchor '></a>XML解析</h2><p></p><p></p><h2><a name='header-c144' class='md-header-anchor '></a>推送</h2><p><a href='http://blog.csdn.net/u012938194/article/details/51971999'>参考资料</a></p><p>推送, 专业名字是 APNs. 全称Apple Push Notification service. 即苹果推送通知服务.</p><p>在以往的开发中, 都是客户端主动发送请求, 向服务端获取某些数据.</p><p>而推送服务正好相反, 是服务端主动联系客户端.</p><p>简单说下这个步骤:</p><ol><li>购买开发者资格, 成为Apple的开发者. 这需要$99或者700RMB. 使用visa, 万事达信用卡支付. 通常一天内可以审核通过. <a href='https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;baseURL=https://developer.apple.com/&amp;path=%2Faccount%2F&amp;rv=1'>购买地址</a></li><li>根据参考资料中的教程, 向苹果申请你的应用程序的各种证书. 包括开发证书, 发布证书. 推送证书(开发版), 推送证书(发布版).</li><li>在程序启动时, 向用户申请推送许可. <strong>只有用户允许, 才能进行推送</strong>.</li><li>如果用户同意接收推送服务, 则程序会自动向苹果服务器申请一个唯一标识, 称为<strong>deviceToken</strong>, 这是一个32位的16进制字符串. 这个字符串就是你的这款设备在苹果服务器中的唯一标识. 苹果服务器可以通过此标识找到这款设备. 此字符串会在一个代理方法中传递给你.</li><li>通过服务器给的某个接口, 把这个标识传递给服务器. 这样服务器就知道了你的这个设备和它对应的这个唯一标识.</li><li>(<strong>这个步骤跟客户端没关系</strong>)当服务器想要给客户端推送消息时. 只要拿着这个标识, 外加证书, 就可以要求苹果服务器向对应的客户端发布信息了. 证书是确保服务器的合法性.</li><li>苹果服务器会把消息传递给客户端.  如果客户端是开启在前台的状态. 则会在某个代理方法中接受到这个通知. 如果客户端在后台, 则会有屏幕上的一些提示. 例如弹出框, 声音, 桌面图标数字.</li></ol><h2><a name='header-c177' class='md-header-anchor '></a>NSUserDefaults</h2><p><a href='http://www.jianshu.com/p/459c15cf6ce2'>参考资料</a></p><p>NSUserDefaults的本质就是一个管理沙盒中<code>Library/preference/***.plist</code>此plist文件的类. </p><p>这个类拥有比普通的字典或者数组更多的方法. 仅此而已.</p><p></p><h2><a name='header-c186' class='md-header-anchor '></a>Archive</h2><p><a href='http://www.cnblogs.com/xiaobaizhu/p/4011332.html'>参考资料</a></p><p>Archive的作用是把对象转化为NSData类型.</p><p>对于自定义类型, 需要遵循NSCoding协议并且实现协议的归档和解档两个方法.</p><h2><a name='header-c193' class='md-header-anchor '></a>Runtime</h2><p><a href='http://www.jianshu.com/p/f6375aa49e0b?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-timeline&amp;from=timeline&amp;isappinstalled=0'>参考资料</a></p><p></p></div>
+</body>
+</html>
