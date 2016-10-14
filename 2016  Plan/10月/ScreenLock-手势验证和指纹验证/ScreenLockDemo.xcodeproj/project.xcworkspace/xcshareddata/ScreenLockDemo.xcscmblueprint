@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2684C05BF1F74F4EE927636B8E043440FE7BCD78",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "35BFE3F5B998B0E4B5791DE683587C68F86A0F7C" : 0,
+    "2684C05BF1F74F4EE927636B8E043440FE7BCD78" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C36A434F-5568-4C2A-A29E-1ED4143593DA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "35BFE3F5B998B0E4B5791DE683587C68F86A0F7C" : "",
+    "2684C05BF1F74F4EE927636B8E043440FE7BCD78" : "ScreenLockDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ScreenLockDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ScreenLockDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/Justin_C\/ScreenLock.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2684C05BF1F74F4EE927636B8E043440FE7BCD78"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/fzhongli\/SuperQuick.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "35BFE3F5B998B0E4B5791DE683587C68F86A0F7C"
+    }
+  ]
+}

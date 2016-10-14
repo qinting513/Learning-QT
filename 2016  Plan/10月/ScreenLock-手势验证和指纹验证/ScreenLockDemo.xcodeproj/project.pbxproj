@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE5096BA1C46911C00143A74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5096B91C46911C00143A74 /* main.m */; };
+		BE5096BD1C46911C00143A74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5096BC1C46911C00143A74 /* AppDelegate.m */; };
+		BE5096C31C46911C00143A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5096C11C46911C00143A74 /* Main.storyboard */; };
+		BE5096C51C46911C00143A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5096C41C46911C00143A74 /* Assets.xcassets */; };
+		BE5096C81C46911C00143A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5096C61C46911C00143A74 /* LaunchScreen.storyboard */; };
+		BE5096D31C46911C00143A74 /* ScreenLockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5096D21C46911C00143A74 /* ScreenLockDemoTests.m */; };
+		BE5096DE1C46911C00143A74 /* ScreenLockDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5096DD1C46911C00143A74 /* ScreenLockDemoUITests.m */; };
+		BE576A701C4A6FD1009991DB /* UIDevice+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A6F1C4A6FD1009991DB /* UIDevice+Info.m */; };
+		BE576A871C4A726B009991DB /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A751C4A726B009991DB /* CALayer+Anim.m */; };
+		BE576A881C4A726B009991DB /* CoreLockConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A781C4A726B009991DB /* CoreLockConst.m */; };
+		BE576A891C4A726B009991DB /* CLLockInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A7B1C4A726B009991DB /* CLLockInfoView.m */; };
+		BE576A8A1C4A726B009991DB /* CLLockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A7D1C4A726B009991DB /* CLLockItemView.m */; };
+		BE576A8B1C4A726B009991DB /* CLLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A7F1C4A726B009991DB /* CLLockLabel.m */; };
+		BE576A8C1C4A726B009991DB /* CLLockMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A811C4A726B009991DB /* CLLockMainView.m */; };
+		BE576A8D1C4A726B009991DB /* CLLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A831C4A726B009991DB /* CLLockView.m */; };
+		BE576A8E1C4A726B009991DB /* ScreenLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A851C4A726B009991DB /* ScreenLockVC.m */; };
+		BE576A8F1C4A726B009991DB /* ScreenLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE576A861C4A726B009991DB /* ScreenLockVC.xib */; };
+		BE576A921C4A72DC009991DB /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A911C4A72DC009991DB /* NSObject+Common.m */; };
+		BE576A951C4A78AA009991DB /* SetLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A941C4A78AA009991DB /* SetLockViewController.m */; };
+		BE576A981C4A7965009991DB /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE576A971C4A7965009991DB /* LocalAuthentication.framework */; };
+		BE576A9E1C4A79AD009991DB /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A9B1C4A79AD009991DB /* MBProgressHUD+Add.m */; };
+		BE576A9F1C4A79AD009991DB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BE576A9D1C4A79AD009991DB /* MBProgressHUD.m */; };
+		BE725F621C4A8212005724F9 /* NavRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE725F611C4A8212005724F9 /* NavRootVC.m */; };
+		BE725F641C4A9205005724F9 /* touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE725F631C4A9205005724F9 /* touch@2x.png */; };
+		BE725F661C4A9331005724F9 /* headImg.png in Resources */ = {isa = PBXBuildFile; fileRef = BE725F651C4A9331005724F9 /* headImg.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE5096CF1C46911C00143A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5096AD1C46911C00143A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE5096B41C46911C00143A74;
+			remoteInfo = ScreenLockDemo;
+		};
+		BE5096DA1C46911C00143A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5096AD1C46911C00143A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE5096B41C46911C00143A74;
+			remoteInfo = ScreenLockDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE5096B51C46911C00143A74 /* ScreenLockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenLockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5096B91C46911C00143A74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE5096BB1C46911C00143A74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE5096BC1C46911C00143A74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE5096C21C46911C00143A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE5096C41C46911C00143A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE5096C71C46911C00143A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE5096C91C46911C00143A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5096CE1C46911C00143A74 /* ScreenLockDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenLockDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5096D21C46911C00143A74 /* ScreenLockDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenLockDemoTests.m; sourceTree = "<group>"; };
+		BE5096D41C46911C00143A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5096D91C46911C00143A74 /* ScreenLockDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenLockDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5096DD1C46911C00143A74 /* ScreenLockDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenLockDemoUITests.m; sourceTree = "<group>"; };
+		BE5096DF1C46911C00143A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE576A6E1C4A6FD1009991DB /* UIDevice+Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Info.h"; sourceTree = "<group>"; };
+		BE576A6F1C4A6FD1009991DB /* UIDevice+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Info.m"; sourceTree = "<group>"; };
+		BE576A741C4A726B009991DB /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		BE576A751C4A726B009991DB /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		BE576A771C4A726B009991DB /* CoreLockConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLockConst.h; sourceTree = "<group>"; };
+		BE576A781C4A726B009991DB /* CoreLockConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLockConst.m; sourceTree = "<group>"; };
+		BE576A7A1C4A726B009991DB /* CLLockInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockInfoView.h; sourceTree = "<group>"; };
+		BE576A7B1C4A726B009991DB /* CLLockInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockInfoView.m; sourceTree = "<group>"; };
+		BE576A7C1C4A726B009991DB /* CLLockItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockItemView.h; sourceTree = "<group>"; };
+		BE576A7D1C4A726B009991DB /* CLLockItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockItemView.m; sourceTree = "<group>"; };
+		BE576A7E1C4A726B009991DB /* CLLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockLabel.h; sourceTree = "<group>"; };
+		BE576A7F1C4A726B009991DB /* CLLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockLabel.m; sourceTree = "<group>"; };
+		BE576A801C4A726B009991DB /* CLLockMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockMainView.h; sourceTree = "<group>"; };
+		BE576A811C4A726B009991DB /* CLLockMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockMainView.m; sourceTree = "<group>"; };
+		BE576A821C4A726B009991DB /* CLLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockView.h; sourceTree = "<group>"; };
+		BE576A831C4A726B009991DB /* CLLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockView.m; sourceTree = "<group>"; };
+		BE576A841C4A726B009991DB /* ScreenLockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenLockVC.h; sourceTree = "<group>"; };
+		BE576A851C4A726B009991DB /* ScreenLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenLockVC.m; sourceTree = "<group>"; };
+		BE576A861C4A726B009991DB /* ScreenLockVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenLockVC.xib; sourceTree = "<group>"; };
+		BE576A901C4A72DC009991DB /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		BE576A911C4A72DC009991DB /* NSObject+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
+		BE576A931C4A78AA009991DB /* SetLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetLockViewController.h; sourceTree = "<group>"; };
+		BE576A941C4A78AA009991DB /* SetLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLockViewController.m; sourceTree = "<group>"; };
+		BE576A971C4A7965009991DB /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		BE576A9A1C4A79AD009991DB /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		BE576A9B1C4A79AD009991DB /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		BE576A9C1C4A79AD009991DB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BE576A9D1C4A79AD009991DB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BE725F601C4A8212005724F9 /* NavRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavRootVC.h; sourceTree = "<group>"; };
+		BE725F611C4A8212005724F9 /* NavRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavRootVC.m; sourceTree = "<group>"; };
+		BE725F631C4A9205005724F9 /* touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touch@2x.png"; sourceTree = "<group>"; };
+		BE725F651C4A9331005724F9 /* headImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headImg.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE5096B21C46911C00143A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE576A981C4A7965009991DB /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5096CB1C46911C00143A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5096D61C46911C00143A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE5096AC1C46911C00143A74 = {
+			isa = PBXGroup;
+			children = (
+				BE5096B71C46911C00143A74 /* ScreenLockDemo */,
+				BE5096D11C46911C00143A74 /* ScreenLockDemoTests */,
+				BE5096DC1C46911C00143A74 /* ScreenLockDemoUITests */,
+				BE5096B61C46911C00143A74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE5096B61C46911C00143A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE5096B51C46911C00143A74 /* ScreenLockDemo.app */,
+				BE5096CE1C46911C00143A74 /* ScreenLockDemoTests.xctest */,
+				BE5096D91C46911C00143A74 /* ScreenLockDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE5096B71C46911C00143A74 /* ScreenLockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BE725F631C4A9205005724F9 /* touch@2x.png */,
+				BE725F651C4A9331005724F9 /* headImg.png */,
+				BE576A961C4A792D009991DB /* FrameWork */,
+				BE576A6A1C4A6F92009991DB /* OC_Category */,
+				BE576A991C4A79AD009991DB /* MB_HUD */,
+				BE576A711C4A726B009991DB /* ScreenLock */,
+				BE5096BB1C46911C00143A74 /* AppDelegate.h */,
+				BE5096BC1C46911C00143A74 /* AppDelegate.m */,
+				BE725F601C4A8212005724F9 /* NavRootVC.h */,
+				BE725F611C4A8212005724F9 /* NavRootVC.m */,
+				BE576A931C4A78AA009991DB /* SetLockViewController.h */,
+				BE576A941C4A78AA009991DB /* SetLockViewController.m */,
+				BE5096C11C46911C00143A74 /* Main.storyboard */,
+				BE5096C41C46911C00143A74 /* Assets.xcassets */,
+				BE5096C61C46911C00143A74 /* LaunchScreen.storyboard */,
+				BE5096C91C46911C00143A74 /* Info.plist */,
+				BE5096B81C46911C00143A74 /* Supporting Files */,
+			);
+			path = ScreenLockDemo;
+			sourceTree = "<group>";
+		};
+		BE5096B81C46911C00143A74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE5096B91C46911C00143A74 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE5096D11C46911C00143A74 /* ScreenLockDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE5096D21C46911C00143A74 /* ScreenLockDemoTests.m */,
+				BE5096D41C46911C00143A74 /* Info.plist */,
+			);
+			path = ScreenLockDemoTests;
+			sourceTree = "<group>";
+		};
+		BE5096DC1C46911C00143A74 /* ScreenLockDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE5096DD1C46911C00143A74 /* ScreenLockDemoUITests.m */,
+				BE5096DF1C46911C00143A74 /* Info.plist */,
+			);
+			path = ScreenLockDemoUITests;
+			sourceTree = "<group>";
+		};
+		BE576A6A1C4A6F92009991DB /* OC_Category */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A901C4A72DC009991DB /* NSObject+Common.h */,
+				BE576A911C4A72DC009991DB /* NSObject+Common.m */,
+				BE576A6E1C4A6FD1009991DB /* UIDevice+Info.h */,
+				BE576A6F1C4A6FD1009991DB /* UIDevice+Info.m */,
+			);
+			path = OC_Category;
+			sourceTree = "<group>";
+		};
+		BE576A711C4A726B009991DB /* ScreenLock */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A721C4A726B009991DB /* Lib */,
+				BE576A841C4A726B009991DB /* ScreenLockVC.h */,
+				BE576A851C4A726B009991DB /* ScreenLockVC.m */,
+				BE576A861C4A726B009991DB /* ScreenLockVC.xib */,
+			);
+			path = ScreenLock;
+			sourceTree = "<group>";
+		};
+		BE576A721C4A726B009991DB /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A731C4A726B009991DB /* Category */,
+				BE576A761C4A726B009991DB /* Const */,
+				BE576A791C4A726B009991DB /* View */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		BE576A731C4A726B009991DB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A741C4A726B009991DB /* CALayer+Anim.h */,
+				BE576A751C4A726B009991DB /* CALayer+Anim.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BE576A761C4A726B009991DB /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A771C4A726B009991DB /* CoreLockConst.h */,
+				BE576A781C4A726B009991DB /* CoreLockConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		BE576A791C4A726B009991DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A7A1C4A726B009991DB /* CLLockInfoView.h */,
+				BE576A7B1C4A726B009991DB /* CLLockInfoView.m */,
+				BE576A7C1C4A726B009991DB /* CLLockItemView.h */,
+				BE576A7D1C4A726B009991DB /* CLLockItemView.m */,
+				BE576A7E1C4A726B009991DB /* CLLockLabel.h */,
+				BE576A7F1C4A726B009991DB /* CLLockLabel.m */,
+				BE576A801C4A726B009991DB /* CLLockMainView.h */,
+				BE576A811C4A726B009991DB /* CLLockMainView.m */,
+				BE576A821C4A726B009991DB /* CLLockView.h */,
+				BE576A831C4A726B009991DB /* CLLockView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE576A961C4A792D009991DB /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A971C4A7965009991DB /* LocalAuthentication.framework */,
+			);
+			name = FrameWork;
+			sourceTree = "<group>";
+		};
+		BE576A991C4A79AD009991DB /* MB_HUD */ = {
+			isa = PBXGroup;
+			children = (
+				BE576A9A1C4A79AD009991DB /* MBProgressHUD+Add.h */,
+				BE576A9B1C4A79AD009991DB /* MBProgressHUD+Add.m */,
+				BE576A9C1C4A79AD009991DB /* MBProgressHUD.h */,
+				BE576A9D1C4A79AD009991DB /* MBProgressHUD.m */,
+			);
+			path = MB_HUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE5096B41C46911C00143A74 /* ScreenLockDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5096E21C46911C00143A74 /* Build configuration list for PBXNativeTarget "ScreenLockDemo" */;
+			buildPhases = (
+				BE5096B11C46911C00143A74 /* Sources */,
+				BE5096B21C46911C00143A74 /* Frameworks */,
+				BE5096B31C46911C00143A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenLockDemo;
+			productName = ScreenLockDemo;
+			productReference = BE5096B51C46911C00143A74 /* ScreenLockDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE5096CD1C46911C00143A74 /* ScreenLockDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5096E51C46911C00143A74 /* Build configuration list for PBXNativeTarget "ScreenLockDemoTests" */;
+			buildPhases = (
+				BE5096CA1C46911C00143A74 /* Sources */,
+				BE5096CB1C46911C00143A74 /* Frameworks */,
+				BE5096CC1C46911C00143A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5096D01C46911C00143A74 /* PBXTargetDependency */,
+			);
+			name = ScreenLockDemoTests;
+			productName = ScreenLockDemoTests;
+			productReference = BE5096CE1C46911C00143A74 /* ScreenLockDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE5096D81C46911C00143A74 /* ScreenLockDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5096E81C46911C00143A74 /* Build configuration list for PBXNativeTarget "ScreenLockDemoUITests" */;
+			buildPhases = (
+				BE5096D51C46911C00143A74 /* Sources */,
+				BE5096D61C46911C00143A74 /* Frameworks */,
+				BE5096D71C46911C00143A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5096DB1C46911C00143A74 /* PBXTargetDependency */,
+			);
+			name = ScreenLockDemoUITests;
+			productName = ScreenLockDemoUITests;
+			productReference = BE5096D91C46911C00143A74 /* ScreenLockDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE5096AD1C46911C00143A74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Jone;
+				TargetAttributes = {
+					BE5096B41C46911C00143A74 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					BE5096CD1C46911C00143A74 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BE5096B41C46911C00143A74;
+					};
+					BE5096D81C46911C00143A74 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BE5096B41C46911C00143A74;
+					};
+				};
+			};
+			buildConfigurationList = BE5096B01C46911C00143A74 /* Build configuration list for PBXProject "ScreenLockDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE5096AC1C46911C00143A74;
+			productRefGroup = BE5096B61C46911C00143A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE5096B41C46911C00143A74 /* ScreenLockDemo */,
+				BE5096CD1C46911C00143A74 /* ScreenLockDemoTests */,
+				BE5096D81C46911C00143A74 /* ScreenLockDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE5096B31C46911C00143A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5096C81C46911C00143A74 /* LaunchScreen.storyboard in Resources */,
+				BE725F641C4A9205005724F9 /* touch@2x.png in Resources */,
+				BE5096C51C46911C00143A74 /* Assets.xcassets in Resources */,
+				BE725F661C4A9331005724F9 /* headImg.png in Resources */,
+				BE5096C31C46911C00143A74 /* Main.storyboard in Resources */,
+				BE576A8F1C4A726B009991DB /* ScreenLockVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5096CC1C46911C00143A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5096D71C46911C00143A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE5096B11C46911C00143A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE576A881C4A726B009991DB /* CoreLockConst.m in Sources */,
+				BE576A951C4A78AA009991DB /* SetLockViewController.m in Sources */,
+				BE5096BD1C46911C00143A74 /* AppDelegate.m in Sources */,
+				BE725F621C4A8212005724F9 /* NavRootVC.m in Sources */,
+				BE576A8E1C4A726B009991DB /* ScreenLockVC.m in Sources */,
+				BE576A8C1C4A726B009991DB /* CLLockMainView.m in Sources */,
+				BE576A8B1C4A726B009991DB /* CLLockLabel.m in Sources */,
+				BE576A9E1C4A79AD009991DB /* MBProgressHUD+Add.m in Sources */,
+				BE5096BA1C46911C00143A74 /* main.m in Sources */,
+				BE576A921C4A72DC009991DB /* NSObject+Common.m in Sources */,
+				BE576A871C4A726B009991DB /* CALayer+Anim.m in Sources */,
+				BE576A8A1C4A726B009991DB /* CLLockItemView.m in Sources */,
+				BE576A701C4A6FD1009991DB /* UIDevice+Info.m in Sources */,
+				BE576A8D1C4A726B009991DB /* CLLockView.m in Sources */,
+				BE576A891C4A726B009991DB /* CLLockInfoView.m in Sources */,
+				BE576A9F1C4A79AD009991DB /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5096CA1C46911C00143A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5096D31C46911C00143A74 /* ScreenLockDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5096D51C46911C00143A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5096DE1C46911C00143A74 /* ScreenLockDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE5096D01C46911C00143A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE5096B41C46911C00143A74 /* ScreenLockDemo */;
+			targetProxy = BE5096CF1C46911C00143A74 /* PBXContainerItemProxy */;
+		};
+		BE5096DB1C46911C00143A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE5096B41C46911C00143A74 /* ScreenLockDemo */;
+			targetProxy = BE5096DA1C46911C00143A74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE5096C11C46911C00143A74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5096C21C46911C00143A74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE5096C61C46911C00143A74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5096C71C46911C00143A74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE5096E01C46911C00143A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE5096E11C46911C00143A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE5096E31C46911C00143A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScreenLockDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbtest.sb.ScreenLockDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE5096E41C46911C00143A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScreenLockDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbtest.sb.ScreenLockDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE5096E61C46911C00143A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScreenLockDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbtest.sb.ScreenLockDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenLockDemo.app/ScreenLockDemo";
+			};
+			name = Debug;
+		};
+		BE5096E71C46911C00143A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScreenLockDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbtest.sb.ScreenLockDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenLockDemo.app/ScreenLockDemo";
+			};
+			name = Release;
+		};
+		BE5096E91C46911C00143A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScreenLockDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbtest.sb.ScreenLockDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScreenLockDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BE5096EA1C46911C00143A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScreenLockDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbtest.sb.ScreenLockDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScreenLockDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE5096B01C46911C00143A74 /* Build configuration list for PBXProject "ScreenLockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5096E01C46911C00143A74 /* Debug */,
+				BE5096E11C46911C00143A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5096E21C46911C00143A74 /* Build configuration list for PBXNativeTarget "ScreenLockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5096E31C46911C00143A74 /* Debug */,
+				BE5096E41C46911C00143A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5096E51C46911C00143A74 /* Build configuration list for PBXNativeTarget "ScreenLockDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5096E61C46911C00143A74 /* Debug */,
+				BE5096E71C46911C00143A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5096E81C46911C00143A74 /* Build configuration list for PBXNativeTarget "ScreenLockDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5096E91C46911C00143A74 /* Debug */,
+				BE5096EA1C46911C00143A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE5096AD1C46911C00143A74 /* Project object */;
+}
