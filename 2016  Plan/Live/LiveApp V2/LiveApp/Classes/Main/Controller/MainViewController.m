@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "BroadcastViewController.h"
+#import "CaptureViewController.h"
 
 @interface MainViewController ()
 
@@ -23,6 +24,8 @@
 
 /** 采集视频 */
 - (IBAction)getCaptureVideo:(id)sender {
+    CaptureViewController *vc = [[CaptureViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

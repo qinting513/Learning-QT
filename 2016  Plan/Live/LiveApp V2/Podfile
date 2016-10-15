@@ -9,5 +9,6 @@ target 'LiveApp' do
  pod 'AFNetworking'
   pod 'SDWebImage'
   pod 'MJExtension'
+  pod 'GPUImage'
 
 end

@@ -19,6 +19,22 @@
 		B7E90D981DB2117900529A41 /* LiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E90D961DB2117900529A41 /* LiveTableViewCell.m */; };
 		B7E90D991DB2117900529A41 /* LiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E90D971DB2117900529A41 /* LiveTableViewCell.xib */; };
 		B7E90D9C1DB213F300529A41 /* LiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E90D9B1DB213F300529A41 /* LiveItem.m */; };
+		B7E90D9E1DB2200A00529A41 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90D9D1DB2200A00529A41 /* AudioToolbox.framework */; };
+		B7E90DA01DB2201400529A41 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90D9F1DB2201400529A41 /* AVFoundation.framework */; };
+		B7E90DA21DB2201C00529A41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DA11DB2201C00529A41 /* CoreGraphics.framework */; };
+		B7E90DA41DB2202500529A41 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DA31DB2202500529A41 /* CoreMedia.framework */; };
+		B7E90DA61DB2202E00529A41 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DA51DB2202E00529A41 /* CoreVideo.framework */; };
+		B7E90DA81DB2203700529A41 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DA71DB2203700529A41 /* libbz2.tbd */; };
+		B7E90DAA1DB2204000529A41 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DA91DB2204000529A41 /* libz.tbd */; };
+		B7E90DAC1DB2204B00529A41 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DAB1DB2204B00529A41 /* MediaPlayer.framework */; };
+		B7E90DAE1DB2205600529A41 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DAD1DB2205600529A41 /* MobileCoreServices.framework */; };
+		B7E90DB01DB2206200529A41 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DAF1DB2206200529A41 /* OpenGLES.framework */; };
+		B7E90DB21DB2206E00529A41 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DB11DB2206E00529A41 /* VideoToolbox.framework */; };
+		B7E90DB41DB2208500529A41 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E90DB31DB2208500529A41 /* IJKMediaFramework.framework */; };
+		B7E90DBE1DB2219C00529A41 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E90DBD1DB2219C00529A41 /* LiveViewController.m */; };
+		B7E90DC01DB2221C00529A41 /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E90DBF1DB2221C00529A41 /* LiveViewController.xib */; };
+		B7F0D9101DB2523000E765A3 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F0D90E1DB2522F00E765A3 /* CaptureViewController.m */; };
+		B7F0D9111DB2523000E765A3 /* CaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F0D90F1DB2522F00E765A3 /* CaptureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +57,24 @@
 		B7E90D971DB2117900529A41 /* LiveTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveTableViewCell.xib; sourceTree = "<group>"; };
 		B7E90D9A1DB213F300529A41 /* LiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveItem.h; sourceTree = "<group>"; };
 		B7E90D9B1DB213F300529A41 /* LiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveItem.m; sourceTree = "<group>"; };
+		B7E90D9D1DB2200A00529A41 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B7E90D9F1DB2201400529A41 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B7E90DA11DB2201C00529A41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B7E90DA31DB2202500529A41 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B7E90DA51DB2202E00529A41 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B7E90DA71DB2203700529A41 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		B7E90DA91DB2204000529A41 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B7E90DAB1DB2204B00529A41 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B7E90DAD1DB2205600529A41 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B7E90DAF1DB2206200529A41 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B7E90DB11DB2206E00529A41 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		B7E90DB31DB2208500529A41 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		B7E90DBC1DB2219C00529A41 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		B7E90DBD1DB2219C00529A41 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		B7E90DBF1DB2221C00529A41 /* LiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveViewController.xib; sourceTree = "<group>"; };
+		B7F0D90D1DB2522F00E765A3 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		B7F0D90E1DB2522F00E765A3 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		B7F0D90F1DB2522F00E765A3 /* CaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureViewController.xib; sourceTree = "<group>"; };
 		BB3C3692B7194A11837FF8E8 /* Pods-LiveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveApp/Pods-LiveApp.release.xcconfig"; sourceTree = "<group>"; };
 		E6BA44C3B0DF12C9C7D92221 /* Pods-LiveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveApp/Pods-LiveApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +84,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E90DB41DB2208500529A41 /* IJKMediaFramework.framework in Frameworks */,
+				B7E90DB21DB2206E00529A41 /* VideoToolbox.framework in Frameworks */,
+				B7E90DB01DB2206200529A41 /* OpenGLES.framework in Frameworks */,
+				B7E90DAE1DB2205600529A41 /* MobileCoreServices.framework in Frameworks */,
+				B7E90DAC1DB2204B00529A41 /* MediaPlayer.framework in Frameworks */,
+				B7E90DAA1DB2204000529A41 /* libz.tbd in Frameworks */,
+				B7E90DA81DB2203700529A41 /* libbz2.tbd in Frameworks */,
+				B7E90DA61DB2202E00529A41 /* CoreVideo.framework in Frameworks */,
+				B7E90DA41DB2202500529A41 /* CoreMedia.framework in Frameworks */,
+				B7E90DA21DB2201C00529A41 /* CoreGraphics.framework in Frameworks */,
+				B7E90DA01DB2201400529A41 /* AVFoundation.framework in Frameworks */,
+				B7E90D9E1DB2200A00529A41 /* AudioToolbox.framework in Frameworks */,
 				158ED643CF27F4DF780D8424 /* libPods-LiveApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,9 +156,9 @@
 		B7E90D7C1DB20D6B00529A41 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B7E90DB81DB2218900529A41 /* Live */,
 				B7E90D7D1DB20D6B00529A41 /* BroadcaseList */,
 				B7E90D811DB20D6B00529A41 /* Capture */,
-				B7E90D851DB20D6B00529A41 /* Live */,
 				B7E90D891DB20D6B00529A41 /* Main */,
 			);
 			path = Classes;
@@ -169,6 +215,9 @@
 		B7E90D821DB20D6B00529A41 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B7F0D90D1DB2522F00E765A3 /* CaptureViewController.h */,
+				B7F0D90E1DB2522F00E765A3 /* CaptureViewController.m */,
+				B7F0D90F1DB2522F00E765A3 /* CaptureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,37 +230,6 @@
 			sourceTree = "<group>";
 		};
 		B7E90D841DB20D6B00529A41 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B7E90D851DB20D6B00529A41 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-				B7E90D861DB20D6B00529A41 /* Controller */,
-				B7E90D871DB20D6B00529A41 /* Model */,
-				B7E90D881DB20D6B00529A41 /* View */,
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
-		B7E90D861DB20D6B00529A41 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B7E90D871DB20D6B00529A41 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B7E90D881DB20D6B00529A41 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -252,9 +270,55 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B7E90DB81DB2218900529A41 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				B7E90DB91DB2218900529A41 /* Controller */,
+				B7E90DBA1DB2218900529A41 /* Model */,
+				B7E90DBB1DB2218900529A41 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		B7E90DB91DB2218900529A41 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7E90DBC1DB2219C00529A41 /* LiveViewController.h */,
+				B7E90DBD1DB2219C00529A41 /* LiveViewController.m */,
+				B7E90DBF1DB2221C00529A41 /* LiveViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7E90DBA1DB2218900529A41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7E90DBB1DB2218900529A41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E4CCDF3C015FA505FC2D3AE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7E90DB31DB2208500529A41 /* IJKMediaFramework.framework */,
+				B7E90DB11DB2206E00529A41 /* VideoToolbox.framework */,
+				B7E90DAF1DB2206200529A41 /* OpenGLES.framework */,
+				B7E90DAD1DB2205600529A41 /* MobileCoreServices.framework */,
+				B7E90DAB1DB2204B00529A41 /* MediaPlayer.framework */,
+				B7E90DA91DB2204000529A41 /* libz.tbd */,
+				B7E90DA71DB2203700529A41 /* libbz2.tbd */,
+				B7E90DA51DB2202E00529A41 /* CoreVideo.framework */,
+				B7E90DA31DB2202500529A41 /* CoreMedia.framework */,
+				B7E90DA11DB2201C00529A41 /* CoreGraphics.framework */,
+				B7E90D9F1DB2201400529A41 /* AVFoundation.framework */,
+				B7E90D9D1DB2200A00529A41 /* AudioToolbox.framework */,
 				A775D3FA4AA59DD788A58CCD /* libPods-LiveApp.a */,
 			);
 			name = Frameworks;
@@ -325,7 +389,9 @@
 				B7E90D751DB20CB200529A41 /* LaunchScreen.storyboard in Resources */,
 				B7E90D991DB2117900529A41 /* LiveTableViewCell.xib in Resources */,
 				B7E90D721DB20CB200529A41 /* Assets.xcassets in Resources */,
+				B7F0D9111DB2523000E765A3 /* CaptureViewController.xib in Resources */,
 				B7E90D701DB20CB200529A41 /* Main.storyboard in Resources */,
+				B7E90DC01DB2221C00529A41 /* LiveViewController.xib in Resources */,
 				B7E90D911DB20DB100529A41 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +456,9 @@
 				B7E90D9C1DB213F300529A41 /* LiveItem.m in Sources */,
 				B7E90D901DB20DB100529A41 /* MainViewController.m in Sources */,
 				B7E90D941DB20E6D00529A41 /* BroadcastViewController.m in Sources */,
+				B7F0D9101DB2523000E765A3 /* CaptureViewController.m in Sources */,
 				B7E90D671DB20CB200529A41 /* main.m in Sources */,
+				B7E90DBE1DB2219C00529A41 /* LiveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +578,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CW23JJ23BD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LiveApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Qinting.LiveApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,7 +596,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CW23JJ23BD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LiveApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Qinting.LiveApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

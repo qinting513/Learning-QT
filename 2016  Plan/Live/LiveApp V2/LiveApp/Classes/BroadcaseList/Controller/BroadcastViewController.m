@@ -11,6 +11,7 @@
 #import <AFNetworking.h>
 #import <MJExtension.h>
 #import "LiveItem.h"
+#import "LiveViewController.h"
 
 @interface BroadcastViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView  *tableView;
@@ -70,5 +71,11 @@ static NSString * cellID = @"LiveTableViewCell";
 }
 
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    LiveViewController *vc = [[LiveViewController alloc]init];
+    vc.live = self.lives[indexPath.row];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end
