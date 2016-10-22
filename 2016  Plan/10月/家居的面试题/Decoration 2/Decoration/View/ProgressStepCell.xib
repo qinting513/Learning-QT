@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProgressStepCell" rowHeight="64" id="0fU-Kk-tl9" userLabel="ProgressStepCell" customClass="ProgressStepCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0fU-Kk-tl9" id="s0n-dg-yl6">
+                <frame key="frameInset" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNf-be-Xsy">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="6Hg-nN-LvE"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="Dmw-5s-Lia"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="g7E-Sb-zib"/>
+                            <constraint firstAttribute="height" constant="16" id="ht2-k3-S08"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvC-Mm-kpq">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="WuR-gP-WZa"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开槽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-Wc-C4x">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.74441386009999999" green="0.66588870739999995" blue="0.30453181309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSN-Da-ndR">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PSN-Da-ndR" firstAttribute="top" secondItem="FdL-Wc-C4x" secondAttribute="bottom" constant="10" id="0tj-EW-zod"/>
+                    <constraint firstItem="iNf-be-Xsy" firstAttribute="leading" secondItem="s0n-dg-yl6" secondAttribute="leading" constant="20" id="1f1-Gz-kip"/>
+                    <constraint firstAttribute="bottom" secondItem="PSN-Da-ndR" secondAttribute="bottom" constant="10" id="DZn-kM-KF2"/>
+                    <constraint firstItem="FdL-Wc-C4x" firstAttribute="leading" secondItem="iNf-be-Xsy" secondAttribute="trailing" constant="10" id="GYQ-Un-GEQ"/>
+                    <constraint firstItem="iNf-be-Xsy" firstAttribute="leading" secondItem="s0n-dg-yl6" secondAttribute="leading" constant="20" id="Gp3-k2-1dz"/>
+                    <constraint firstAttribute="bottom" secondItem="kvC-Mm-kpq" secondAttribute="bottom" id="Le0-ce-zIk"/>
+                    <constraint firstItem="kvC-Mm-kpq" firstAttribute="centerX" secondItem="iNf-be-Xsy" secondAttribute="centerX" id="Qul-AQ-26J"/>
+                    <constraint firstAttribute="trailing" secondItem="FdL-Wc-C4x" secondAttribute="trailing" constant="20" id="XzK-Ao-OtH"/>
+                    <constraint firstItem="kvC-Mm-kpq" firstAttribute="top" secondItem="s0n-dg-yl6" secondAttribute="top" id="ZjS-dw-87n"/>
+                    <constraint firstItem="FdL-Wc-C4x" firstAttribute="centerY" secondItem="iNf-be-Xsy" secondAttribute="centerY" id="gwg-0K-K2J"/>
+                    <constraint firstAttribute="trailing" secondItem="PSN-Da-ndR" secondAttribute="trailing" constant="20" id="hoo-TU-Xuj"/>
+                    <constraint firstItem="PSN-Da-ndR" firstAttribute="leading" secondItem="FdL-Wc-C4x" secondAttribute="leading" id="p9M-Yt-EAp"/>
+                    <constraint firstItem="iNf-be-Xsy" firstAttribute="top" secondItem="s0n-dg-yl6" secondAttribute="top" constant="10" id="sur-2G-NCI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="circleView" destination="iNf-be-Xsy" id="VoZ-aa-187"/>
+                <outlet property="containView" destination="PSN-Da-ndR" id="p9s-LS-pXL"/>
+                <outlet property="stepLabel" destination="FdL-Wc-C4x" id="JOy-2a-myo"/>
+                <outlet property="verticalLineView" destination="kvC-Mm-kpq" id="p3L-HW-rad"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="2"/>
+        </tableViewCell>
+    </objects>
+</document>

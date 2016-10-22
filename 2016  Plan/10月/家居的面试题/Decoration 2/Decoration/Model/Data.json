@@ -1,0 +1,44 @@
+{
+"master":"吴先生的家",
+"info":"86m2／三居室／美式风格",
+"team":[{
+"name":"吴天明",
+"position":"设计师",
+"icon":"head_1"
+},
+{
+"name":"谢长生",
+"position":"项目经理",
+"icon":"head_2"
+},{
+"name":"陈有利",
+"position":"监理",
+"icon":"head_3"
+}],
+"address":"宝安中心区天悦龙庭",
+"budget":6.7,
+"progress":[{
+  "date":"2016-07-28",
+ "dayCount":"第21天",
+  "progressName":"水电阶段",
+ "steps":[{
+  "step":"开槽",
+  "progressNum":"0.6",
+  "photos":[]
+},{
+  "step":"开始测试水压，电路绝缘测试",
+  "progressNum":"",
+  "photos":[]
+},{
+  "step":"现场照片",
+  "progressNum":"",
+  "photos":["pic_1","pic_2","pic_3","pic_4","pic_5","pic_6","pic_7","pic_8"]
+}]
+},{
+  "date":"2016-07-27",
+ "dayCount":"第20天",
+  "progressName":"水电阶段",
+"steps":[]
+}
+]
+}

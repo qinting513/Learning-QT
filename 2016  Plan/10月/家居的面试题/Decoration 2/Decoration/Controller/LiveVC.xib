@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveVC">
+            <connections>
+                <outlet property="bedRoom" destination="LDP-Fz-lz5" id="cmK-2W-Abi"/>
+                <outlet property="hall" destination="gxg-pS-eEr" id="i0N-o2-qMN"/>
+                <outlet property="showImage" destination="cXt-na-gTa" id="ghW-ZO-foz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="washRoom" destination="ta1-8Z-xrU" id="YZr-Uc-Ula"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cXt-na-gTa"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-pS-eEr">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="0AX-1Q-GH9"/>
+                        <constraint firstAttribute="height" constant="92" id="dfb-30-ctY"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-Fz-lz5">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="92" id="DEU-72-4Us"/>
+                        <constraint firstAttribute="width" constant="83" id="WeN-W1-CBq"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ta1-8Z-xrU">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="BTG-qE-N7n"/>
+                        <constraint firstAttribute="height" constant="92" id="wVr-ac-sxz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-Az-de7">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="DAc-XX-OVK"/>
+                        <constraint firstAttribute="width" constant="55" id="QbD-rm-E8Z"/>
+                    </constraints>
+                    <state key="normal" image="刷新.png"/>
+                    <connections>
+                        <action selector="refreshAction:" destination="-1" eventType="touchUpInside" id="ciB-XI-nOP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slS-aO-Dj6">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="Btt-xU-bNc"/>
+                        <constraint firstAttribute="height" constant="94" id="K8g-Az-PZV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="客 厅">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectShowRoom:" destination="-1" eventType="touchUpInside" id="1YX-ri-NUO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naE-Ht-QrK">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="93" id="LUU-rS-X1L"/>
+                        <constraint firstAttribute="width" constant="83" id="pNc-4f-XMa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="卧 室">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectShowRoom:" destination="-1" eventType="touchUpInside" id="z9q-g5-ioO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpY-oX-DZq">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="92" id="HAk-HB-GPB"/>
+                        <constraint firstAttribute="width" constant="83" id="jlT-yi-J2H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="卫生间">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectShowRoom:" destination="-1" eventType="touchUpInside" id="uDV-gU-4Nf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="naE-Ht-QrK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1s1-co-XYt"/>
+                <constraint firstItem="ta1-8Z-xrU" firstAttribute="top" secondItem="cXt-na-gTa" secondAttribute="bottom" constant="16" id="4A0-m7-Ew2"/>
+                <constraint firstAttribute="bottom" secondItem="Mb8-Az-de7" secondAttribute="bottom" constant="17" id="7yf-jt-CAP"/>
+                <constraint firstItem="slS-aO-Dj6" firstAttribute="top" secondItem="cXt-na-gTa" secondAttribute="bottom" constant="15.5" id="FJs-AB-SgI"/>
+                <constraint firstAttribute="trailing" secondItem="ta1-8Z-xrU" secondAttribute="trailing" constant="8" id="K2u-mD-YfQ"/>
+                <constraint firstItem="LDP-Fz-lz5" firstAttribute="top" secondItem="cXt-na-gTa" secondAttribute="bottom" constant="16" id="Sbc-ai-G3c"/>
+                <constraint firstAttribute="trailing" secondItem="dpY-oX-DZq" secondAttribute="trailing" constant="8" id="YDV-sm-r39"/>
+                <constraint firstAttribute="trailing" secondItem="cXt-na-gTa" secondAttribute="trailing" id="ZO6-v9-pjo"/>
+                <constraint firstItem="cXt-na-gTa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aXW-Ki-Uy4"/>
+                <constraint firstItem="naE-Ht-QrK" firstAttribute="top" secondItem="cXt-na-gTa" secondAttribute="bottom" constant="15.5" id="egp-4f-NG4"/>
+                <constraint firstItem="cXt-na-gTa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.65" id="oVF-xO-UtF"/>
+                <constraint firstItem="cXt-na-gTa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qG3-rI-9Ql"/>
+                <constraint firstItem="slS-aO-Dj6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="rkR-K9-ohx"/>
+                <constraint firstItem="gxg-pS-eEr" firstAttribute="top" secondItem="cXt-na-gTa" secondAttribute="bottom" constant="16" id="sGn-vz-YhW"/>
+                <constraint firstItem="gxg-pS-eEr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ubQ-lb-IJi"/>
+                <constraint firstItem="Mb8-Az-de7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vaU-xf-ATT"/>
+                <constraint firstItem="LDP-Fz-lz5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yyM-Zs-fi4"/>
+                <constraint firstItem="dpY-oX-DZq" firstAttribute="top" secondItem="cXt-na-gTa" secondAttribute="bottom" constant="16.5" id="zt5-eF-7b9"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="140.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_1.jpg" width="580" height="625"/>
+        <image name="pic_2.jpg" width="2448" height="3264"/>
+        <image name="pic_3.jpg" width="461" height="388"/>
+        <image name="刷新.png" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
