@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CentralView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接收到：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ED-m8-PcW">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbN-35-7Vq">
+                    <state key="normal" title="发送"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQ7-k8-ldd">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZmT-JO-HKb"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N0N-sw-cRm">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="165" id="HiH-4h-0S7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dO-V1-NA8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="OQg-g1-CUU"/>
+                        <constraint firstAttribute="width" constant="46" id="iia-jL-YAN"/>
+                    </constraints>
+                    <state key="normal" title="X"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DQ7-k8-ldd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="130" id="GoL-lr-6ti"/>
+                <constraint firstItem="7ED-m8-PcW" firstAttribute="leading" secondItem="ZbN-35-7Vq" secondAttribute="leading" id="KwV-D9-JdB"/>
+                <constraint firstItem="DQ7-k8-ldd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="LiO-as-oJa"/>
+                <constraint firstItem="ZbN-35-7Vq" firstAttribute="trailing" secondItem="DQ7-k8-ldd" secondAttribute="trailing" id="PFb-Af-RAz"/>
+                <constraint firstAttribute="trailing" secondItem="N0N-sw-cRm" secondAttribute="trailing" constant="20" id="Pvw-ej-Jlq"/>
+                <constraint firstItem="N0N-sw-cRm" firstAttribute="top" secondItem="7ED-m8-PcW" secondAttribute="bottom" constant="20" id="Rbt-tb-9OC"/>
+                <constraint firstAttribute="trailing" secondItem="DQ7-k8-ldd" secondAttribute="trailing" constant="20" id="bTZ-9g-IIr"/>
+                <constraint firstItem="ZbN-35-7Vq" firstAttribute="leading" secondItem="DQ7-k8-ldd" secondAttribute="leading" id="efz-e9-ikr"/>
+                <constraint firstItem="N0N-sw-cRm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="noa-jt-FEk"/>
+                <constraint firstItem="ZbN-35-7Vq" firstAttribute="top" secondItem="DQ7-k8-ldd" secondAttribute="bottom" constant="20" id="nsd-LX-YZG"/>
+                <constraint firstItem="7ED-m8-PcW" firstAttribute="top" secondItem="ZbN-35-7Vq" secondAttribute="bottom" constant="39" id="pTA-tV-p9L"/>
+                <constraint firstAttribute="trailing" secondItem="5dO-V1-NA8" secondAttribute="trailing" constant="16" id="rXI-4P-YPi"/>
+                <constraint firstItem="5dO-V1-NA8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="uea-s3-d0K"/>
+            </constraints>
+            <connections>
+                <outlet property="dismissBtn" destination="5dO-V1-NA8" id="dzm-bt-8YF"/>
+                <outlet property="receiveTextView" destination="N0N-sw-cRm" id="ZR8-CO-WqN"/>
+                <outlet property="sendMsgButton" destination="5dO-V1-NA8" id="ycT-5q-08u"/>
+                <outlet property="sendMsgTextField" destination="DQ7-k8-ldd" id="HSb-6S-2xn"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
