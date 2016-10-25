@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  天气助手
+//
+//  Created by Guo.JC on 16/8/27.
+//  Copyright © 2016年 Guo.JC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define ZERO 0
+
+
+
+
+#import "MeViewController.h"
+#import "WeatherViewController.h"
+#import "TimeViewController.h"
+
+#define         SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+#define         SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  Turing
+//
+//  Created by Guo.JC on 16/9/17.
+//  Copyright © 2016年 Guo.JC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <iflyMSC/iflyMSC.h>
+#import <AFNetworking.h>
+#import "Masonry.h"
+#import <SystemConfiguration/CaptiveNetwork.h>
+#import "JSONKit.h"
+
+#import "JCMainNavi.h"
+#import "JCMainTabBar.h"
+
+#import "JCBluetoothTest.h"
+#import "JCTuringVC.h"
+#import "JCWeatherVC.h"
+#import "JCMapVC.h"
+#import "JCMeVC.h"
+
+#import "JCVoiceUtils.h"
+#import "JCTuRingUtils.h"
+
+
+
+
+#define       kOpenWeather          @"正在为你打开天气界面"
+#define       kOpenTime             @"正在为你打开时景界面"
+#define       kOpenMe               @"正在为你打开我的界面"
+#define       kOpenMusic            @"正在为你打开音乐播放界面,马上就可以欣赏优美的音乐啦"
+
+#define       kJCScreenWidth        [UIScreen mainScreen].bounds.size.width
+#define       kJCScreenHeight       [UIScreen mainScreen].bounds.size.height
+
+#define       kZero                 0
+#define       kMaxMargin            10
+#define       kMinMargin            5
+#define       kMainColor            [UIColor colorWithRed:36.0/255 green:65.0/255 blue:111.0/255 alpha:1]
+#define       kBGColor              [UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1]
+#define       kRandomColor          [UIColor colorWithRed:arc4random()%256/256.0 green:arc4random()%256/256.0 blue:arc4random()%256/256.0 alpha:1];
+
+#define       CITY_NAME_KEY         @"cityName"
+#define       CITY_ID_KEY           @"cityID"
+
+#endif /* PrefixHeader_pch */

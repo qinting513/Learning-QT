@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController">
+            <connections>
+                <outlet property="moveImage" destination="GvJ-SL-Zwr" id="4S9-6D-CbP"/>
+                <outlet property="moveView" destination="A0d-Zs-q7h" id="RnS-5z-36l"/>
+                <outlet property="myPan" destination="GTT-9y-Efd" id="pUD-pp-brb"/>
+                <outlet property="view" destination="iN0-l3-epB" id="XDQ-jn-Rxv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0d-Zs-q7h">
+                    <rect key="frame" x="60" y="360" width="200" height="200"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="圆圈.png" translatesAutoresizingMaskIntoConstraints="NO" id="GvJ-SL-Zwr">
+                            <rect key="frame" x="50" y="50" width="100" height="100"/>
+                            <animations/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="l48-pT-noG"/>
+                                <constraint firstAttribute="height" constant="100" id="tMC-Sz-b7n"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="GTT-9y-Efd" appends="YES" id="u1x-36-GZ0"/>
+                            </connections>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="GvJ-SL-Zwr" firstAttribute="centerY" secondItem="A0d-Zs-q7h" secondAttribute="centerY" id="0W7-Ob-LLz"/>
+                        <constraint firstItem="GvJ-SL-Zwr" firstAttribute="centerX" secondItem="A0d-Zs-q7h" secondAttribute="centerX" id="PN1-9P-KQv"/>
+                        <constraint firstAttribute="height" constant="200" id="PeR-2M-HPR"/>
+                        <constraint firstAttribute="width" constant="200" id="gwW-kM-bBu"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpF-rf-lJ8">
+                    <rect key="frame" x="135" y="63" width="50" height="70"/>
+                    <animations/>
+                    <state key="normal" title="Button" image="向上.png"/>
+                    <state key="selected" image="向上_"/>
+                    <connections>
+                        <action selector="directionBTN:" destination="-1" eventType="touchUpInside" id="EZh-Cn-yLZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI6-j4-Eyp">
+                    <rect key="frame" x="135" y="218" width="50" height="70"/>
+                    <animations/>
+                    <state key="normal" title="Button" image="向下.png"/>
+                    <state key="selected" image="向下_"/>
+                    <connections>
+                        <action selector="directionBTN:" destination="-1" eventType="touchUpInside" id="eAJ-yW-FfZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkX-9y-RVi">
+                    <rect key="frame" x="210" y="155" width="70" height="50"/>
+                    <animations/>
+                    <state key="normal" title="Button" image="_向右.png"/>
+                    <state key="selected" image="向右_"/>
+                    <connections>
+                        <action selector="directionBTN:" destination="-1" eventType="touchUpInside" id="HZU-7z-cn9"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tBH-gZ-wyl">
+                    <rect key="frame" x="38" y="314" width="244" height="31"/>
+                    <animations/>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ec-i1-Zeb">
+                    <rect key="frame" x="238" y="258" width="39" height="30"/>
+                    <animations/>
+                    <state key="normal" title="STOP"/>
+                    <connections>
+                        <action selector="stop:" destination="-1" eventType="touchUpInside" id="c2D-Zg-WrI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww1-tY-PH5">
+                    <rect key="frame" x="40" y="155" width="70" height="50"/>
+                    <animations/>
+                    <state key="normal" title="Button" image="向左.png"/>
+                    <state key="selected" image="向左_"/>
+                    <connections>
+                        <action selector="directionBTN:" destination="-1" eventType="touchUpInside" id="h0m-qD-XDd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="A0d-Zs-q7h" secondAttribute="bottom" constant="8" id="8uC-8W-7xE"/>
+                <constraint firstItem="A0d-Zs-q7h" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ee2-KB-4rm"/>
+            </constraints>
+            <point key="canvasLocation" x="600" y="317"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="GTT-9y-Efd">
+            <connections>
+                <action selector="panDirection:" destination="-1" id="BCd-B1-1Kd"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="_向右.png" width="80" height="80"/>
+        <image name="向上.png" width="80" height="80"/>
+        <image name="向上_" width="80" height="80"/>
+        <image name="向下.png" width="80" height="80"/>
+        <image name="向下_" width="80" height="80"/>
+        <image name="向右_" width="80" height="80"/>
+        <image name="向左.png" width="80" height="80"/>
+        <image name="向左_" width="80" height="80"/>
+        <image name="圆圈.png" width="64" height="64"/>
+    </resources>
+</document>
