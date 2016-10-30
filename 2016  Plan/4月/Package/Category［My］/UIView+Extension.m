@@ -151,8 +151,8 @@
 /** 高效的设置圆形图片 */
 - (UIImage*)round
 {
-    //NO 代表透明
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);
+    //YES 代表bu透明
+    UIGraphicsBeginImageContextWithOptions(self.size, YES, 0.0);
     
     //获取上下文
     CGContextRef ctx = UIGraphicsGetCurrentContext();
