@@ -17,20 +17,16 @@
 
 @implementation HMFullScreenPopGestureRecognizerDelegate
 
-/** 手势识别的判断 */
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer {
     
-    //如果是根视图，则返回
     if (self.navigationController.viewControllers.count <= 1) {
         return NO;
     }
     
-    // 如果正在转场动画，取消手势
     if ([[self.navigationController valueForKey:@"_isTransitioning"] boolValue]) {
         return NO;
     }
     
-    //判断手指移动方向
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
     if (translation.x <= 0) {
         return NO;
@@ -44,7 +40,7 @@
 @implementation UINavigationController (HMObjcSugar)
 
 + (void)load {
-    /** 在运行时，交换方法 */
+    
     Method originalMethod = class_getInstanceMethod([self class], @selector(pushViewController:animated:));
     Method swizzledMethod = class_getInstanceMethod([self class], @selector(hm_pushViewController:animated:));
     
@@ -53,11 +49,9 @@
 
 - (void)hm_pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
-    /** 从整个交互式的手势数组里找，如果手势没有添加，则添加这个手势到数组里 */
     if (![self.interactivePopGestureRecognizer.view.gestureRecognizers containsObject:self.hm_popGestureRecognizer]) {
         [self.interactivePopGestureRecognizer.view addGestureRecognizer:self.hm_popGestureRecognizer];
         
-        /** 添加的这个手势替代了系统的 handleNavigationTransition 这个方法 */
         NSArray *targets = [self.interactivePopGestureRecognizer valueForKey:@"targets"];
         id internalTarget = [targets.firstObject valueForKey:@"target"];
         SEL internalAction = NSSelectorFromString(@"handleNavigationTransition:");
@@ -74,7 +68,6 @@
     }
 }
 
-//懒加载
 - (HMFullScreenPopGestureRecognizerDelegate *)hm_fullScreenPopGestureRecognizerDelegate {
     HMFullScreenPopGestureRecognizerDelegate *delegate = objc_getAssociatedObject(self, _cmd);
     if (!delegate) {
@@ -86,7 +79,6 @@
     return delegate;
 }
 
-//懒加载
 - (UIPanGestureRecognizer *)hm_popGestureRecognizer {
     UIPanGestureRecognizer *panGestureRecognizer = objc_getAssociatedObject(self, _cmd);
     
