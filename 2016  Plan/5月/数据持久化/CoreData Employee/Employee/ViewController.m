@@ -66,7 +66,7 @@
     NSError *error = nil;
    NSArray *emps =  [self.context executeFetchRequest:request error:&error];
     if (!error) {
-//        NSLog(@"emps:%@",emps);
+        NSLog(@"=============emps:%@",emps);
         for (Employee *ee  in emps) {
             NSLog(@"emp:%@ %@ %@",ee.name,ee.age,ee.height);
         }

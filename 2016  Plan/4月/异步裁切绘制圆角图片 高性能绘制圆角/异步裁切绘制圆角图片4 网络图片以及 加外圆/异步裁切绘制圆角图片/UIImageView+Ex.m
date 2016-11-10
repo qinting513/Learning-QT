@@ -112,18 +112,18 @@
     self.layer.mask = maskLayer;
     
     
-    CAShapeLayer *solidLine =  [CAShapeLayer layer];
-    CGMutablePathRef solidPath =  CGPathCreateMutable();
-    solidLine.lineWidth = 5.0f ;
-    solidLine.strokeColor = [UIColor redColor].CGColor;
-    solidLine.fillColor = [UIColor clearColor].CGColor;
-    CGPathAddEllipseInRect(solidPath, nil, CGRectMake(0,
-                                                      0,
-                                                      self.bounds.size.width ,
-                                                      self.bounds.size.height));
-    solidLine.path = solidPath;
-    CGPathRelease(solidPath);
-    [self.layer addSublayer:solidLine];
+//    CAShapeLayer *solidLine =  [CAShapeLayer layer];
+//    CGMutablePathRef solidPath =  CGPathCreateMutable();
+//    solidLine.lineWidth = 5.0f ;
+//    solidLine.strokeColor = [UIColor redColor].CGColor;
+//    solidLine.fillColor = [UIColor clearColor].CGColor;
+//    CGPathAddEllipseInRect(solidPath, nil, CGRectMake(0,
+//                                                      0,
+//                                                      self.bounds.size.width ,
+//                                                      self.bounds.size.height));
+//    solidLine.path = solidPath;
+//    CGPathRelease(solidPath);
+//    [self.layer addSublayer:solidLine];
 }
 
 @end

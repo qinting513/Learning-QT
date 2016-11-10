@@ -17,7 +17,7 @@
 
 @implementation HMFullScreenPopGestureRecognizerDelegate
 
-/** 手势识别的判断 */
+/** UIView的系统的方法 手势识别的判断 询问一个手势接收者(即这里的UIView)是否应该开始解释执行一个触摸接收事件 */
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer {
     
     //如果是根视图，则返回

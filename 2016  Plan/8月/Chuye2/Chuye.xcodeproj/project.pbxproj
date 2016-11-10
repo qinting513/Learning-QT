@@ -1774,10 +1774,11 @@
 			baseConfigurationReference = F8437D8AFC043058E46B7CFA /* Pods-Chuye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CW23JJ23BD;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = Chuye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QT.Chuye;
+				PRODUCT_BUNDLE_IDENTIFIER = Qinting.IJKPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1787,10 +1788,11 @@
 			baseConfigurationReference = 1FEDFC5B445ACDA54F4F234B /* Pods-Chuye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CW23JJ23BD;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = Chuye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QT.Chuye;
+				PRODUCT_BUNDLE_IDENTIFIER = Qinting.IJKPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

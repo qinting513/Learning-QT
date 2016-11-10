@@ -24,7 +24,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"个人中心";
     [JCWeatherAnimation creatRainForLayer:self.view.layer];
 //    [JCWeatherAnimation creatSnowForLayer:self.view.layer];
     [JCWeatherAnimation creatCloudForLayer:self.view.layer];

@@ -36,7 +36,6 @@
 		A7E8C42B1D7706D20002D786 /* BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C41F1D7706D20002D786 /* BG.jpg */; };
 		A7E8C42C1D7706D20002D786 /* Tuling01.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C4201D7706D20002D786 /* Tuling01.png */; };
 		A7E8C42D1D7706D20002D786 /* TR002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C4211D7706D20002D786 /* TR002.jpg */; };
-		A7E8C42E1D7706D20002D786 /* TR003.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C4221D7706D20002D786 /* TR003.png */; };
 		A7E8C42F1D7706D20002D786 /* TRBG001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C4231D7706D20002D786 /* TRBG001.jpg */; };
 		A7E8C4301D7706D20002D786 /* TRBG002.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C4241D7706D20002D786 /* TRBG002.png */; };
 		A7E8C4331D7707620002D786 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8C4321D7707620002D786 /* MainViewController.m */; };
@@ -175,8 +174,11 @@
 		A7E8C55E1D7723540002D786 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8C5581D7723540002D786 /* MeViewController.m */; };
 		A7E8C55F1D7723540002D786 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C5591D7723540002D786 /* MeViewController.xib */; };
 		A7E8C5611D7723DC0002D786 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C5601D7723DC0002D786 /* MainViewController.xib */; };
-		A7E8C5631D7726710002D786 /* TR003.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C5621D7726710002D786 /* TR003.png */; };
-		A7E8C5651D7726920002D786 /* tabbar_TR003.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E8C5641D7726920002D786 /* tabbar_TR003.png */; };
+		B7069E0F1DCCB30600277E1E /* tabbar-TR003.png in Resources */ = {isa = PBXBuildFile; fileRef = B7069E0E1DCCB30600277E1E /* tabbar-TR003.png */; };
+		B7069E111DCCB32100277E1E /* TR003.png in Resources */ = {isa = PBXBuildFile; fileRef = B7069E101DCCB32100277E1E /* TR003.png */; };
+		B7069E151DCCB4DF00277E1E /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B7069E121DCCB4DE00277E1E /* home.png */; };
+		B7069E161DCCB4DF00277E1E /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7069E131DCCB4DF00277E1E /* home@2x.png */; };
+		B7069E171DCCB4DF00277E1E /* home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7069E141DCCB4DF00277E1E /* home@3x.png */; };
 		ECA9A4B09AFE95962B5D6A41 /* libPods-图灵机器人.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1FBF9EBF6EA9B1A49915CE /* libPods-图灵机器人.a */; };
 /* End PBXBuildFile section */
 
@@ -233,7 +235,6 @@
 		A7E8C41F1D7706D20002D786 /* BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG.jpg; sourceTree = "<group>"; };
 		A7E8C4201D7706D20002D786 /* Tuling01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tuling01.png; sourceTree = "<group>"; };
 		A7E8C4211D7706D20002D786 /* TR002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TR002.jpg; sourceTree = "<group>"; };
-		A7E8C4221D7706D20002D786 /* TR003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TR003.png; sourceTree = "<group>"; };
 		A7E8C4231D7706D20002D786 /* TRBG001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TRBG001.jpg; sourceTree = "<group>"; };
 		A7E8C4241D7706D20002D786 /* TRBG002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TRBG002.png; sourceTree = "<group>"; };
 		A7E8C4311D7707620002D786 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -384,8 +385,11 @@
 		A7E8C5581D7723540002D786 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		A7E8C5591D7723540002D786 /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
 		A7E8C5601D7723DC0002D786 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		A7E8C5621D7726710002D786 /* TR003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TR003.png; sourceTree = "<group>"; };
-		A7E8C5641D7726920002D786 /* tabbar_TR003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_TR003.png; path = "小女孩/tabbar_TR003.png"; sourceTree = "<group>"; };
+		B7069E0E1DCCB30600277E1E /* tabbar-TR003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-TR003.png"; sourceTree = "<group>"; };
+		B7069E101DCCB32100277E1E /* TR003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TR003.png; sourceTree = "<group>"; };
+		B7069E121DCCB4DE00277E1E /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		B7069E131DCCB4DF00277E1E /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		B7069E141DCCB4DF00277E1E /* home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -656,16 +660,17 @@
 				A7E8C4BC1D771FF20002D786 /* 我 */,
 				A7E8C4BD1D771FF20002D786 /* 小女孩 */,
 				A7E8C4CB1D771FF20002D786 /* splash.jpg */,
-				A7E8C5641D7726920002D786 /* tabbar_TR003.png */,
 				A7E8C4CC1D771FF20002D786 /* tab_live_selected.png */,
 				A7E8C4CD1D771FF20002D786 /* tab_live.png */,
 				A7E8C4CE1D771FF20002D786 /* tab_me_selected.png */,
 				A7E8C4CF1D771FF20002D786 /* tab_me.png */,
+				B7069E0E1DCCB30600277E1E /* tabbar-TR003.png */,
 				A7E8C4D01D771FF20002D786 /* tab_weather_selected.png */,
 				A7E8C4D11D771FF20002D786 /* tab_weather.png */,
 				A7E8C4191D7706D20002D786 /* 003.jpg */,
 				A7E8C41A1D7706D20002D786 /* 004.jpg */,
 				A7E8C41B1D7706D20002D786 /* 576b9c5829330_1024.jpg */,
+				B7069E101DCCB32100277E1E /* TR003.png */,
 				A7E8C41C1D7706D20002D786 /* 5771bfb7582dc_1024.jpg */,
 				A7E8C41D1D7706D20002D786 /* Tuling03.png */,
 				A7E8C41E1D7706D20002D786 /* Tuling02.png */,
@@ -673,7 +678,6 @@
 				A73C1D911D786635000D9FE2 /* BG01.jpg */,
 				A7E8C41F1D7706D20002D786 /* BG.jpg */,
 				A7E8C4211D7706D20002D786 /* TR002.jpg */,
-				A7E8C4221D7706D20002D786 /* TR003.png */,
 				A7E8C4231D7706D20002D786 /* TRBG001.jpg */,
 				A7E8C4241D7706D20002D786 /* TRBG002.png */,
 				A73C1D931D78673E000D9FE2 /* BG002.jpg */,
@@ -820,7 +824,9 @@
 		A7E8C4BD1D771FF20002D786 /* 小女孩 */ = {
 			isa = PBXGroup;
 			children = (
-				A7E8C5621D7726710002D786 /* TR003.png */,
+				B7069E121DCCB4DE00277E1E /* home.png */,
+				B7069E131DCCB4DF00277E1E /* home@2x.png */,
+				B7069E141DCCB4DF00277E1E /* home@3x.png */,
 				A7E8C4BE1D771FF20002D786 /* xmm_1.png */,
 				A7E8C4BF1D771FF20002D786 /* xmm_10.png */,
 				A7E8C4C01D771FF20002D786 /* xmm_11.png */,
@@ -1006,6 +1012,7 @@
 				A7E8C50E1D771FF20002D786 /* notif_level7.png in Resources */,
 				A7E8C5421D771FF20002D786 /* tab_weather.png in Resources */,
 				A7E8C5261D771FF20002D786 /* notification_025.jpg in Resources */,
+				B7069E151DCCB4DF00277E1E /* home.png in Resources */,
 				A7E8C4FB1D771FF20002D786 /* main_title_setting.png in Resources */,
 				A7E8C5051D771FF20002D786 /* mall_comment_score_has.png in Resources */,
 				A7E8C4DB1D771FF20002D786 /* org4_widget_nw8.png in Resources */,
@@ -1064,7 +1071,6 @@
 				A7E8C50A1D771FF20002D786 /* notif_level3.png in Resources */,
 				A7E8C4EB1D771FF20002D786 /* sunny_night_shooting_start.png in Resources */,
 				A7E8C5061D771FF20002D786 /* notif_icon_bg.png in Resources */,
-				A7E8C42E1D7706D20002D786 /* TR003.png in Resources */,
 				A7E8C4E41D771FF20002D786 /* bg_snow_night.jpg in Resources */,
 				A7E8C50C1D771FF20002D786 /* notif_level5.png in Resources */,
 				A7E8C5041D771FF20002D786 /* mall_comment_score_blank.png in Resources */,
@@ -1097,7 +1103,7 @@
 				A7E8C4F41D771FF20002D786 /* main_high_light.png in Resources */,
 				A7E8C4DC1D771FF20002D786 /* org4_widget_nw9.png in Resources */,
 				A7E8C5231D771FF20002D786 /* notification_022.jpg in Resources */,
-				A7E8C5651D7726920002D786 /* tabbar_TR003.png in Resources */,
+				B7069E161DCCB4DF00277E1E /* home@2x.png in Resources */,
 				A7E8C4251D7706D20002D786 /* 003.jpg in Resources */,
 				A7E8C4EA1D771FF20002D786 /* sunny_night_seawater.png in Resources */,
 				A7E8C4FF1D771FF20002D786 /* main_voice_3.png in Resources */,
@@ -1110,11 +1116,11 @@
 				A7E8C4F61D771FF20002D786 /* main_icon_humidity.png in Resources */,
 				A7E8C53A1D771FF20002D786 /* xmm_8.png in Resources */,
 				A73C1DB41D7870A3000D9FE2 /* Info.plist in Resources */,
-				A7E8C5631D7726710002D786 /* TR003.png in Resources */,
 				A7E8C4D31D771FF20002D786 /* org4_widget_nw0.png in Resources */,
 				A7E8C5111D771FF20002D786 /* notifi_no_city.png in Resources */,
 				A7E8C42B1D7706D20002D786 /* BG.jpg in Resources */,
 				A7E8C4DF1D771FF20002D786 /* bg_fog_night.jpg in Resources */,
+				B7069E0F1DCCB30600277E1E /* tabbar-TR003.png in Resources */,
 				A7E8C4D41D771FF20002D786 /* org4_widget_nw1.png in Resources */,
 				A7E8C5611D7723DC0002D786 /* MainViewController.xib in Resources */,
 				A7E8C5091D771FF20002D786 /* notif_level2.png in Resources */,
@@ -1123,11 +1129,13 @@
 				A7E8C51F1D771FF20002D786 /* notification_014.jpg in Resources */,
 				A7E8C50F1D771FF20002D786 /* notifi_city_manager_update.png in Resources */,
 				A7E8C5471D77201F0002D786 /* WeatherViewController.xib in Resources */,
+				B7069E111DCCB32100277E1E /* TR003.png in Resources */,
 				A7E8C5341D771FF20002D786 /* xmm_2.png in Resources */,
 				A7E8C5381D771FF20002D786 /* xmm_6.png in Resources */,
 				A7E8C4D91D771FF20002D786 /* org4_widget_nw6.png in Resources */,
 				A7E8C4DE1D771FF20002D786 /* bg_fog_day.jpg in Resources */,
 				A7E8C4271D7706D20002D786 /* 576b9c5829330_1024.jpg in Resources */,
+				B7069E171DCCB4DF00277E1E /* home@3x.png in Resources */,
 				A7E8C53C1D771FF20002D786 /* splash.jpg in Resources */,
 				A7E8C53F1D771FF20002D786 /* tab_me_selected.png in Resources */,
 				A7E8C5181D771FF20002D786 /* notification_006.jpg in Resources */,

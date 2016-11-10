@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSArray *properties = [Person qt_objProperties];
-//    NSLog(@"%@",properties);
+    NSLog(@"%@",properties);
     Person *person = [Person qt_objWithDict:@{
                                               @"name":@"aaa",
                                               @"age":@12,

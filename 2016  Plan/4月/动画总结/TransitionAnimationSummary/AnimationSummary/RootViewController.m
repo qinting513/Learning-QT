@@ -69,7 +69,7 @@
             break;
         case 10002:
             tran.type = @"pageCurl"; //翻页
-            tran.subtype = kCATransitionFromLeft; //从左到右
+            tran.subtype = kCATransitionFromRight; //从左到右
             break;
         case 10003:
             tran.type = kCATransitionMoveIn;
