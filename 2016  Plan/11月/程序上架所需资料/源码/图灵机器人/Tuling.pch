@@ -1,0 +1,33 @@
+//
+//  Tuling.pch
+//  图灵机器人
+//
+//  Created by Guo.JC on 16/8/31.
+//  Copyright © 2016年 Guo.JC. All rights reserved.
+//
+
+#ifndef Tuling_pch
+#define Tuling_pch
+
+#import <iflyMSC/iflyMSC.h>
+#import "ISRDataHelper.h"
+#import "JCVoiceUtils.h"
+#import <AFNetworking.h>
+#import "JCTuRingUtils.h"
+#import "WeatherViewController.h"
+#import "TimeViewController.h"
+#import "MeViewController.h"
+#import "MainViewController.h"
+#import "MainNavi.h"
+#import "JCWeatherAnimation.h"
+#import "Masonry.h"
+
+
+#define         OPEN_WEATHER        @"正在为你打开天气界面"
+#define         OPEN_TIME           @"正在为你打开时景界面"
+#define         OPEN_ME             @"正在为你打开我的界面"
+#define         OPEN_MUSIC          @"正在为你打开音乐播放界面,马上就可以欣赏优美的音乐啦"
+
+#define         SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+#define         SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+#endif /* Tuling_pch */

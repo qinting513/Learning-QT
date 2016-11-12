@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string></string>
+	<key>comments</key>
+	<string></string>
+	<key>isUsingConstrainedLayout</key>
+	<false/>
+	<key>keywords</key>
+	<string></string>
+	<key>mindMap</key>
+	<dict>
+		<key>associations</key>
+		<array/>
+		<key>color</key>
+		<string>{1.000, 1.000, 1.000, 1.000}</string>
+		<key>mainNodes</key>
+		<array>
+			<dict>
+				<key>contentAlignment</key>
+				<integer>1</integer>
+				<key>fillColor</key>
+				<string>{1.000, 1.000, 1.000, 1.000}</string>
+				<key>isDecreasingBranchThickness</key>
+				<true/>
+				<key>isDrawingFill</key>
+				<true/>
+				<key>isLeftAligned</key>
+				<false/>
+				<key>location</key>
+				<string>{-265.22656000000001, 49}</string>
+				<key>nodeID</key>
+				<string>5266741C-A4EB-4CCA-ADA6-2B547566E1AA</string>
+				<key>strokeColor</key>
+				<string>{0.500, 0.500, 0.500, 1.000}</string>
+				<key>strokeStyle</key>
+				<integer>0</integer>
+				<key>strokeWidth</key>
+				<real>2</real>
+				<key>subnodes</key>
+				<array>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{43.964843999999999, -123.27734}</string>
+						<key>nodeID</key>
+						<string>64BA53EB-94E8-4ACE-862B-3F94457B40E4</string>
+						<key>strokeColor</key>
+						<string>{1.000, 0.800, 0.400, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{223.42578, -247.92968999999999}</string>
+								<key>nodeID</key>
+								<string>53A4494F-533F-4013-924B-16B7922049CC</string>
+								<key>strokeColor</key>
+								<string>{1.000, 0.800, 0.400, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【1】.导入 CoreBluetooth 框架，（导入系统的frame --&amp;gt; import头文件）&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be1\'a1\'bf.\'b5\'bc\'c8\'eb CoreBluetooth \'bf\'f2\'bc\'dc\'a3\'ac\'a3\'a8\'b5\'bc\'c8\'eb\'cf\'b5\'cd\'b3\'b5\'c4frame --&gt; import\'cd\'b7\'ce\'c4\'bc\'fe\'a3\'a9}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{222.32422, -184.20703}</string>
+								<key>nodeID</key>
+								<string>6F593FA1-F8E8-4FE9-AC0E-79913690B3F2</string>
+								<key>strokeColor</key>
+								<string>{1.000, 0.800, 0.400, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【2】.创建中心设备管理器，遵守协议，设置代理，实现代理方法&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be2\'a1\'bf.\'b4\'b4\'bd\'a8\'d6\'d0\'d0\'c4\'c9\'e8\'b1\'b8\'b9\'dc\'c0\'ed\'c6\'f7\'a3\'ac\'d7\'f1\'ca\'d8\'d0\'ad\'d2\'e9\'a3\'ac\'c9\'e8\'d6\'c3\'b4\'fa\'c0\'ed\'a3\'ac\'ca\'b5\'cf\'d6\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{222.32422, -109.20703}</string>
+								<key>nodeID</key>
+								<string>FD1AB904-9DDB-4094-9DC8-D58C856F47E0</string>
+								<key>strokeColor</key>
+								<string>{1.000, 0.800, 0.400, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【3】.判断当前系统的蓝牙状态：模拟器，蓝牙未打开，蓝牙损坏或者未知状态等。当蓝牙的状态为打开时，再调用启动蓝牙扫描的方法：&lt;/span&gt;&lt;span style='color: rgba(0, 0, 204, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;scanForPeripheralsWithServices&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;:&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;nil&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;  &lt;/span&gt;&lt;span style='color: rgba(0, 0, 204, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;options&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;:&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;nil&lt;/span&gt;&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red0\green0\blue204;\red216\green0\blue7;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c0\c0\c80000;\csgenericrgb\c84706\c0\c2745;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be3\'a1\'bf.\'c5\'d0\'b6\'cf\'b5\'b1\'c7\'b0\'cf\'b5\'cd\'b3\'b5\'c4\'c0\'b6\'d1\'c0\'d7\'b4\'cc\'ac\'a3\'ba\'c4\'a3\'c4\'e2\'c6\'f7\'a3\'ac\'c0\'b6\'d1\'c0\'ce\'b4\'b4\'f2\'bf\'aa\'a3\'ac\'c0\'b6\'d1\'c0\'cb\'f0\'bb\'b5\'bb\'f2\'d5\'df\'ce\'b4\'d6\'aa\'d7\'b4\'cc\'ac\'b5\'c8\'a1\'a3\'b5\'b1\'c0\'b6\'d1\'c0\'b5\'c4\'d7\'b4\'cc\'ac\'ce\'aa\'b4\'f2\'bf\'aa\'ca\'b1\'a3\'ac\'d4\'d9\'b5\'f7\'d3\'c3\'c6\'f4\'b6\'af\'c0\'b6\'d1\'c0\'c9\'a8\'c3\'e8\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ba
+\f1\fs36 \cf3 scanForPeripheralsWithServices\cf0 :\cf4 nil\cf0   \cf3 options\cf0 :\cf4 nil}</string>
+								</dict>
+							</dict>
+						</array>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>300</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;步骤一：初始化&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>1</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'b2\'bd\'d6\'e8\'d2\'bb\'a3\'ba\'b3\'f5\'ca\'bc\'bb\'af}</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{44.522339000000002, 331.37707999999998}</string>
+						<key>nodeID</key>
+						<string>4C8CD219-7300-4B18-AB0A-8209F5FBE428</string>
+						<key>strokeColor</key>
+						<string>{0.800, 1.000, 0.400, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array/>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>300</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;步骤四：收数据&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>1</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'b2\'bd\'d6\'e8\'cb\'c4\'a3\'ba\'ca\'d5\'ca\'fd\'be\'dd}</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>hasFoldedSubnodes</key>
+						<true/>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{37.339111000000003, 219.41077000000001}</string>
+						<key>nodeID</key>
+						<string>48F42650-B6FF-4E8A-A286-C5B7D1580170</string>
+						<key>strokeColor</key>
+						<string>{0.400, 1.000, 0.800, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>hasFoldedSubnodes</key>
+								<true/>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{274.42505, 95.020142000000007}</string>
+								<key>nodeID</key>
+								<string>6964EDF0-D599-483A-82DB-0B6449428233</string>
+								<key>strokeColor</key>
+								<string>{0.400, 1.000, 0.800, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{452.42505, 95.020142000000007}</string>
+										<key>nodeID</key>
+										<string>14495EBE-0AF2-4D22-931D-792D9C6253FC</string>
+										<key>strokeColor</key>
+										<string>{0.400, 1.000, 0.800, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array/>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【1】.连接成功，会调用代理方法&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;- (&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;void&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;)centralManager:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBCentralManager&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)central didConnectPeripheral:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBPeripheral&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)peripheral&lt;/span&gt;&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red216\green0\blue7;\red153\green0\blue102;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c84706\c0\c2745;\csgenericrgb\c60000\c0\c40000;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be1\'a1\'bf.\'c1\'ac\'bd\'d3\'b3\'c9\'b9\'a6\'a3\'ac\'bb\'e1\'b5\'f7\'d3\'c3\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8
+\f1\fs36 \cf0 - (\cf3 void\cf0 )centralManager:(\cf4 CBCentralManager\cf0  *)central didConnectPeripheral:(\cf4 CBPeripheral\cf0  *)peripheral}</string>
+										</dict>
+									</dict>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{452.42505, 248.68682999999999}</string>
+										<key>nodeID</key>
+										<string>ADE39DC6-E30B-44C3-B3E2-26B95FBEE29A</string>
+										<key>strokeColor</key>
+										<string>{0.400, 1.000, 0.800, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array/>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【2】.连接成功后需要做的事情为：寻找当前连接上的这个设备的服务。调用方法：&lt;/span&gt;&lt;span style='color: rgba(0, 0, 204, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;discoverServices&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;:&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;nil&lt;/span&gt;&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red0\green0\blue204;\red216\green0\blue7;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c0\c0\c80000;\csgenericrgb\c84706\c0\c2745;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be2\'a1\'bf.\'c1\'ac\'bd\'d3\'b3\'c9\'b9\'a6\'ba\'f3\'d0\'e8\'d2\'aa\'d7\'f6\'b5\'c4\'ca\'c2\'c7\'e9\'ce\'aa\'a3\'ba\'d1\'b0\'d5\'d2\'b5\'b1\'c7\'b0\'c1\'ac\'bd\'d3\'c9\'cf\'b5\'c4\'d5\'e2\'b8\'f6\'c9\'e8\'b1\'b8\'b5\'c4\'b7\'fe\'ce\'f1\'a1\'a3\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8\'a3\'ba
+\f1\fs36 \cf3 discoverServices\cf0 :\cf4 nil}</string>
+										</dict>
+									</dict>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{452.42505, 335.35349000000002}</string>
+										<key>nodeID</key>
+										<string>2981C4CC-5FBA-45A5-BE38-B9EDB93D4C3D</string>
+										<key>strokeColor</key>
+										<string>{0.400, 1.000, 0.800, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array/>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【3】.在寻找到的每个服务中遍历其特性（服务数量一般没有固定值，每次发现一个服务都会调用代理方法：&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;- (&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;void&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;)peripheral:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBPeripheral&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)peripheral didDiscoverServices:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;NSError&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)error           &lt;/span&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;在此代理方法中去遍历每一个服务中的特性（调用方法：&lt;/span&gt;&lt;span style='color: rgba(0, 0, 204, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;discoverCharacteristics&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;:&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;nil&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; &lt;/span&gt;&lt;span style='color: rgba(0, 0, 204, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;forService&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;:s&lt;/span&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;）&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; &lt;/span&gt;&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red216\green0\blue7;\red153\green0\blue102;
+\red0\green0\blue204;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c84706\c0\c2745;\csgenericrgb\c60000\c0\c40000;
+\csgenericrgb\c0\c0\c80000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be3\'a1\'bf.\'d4\'da\'d1\'b0\'d5\'d2\'b5\'bd\'b5\'c4\'c3\'bf\'b8\'f6\'b7\'fe\'ce\'f1\'d6\'d0\'b1\'e9\'c0\'fa\'c6\'e4\'cc\'d8\'d0\'d4\'a3\'a8\'b7\'fe\'ce\'f1\'ca\'fd\'c1\'bf\'d2\'bb\'b0\'e3\'c3\'bb\'d3\'d0\'b9\'cc\'b6\'a8\'d6\'b5\'a3\'ac\'c3\'bf\'b4\'ce\'b7\'a2\'cf\'d6\'d2\'bb\'b8\'f6\'b7\'fe\'ce\'f1\'b6\'bc\'bb\'e1\'b5\'f7\'d3\'c3\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'a3\'ba
+\f1\fs36 \cf0 - (\cf3 void\cf0 )peripheral:(\cf4 CBPeripheral\cf0  *)peripheral didDiscoverServices:(\cf4 NSError\cf0  *)error           
+\f0\fs26 \cf2 \'d4\'da\'b4\'cb\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'d6\'d0\'c8\'a5\'b1\'e9\'c0\'fa\'c3\'bf\'d2\'bb\'b8\'f6\'b7\'fe\'ce\'f1\'d6\'d0\'b5\'c4\'cc\'d8\'d0\'d4\'a3\'a8\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8\'a3\'ba
+\f1\fs36 \cf5 discoverCharacteristics\cf0 :\cf3 nil\cf0  \cf5 forService\cf0 :s
+\f0\fs26 \cf2 \'a3\'a9
+\f1\fs36 \cf0  }</string>
+										</dict>
+									</dict>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{452.42505, 555.02013999999997}</string>
+										<key>nodeID</key>
+										<string>31F977EA-F4AA-4861-B174-E72D43D3EB0C</string>
+										<key>strokeColor</key>
+										<string>{0.400, 1.000, 0.800, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array/>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【4】.每次发现一个特性，都会调用代理方法：&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;- (&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;void&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;)peripheral:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBPeripheral&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)peripheral didDiscoverCharacteristicsForService:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBService&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)service error:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;NSError&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)error&lt;/span&gt;&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red216\green0\blue7;\red153\green0\blue102;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c84706\c0\c2745;\csgenericrgb\c60000\c0\c40000;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be4\'a1\'bf.\'c3\'bf\'b4\'ce\'b7\'a2\'cf\'d6\'d2\'bb\'b8\'f6\'cc\'d8\'d0\'d4\'a3\'ac\'b6\'bc\'bb\'e1\'b5\'f7\'d3\'c3\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'a3\'ba
+\f1\fs36 \cf0 - (\cf3 void\cf0 )peripheral:(\cf4 CBPeripheral\cf0  *)peripheral didDiscoverCharacteristicsForService:(\cf4 CBService\cf0  *)service error:(\cf4 NSError\cf0  *)error}</string>
+										</dict>
+									</dict>
+								</array>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【连接成功】&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be\'c1\'ac\'bd\'d3\'b3\'c9\'b9\'a6\'a1\'bf}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>hasFoldedSubnodes</key>
+								<true/>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{267.33911000000001, 278.41077000000001}</string>
+								<key>nodeID</key>
+								<string>2ADCA30D-78F2-4541-8E9A-BF45A7F78AEF</string>
+								<key>strokeColor</key>
+								<string>{0.400, 1.000, 0.800, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{445.33911000000001, 279.64532000000003}</string>
+										<key>nodeID</key>
+										<string>03B86D9A-79C8-4A6E-94A0-2DAA4EFA16DE</string>
+										<key>strokeColor</key>
+										<string>{0.400, 1.000, 0.800, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array/>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;连接失败.会调用代理方法，在代理方法中重新连接，或者弹出对话框等&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;- (&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;void&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;)centralManager:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBCentralManager&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)central didFailToConnectPeripheral:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBPeripheral&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)peripheral error:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;NSError&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)error&lt;/span&gt;&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red216\green0\blue7;\red153\green0\blue102;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c84706\c0\c2745;\csgenericrgb\c60000\c0\c40000;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'c1\'ac\'bd\'d3\'ca\'a7\'b0\'dc.\'bb\'e1\'b5\'f7\'d3\'c3\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'a3\'ac\'d4\'da\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'d6\'d0\'d6\'d8\'d0\'c2\'c1\'ac\'bd\'d3\'a3\'ac\'bb\'f2\'d5\'df\'b5\'af\'b3\'f6\'b6\'d4\'bb\'b0\'bf\'f2\'b5\'c8
+\f1\fs36 \cf0 - (\cf3 void\cf0 )centralManager:(\cf4 CBCentralManager\cf0  *)central didFailToConnectPeripheral:(\cf4 CBPeripheral\cf0  *)peripheral error:(\cf4 NSError\cf0  *)error}</string>
+										</dict>
+									</dict>
+								</array>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【连接失败】&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be\'c1\'ac\'bd\'d3\'ca\'a7\'b0\'dc\'a1\'bf}</string>
+								</dict>
+							</dict>
+						</array>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>300</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;步骤三：连接外部设备&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>1</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'b2\'bd\'d6\'e8\'c8\'fd\'a3\'ba\'c1\'ac\'bd\'d3\'cd\'e2\'b2\'bf\'c9\'e8\'b1\'b8}</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>hasFoldedSubnodes</key>
+						<true/>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{38.605468999999999, 11.394531000000001}</string>
+						<key>nodeID</key>
+						<string>07ED5BBB-A6AD-40FA-AF73-3DA417150331</string>
+						<key>strokeColor</key>
+						<string>{0.400, 0.800, 1.000, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{257.96483999999998, 26.261718999999999}</string>
+								<key>nodeID</key>
+								<string>36E19491-6040-4FDD-9831-F6B2E1C43FFD</string>
+								<key>strokeColor</key>
+								<string>{0.400, 0.800, 1.000, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【1】.启动扫描外设（系统会扫描周围可被发现的蓝牙设备，每次发现一个设备都会调用代理方法&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;- (&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;void&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;)centralManager:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBCentralManager&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)central didDiscoverPeripheral:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;CBPeripheral&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)peripheral advertisementData:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;NSDictionary&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)advertisementData RSSI:(&lt;/span&gt;&lt;span style='color: rgba(153, 0, 102, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;NSNumber&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt; *)RSSI&lt;/span&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;）                                                                                                   &lt;/span&gt;&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red216\green0\blue7;\red153\green0\blue102;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c84706\c0\c2745;\csgenericrgb\c60000\c0\c40000;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be1\'a1\'bf.\'c6\'f4\'b6\'af\'c9\'a8\'c3\'e8\'cd\'e2\'c9\'e8\'a3\'a8\'cf\'b5\'cd\'b3\'bb\'e1\'c9\'a8\'c3\'e8\'d6\'dc\'ce\'a7\'bf\'c9\'b1\'bb\'b7\'a2\'cf\'d6\'b5\'c4\'c0\'b6\'d1\'c0\'c9\'e8\'b1\'b8\'a3\'ac\'c3\'bf\'b4\'ce\'b7\'a2\'cf\'d6\'d2\'bb\'b8\'f6\'c9\'e8\'b1\'b8\'b6\'bc\'bb\'e1\'b5\'f7\'d3\'c3\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8
+\f1\fs36 \cf0 - (\cf3 void\cf0 )centralManager:(\cf4 CBCentralManager\cf0  *)central didDiscoverPeripheral:(\cf4 CBPeripheral\cf0  *)peripheral advertisementData:(\cf4 NSDictionary\cf0  *)advertisementData RSSI:(\cf4 NSNumber\cf0  *)RSSI
+\f0\fs26 \cf2 \'a3\'a9                                                                                                   }</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{257.96483999999998, 268.91406000000001}</string>
+								<key>nodeID</key>
+								<string>7A3A84B3-9A13-40B4-A756-5C4723D2E9C3</string>
+								<key>strokeColor</key>
+								<string>{0.400, 0.800, 1.000, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【2】.每次发现新的外围设备都将其添加到一个可变数组中，保存起来。注意：每次添加的外设对象都需要强引用，这点和socket通信一样的道理。在添加到数组中的时候可以遍历数组，看看是否已经添加过了设备，如果添加过，则不再往数组中添加&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be2\'a1\'bf.\'c3\'bf\'b4\'ce\'b7\'a2\'cf\'d6\'d0\'c2\'b5\'c4\'cd\'e2\'ce\'a7\'c9\'e8\'b1\'b8\'b6\'bc\'bd\'ab\'c6\'e4\'cc\'ed\'bc\'d3\'b5\'bd\'d2\'bb\'b8\'f6\'bf\'c9\'b1\'e4\'ca\'fd\'d7\'e9\'d6\'d0\'a3\'ac\'b1\'a3\'b4\'e6\'c6\'f0\'c0\'b4\'a1\'a3\'d7\'a2\'d2\'e2\'a3\'ba\'c3\'bf\'b4\'ce\'cc\'ed\'bc\'d3\'b5\'c4\'cd\'e2\'c9\'e8\'b6\'d4\'cf\'f3\'b6\'bc\'d0\'e8\'d2\'aa\'c7\'bf\'d2\'fd\'d3\'c3\'a3\'ac\'d5\'e2\'b5\'e3\'ba\'cdsocket\'cd\'a8\'d0\'c5\'d2\'bb\'d1\'f9\'b5\'c4\'b5\'c0\'c0\'ed\'a1\'a3\'d4\'da\'cc\'ed\'bc\'d3\'b5\'bd\'ca\'fd\'d7\'e9\'d6\'d0\'b5\'c4\'ca\'b1\'ba\'f2\'bf\'c9\'d2\'d4\'b1\'e9\'c0\'fa\'ca\'fd\'d7\'e9\'a3\'ac\'bf\'b4\'bf\'b4\'ca\'c7\'b7\'f1\'d2\'d1\'be\'ad\'cc\'ed\'bc\'d3\'b9\'fd\'c1\'cb\'c9\'e8\'b1\'b8\'a3\'ac\'c8\'e7\'b9\'fb\'cc\'ed\'bc\'d3\'b9\'fd\'a3\'ac\'d4\'f2\'b2\'bb\'d4\'d9\'cd\'f9\'ca\'fd\'d7\'e9\'d6\'d0\'cc\'ed\'bc\'d3}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{257.96483999999998, 392.91406000000001}</string>
+								<key>nodeID</key>
+								<string>98CB2339-4479-4365-9C00-F9A40CF67A65</string>
+								<key>strokeColor</key>
+								<string>{0.400, 0.800, 1.000, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【3】.刷新 TabView 展示扫描到的蓝牙外设&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be3\'a1\'bf.\'cb\'a2\'d0\'c2 TabView \'d5\'b9\'ca\'be\'c9\'a8\'c3\'e8\'b5\'bd\'b5\'c4\'c0\'b6\'d1\'c0\'cd\'e2\'c9\'e8}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{257.96483999999998, 451.91406000000001}</string>
+								<key>nodeID</key>
+								<string>2502B61D-2EAE-4020-B6B0-93410F8A0AA6</string>
+								<key>strokeColor</key>
+								<string>{0.400, 0.800, 1.000, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='text-align: left; '&gt;&lt;span style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;【4】.点击需要连接的蓝牙设备（即TabView 的某行），连接外设，调用方法：&lt;/span&gt;&lt;span style='color: rgba(0, 0, 204, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;connectPeripheral&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;:peripheral &lt;/span&gt;&lt;span style='color: rgba(0, 0, 204, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;options&lt;/span&gt;&lt;span style='font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;:&lt;/span&gt;&lt;span style='color: rgba(216, 0, 7, 1.000000); font: 18px "Courier New"; -cocoa-font-postscriptname: "CourierNewPSMT"; '&gt;nil&lt;/span&gt;&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;\red0\green0\blue204;\red216\green0\blue7;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;\csgenericrgb\c0\c0\c80000;\csgenericrgb\c84706\c0\c2745;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'a1\'be4\'a1\'bf.\'b5\'e3\'bb\'f7\'d0\'e8\'d2\'aa\'c1\'ac\'bd\'d3\'b5\'c4\'c0\'b6\'d1\'c0\'c9\'e8\'b1\'b8\'a3\'a8\'bc\'b4TabView \'b5\'c4\'c4\'b3\'d0\'d0\'a3\'a9\'a3\'ac\'c1\'ac\'bd\'d3\'cd\'e2\'c9\'e8\'a3\'ac\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8\'a3\'ba
+\f1\fs36 \cf3 connectPeripheral\cf0 :peripheral \cf3 options\cf0 :\cf4 nil}</string>
+								</dict>
+							</dict>
+						</array>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>300</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;步骤二：扫描外部设备&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>1</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'b2\'bd\'d6\'e8\'b6\'fe\'a3\'ba\'c9\'a8\'c3\'e8\'cd\'e2\'b2\'bf\'c9\'e8\'b1\'b8}</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{47.406433, 433.60626000000002}</string>
+						<key>nodeID</key>
+						<string>D0D6C1BF-732A-4945-B82A-9DBA5EB6AD03</string>
+						<key>strokeColor</key>
+						<string>{0.800, 0.400, 1.000, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array/>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>300</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;步骤五：发数据&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>1</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'b2\'bd\'d6\'e8\'ce\'e5\'a3\'ba\'b7\'a2\'ca\'fd\'be\'dd}</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{42.6297, 539.72875999999997}</string>
+						<key>nodeID</key>
+						<string>D73C56CD-9C27-42F2-83C8-B205A8941A62</string>
+						<key>strokeColor</key>
+						<string>{1.000, 0.900, 0.500, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array/>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>300</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;步骤六：断开连接&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>1</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 \'b2\'bd\'d6\'e8\'c1\'f9\'a3\'ba\'b6\'cf\'bf\'aa\'c1\'ac\'bd\'d3}</string>
+						</dict>
+					</dict>
+				</array>
+				<key>title</key>
+				<dict>
+					<key>constrainedWidth</key>
+					<integer>300</integer>
+					<key>htmlText</key>
+					<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;iOS蓝牙开发（手机做为中心设备）&lt;/p&gt;</string>
+					<key>shrinkToFitContent</key>
+					<integer>1</integer>
+					<key>text</key>
+					<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 iOS\'c0\'b6\'d1\'c0\'bf\'aa\'b7\'a2\'a3\'a8\'ca\'d6\'bb\'fa\'d7\'f6\'ce\'aa\'d6\'d0\'d0\'c4\'c9\'e8\'b1\'b8\'a3\'a9}</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>contentAlignment</key>
+				<integer>1</integer>
+				<key>fillColor</key>
+				<string>{1.000, 1.000, 1.000, 1.000}</string>
+				<key>isDecreasingBranchThickness</key>
+				<true/>
+				<key>isDrawingFill</key>
+				<true/>
+				<key>isLeftAligned</key>
+				<false/>
+				<key>location</key>
+				<string>{-328.92577999999997, -182.1875}</string>
+				<key>nodeID</key>
+				<string>730F8F4B-FFA2-4234-ACA2-ADD7D6B3DD11</string>
+				<key>strokeColor</key>
+				<string>{0.500, 0.500, 0.500, 1.000}</string>
+				<key>strokeStyle</key>
+				<integer>0</integer>
+				<key>strokeWidth</key>
+				<real>2</real>
+				<key>subnodes</key>
+				<array/>
+				<key>title</key>
+				<dict>
+					<key>constrainedWidth</key>
+					<integer>300</integer>
+					<key>htmlText</key>
+					<string>&lt;p style='font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;iOS蓝牙开发只能使用真机，模拟器也可以，但是很麻烦，调试也不方便，不建议使用&lt;/p&gt;</string>
+					<key>shrinkToFitContent</key>
+					<integer>1</integer>
+					<key>text</key>
+					<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf0 iOS\'c0\'b6\'d1\'c0\'bf\'aa\'b7\'a2\'d6\'bb\'c4\'dc\'ca\'b9\'d3\'c3\'d5\'e6\'bb\'fa\'a3\'ac\'c4\'a3\'c4\'e2\'c6\'f7\'d2\'b2\'bf\'c9\'d2\'d4\'a3\'ac\'b5\'ab\'ca\'c7\'ba\'dc\'c2\'e9\'b7\'b3\'a3\'ac\'b5\'f7\'ca\'d4\'d2\'b2\'b2\'bb\'b7\'bd\'b1\'e3\'a3\'ac\'b2\'bb\'bd\'a8\'d2\'e9\'ca\'b9\'d3\'c3}</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>contentAlignment</key>
+				<integer>1</integer>
+				<key>fillColor</key>
+				<string>{1.000, 1.000, 1.000, 1.000}</string>
+				<key>isDecreasingBranchThickness</key>
+				<true/>
+				<key>isDrawingFill</key>
+				<true/>
+				<key>isLeftAligned</key>
+				<false/>
+				<key>location</key>
+				<string>{-268.80896000000001, 694.48584000000005}</string>
+				<key>nodeID</key>
+				<string>FCEA5EB1-C9E5-4237-9DE0-1E570C902D29</string>
+				<key>strokeColor</key>
+				<string>{0.500, 0.500, 0.500, 1.000}</string>
+				<key>strokeStyle</key>
+				<integer>0</integer>
+				<key>strokeWidth</key>
+				<real>2</real>
+				<key>subnodes</key>
+				<array/>
+				<key>title</key>
+				<dict>
+					<key>constrainedWidth</key>
+					<integer>300</integer>
+					<key>htmlText</key>
+					<string>&lt;p style='color: rgba(255, 0, 255, 1.000000); font: 13px ".PingFang SC"; text-align: left; -cocoa-font-postscriptname: ".PingFangSC-Regular"; '&gt;iOS蓝牙开发（手机做为外设设备，对外广播，这种情况较少，没做过，实现原理都差不多）&lt;/p&gt;</string>
+					<key>shrinkToFitContent</key>
+					<integer>1</integer>
+					<key>text</key>
+					<string>{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c100000\c0\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 iOS\'c0\'b6\'d1\'c0\'bf\'aa\'b7\'a2\'a3\'a8\'ca\'d6\'bb\'fa\'d7\'f6\'ce\'aa\'cd\'e2\'c9\'e8\'c9\'e8\'b1\'b8\'a3\'ac\'b6\'d4\'cd\'e2\'b9\'e3\'b2\'a5\'a3\'ac\'d5\'e2\'d6\'d6\'c7\'e9\'bf\'f6\'bd\'cf\'c9\'d9\'a3\'ac\'c3\'bb\'d7\'f6\'b9\'fd\'a3\'ac\'ca\'b5\'cf\'d6\'d4\'ad\'c0\'ed\'b6\'bc\'b2\'ee\'b2\'bb\'b6\'e0\'a3\'a9}</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<key>printInfo</key>
+	<data>
+	BAtzdHJlYW10eXBlZIHoA4QBQISEhAtOU1ByaW50SW5mbwGEhAhOU09iamVjdACFkoSE
+	hBNOU011dGFibGVEaWN0aW9uYXJ5AISEDE5TRGljdGlvbmFyeQCUhAFpCZKEhIQITlNT
+	dHJpbmcBlIQBKw9wcmludEJhY2tncm91bmSGkoSEhAhOU051bWJlcgCEhAdOU1ZhbHVl
+	AJSEASqEhAFjnQCGkoSZmRZOU0hvcml6b250YWxseUNlbnRlcmVkhpKEm5ydnQGGkoSZ
+	mQ1OU1JpZ2h0TWFyZ2luhpKEm5yEhAFmnkiGkoSZmRROU1ZlcnRpY2FsUGFnaW5hdGlv
+	boaShJuchJeXAYaShJmZDE5TTGVmdE1hcmdpboaSoZKEmZkVTlNIb3Jpem9uYWxQYWdp
+	bmF0aW9uhpKkkoSZmRROU1ZlcnRpY2FsbHlDZW50ZXJlZIaSn5KEmZkOTlNCb3R0b21N
+	YXJnaW6GkoSbnKKeWoaShJmZC05TVG9wTWFyZ2luhpKqhoY=
+	</data>
+	<key>title</key>
+	<string>iOS蓝牙开发</string>
+	<key>version</key>
+	<integer>4</integer>
+</dict>
+</plist>
