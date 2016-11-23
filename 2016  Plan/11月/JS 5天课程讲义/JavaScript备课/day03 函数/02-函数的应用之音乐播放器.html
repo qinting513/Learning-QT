@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE>给网页加上背景音乐，选择音效功能</TITLE>
+<STYLE>
+/*<!--样式单 -->*/
+a{ 
+	font-size:30px;
+	color:blue;
+	font-family:Vineta BT
+}
+a:link{text-decoration:none;}
+a:hover{text-decoration:none;color:red }
+
+</STYLE>
+<script>
+// 自学网址：http://www.w3school.com.cn/jsref/dom_obj_audio.asp
+function playFunc(){
+   var audio = document.getElementById("bgMusic");
+     audio.play();
+     console.log('play');
+}
+
+function pauseFunc(){
+   var audio = document.getElementById("bgMusic");
+     audio.pause();
+}
+function stopFunc(){
+   var audio = document.getElementById("bgMusic");
+     audio.pause();
+     audio.currentTime = 0;
+}
+ // 作业 ：合并为一个方法的，里面用if else 
+// function clicksound(i)
+// {
+// var audio = document.getElementById("bgMusic");
+//  if(i==1){
+//  	audio.play();  // 播放或继续的功能
+//  }else if(i==2){
+//  	 audio.pause();
+//  }else{
+//  	audio.pause();
+//  	audio.currentTime = 0;
+//  }
+// }
+
+ // 作业 ： if else 改成switch 格式的
+</script>
+</HEAD>
+
+<BODY>
+<!-- 铃声地址 http://www.haolingsheng.com -->
+<audio id="bgMusic" src="music/s02.mp3" type="audio/mp3"></audio>
+<!--autoplay 自动播放-->
+<center>
+<a href="#" onclick="playFunc()">播放音乐</a><br>
+<a href="#" onclick="pauseFunc()">暂停</a><br>
+<a href="#" onclick="stopFunc()">停止</a><br>
+
+<!-- <a href="#" onclick="clicksound(1)">播放音乐</a><br>
+<a href="#" onclick="clicksound(2)">暂停</a><br>
+<a href="#" onclick="clicksound(3)">停止</a><br> -->
+<hr width=700>
+<div>鼠标单击上面的内容时,会有动感的背景音效</div>
+
+</center>
+</BODY>
+</HTML>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+
+<script>
+   /*
+	HTML 事件的例子：
+	当用户点击鼠标时  <h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>
+	当网页已加载时
+	当图像已加载时
+	当输入字段被改变时
+	当鼠标移动到元素上时
+	当用户触发按钮时
+   */
+   		function changetext(id)
+		{
+		    id.innerHTML="谢谢!";
+		}
+
+		function checkCookies()
+		{
+		if (navigator.cookieEnabled==true)
+			{
+			alert("提示：已启用 cookie");
+			}
+		else
+			{
+			alert("提示：未启用 cookie");
+			}
+		}
+
+		function toUpperFunc()
+		{
+			var x=document.getElementById("fname");
+			x.value=x.value.toUpperCase();
+		}
+
+		function lighton()
+		{
+		   document.getElementById('myimage').src="images/eg_bulbon.gif";
+		}
+		function lightoff()
+		{
+		    document.getElementById('myimage').src="images/eg_bulboff.gif";
+		}
+
+		function clickFunc()
+		{
+			alert("完成鼠标点击");
+		}
+
+</script>
+</head>
+
+<body>
+
+<!-- 当用户点击鼠标时 谁调用，this就是谁 -->
+<h1 onclick="changetext(this)">请点击该文本</h1>
+
+<!-- onload 和 onunload 事件会在用户进入或离开页面时被触发。
+onload 事件可用于检测访问者的浏览器类型和浏览器版本，并基于这些信息来加载网页的正确版本。
+onload 和 onunload 事件可用于处理 cookie。 -->
+<body onload="checkCookies()">
+
+
+请输入英文字符：<input type="text" id="fname" onchange="toUpperFunc()">
+<p>当您离开输入字段时，会触发将输入文本转换为大写的函数。</p>
+
+<!--  onmouseover 鼠标移到上面   onmouseout鼠标移出时 -->
+<h1 onmouseover="style.color='red'" onmouseout="style.color='blue'">
+请把鼠标移到这段文本上，改变颜色
+</h1>
+
+<!--  onmousedown, onmouseup 以及 onclick 构成了鼠标点击事件的所有部分。首先当点击鼠标按钮时，会触发 onmousedown 事件，当释放鼠标按钮时，会触发 onmouseup 事件，最后，当完成鼠标点击时，会触发 onclick 事件。 -->
+<img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" onclick="clickFunc()" src="images/eg_bulboff.gif" />
+<p>按住鼠标不放可以点亮这盏灯！</p>
+
+<!-- 作业： 移动到上面时，切换图片，移走时，切换回来 -->
+</body>
+</html>

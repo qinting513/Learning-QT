@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE>选择美女</TITLE>
+<STYLE>
+/*<!--样式单 -->*/
+a{ 
+	font-size:20px;
+	color:blue;
+	font-family:Vineta BT
+}
+a:link{text-decoration:none;}
+a:hover{text-decoration:none;color:red }
+
+</STYLE>
+// <script>
+// var girls = ["images/meinv0.jpg","images/meinv1.jpg","images/meinv2.jpg","images/meinv3.jpg","images/meinv4.jpg","images/meinv5.jpg","images/meinv6.jpg","images/meinv7.jpg"];
+
+function selectImg(i)
+{
+    var girlImg = document.getElementById("girlImg");
+	 switch (i) 
+	 {
+	 	case 0 : girlImg.src = "images/meinv0.jpg";break;
+	 	case 1 : girlImg.src = "images/meinv1.jpg";break;
+	 	case 2 : girlImg.src = "images/meinv2.jpg";break;
+	 	case 3 : girlImg.src = "images/meinv3.jpg";break;
+	 	case 4 : girlImg.src = "images/meinv4.jpg";break;
+	 	case 5 : girlImg.src = "images/meinv5.jpg";break;
+	 	case 6 : girlImg.src = "images/meinv6.jpg";break;
+	 	case 7 : girlImg.src = "images/meinv7.jpg";break;
+	 }
+}
+//  作业： 优化代码！
+
+</script>
+
+</HEAD>
+
+<BODY>
+<center>
+<h2>点击名字，显示对应的美女图片</h2>
+<hr width=700>
+<a href="#" onclick="selectImg(0)">刘亦菲</a><br>
+<a href="#" onclick="selectImg(1)">高圆圆</a><br>
+<a href="#" onclick="selectImg(2)">范冰冰</a><br>
+<a href="#" onclick="selectImg(3)">郑  爽</a><br>
+<a href="#" onclick="selectImg(4)">林志玲</a><br>
+<a href="#" onclick="selectImg(5)">章子怡</a><br>
+<a href="#" onclick="selectImg(6)">唐  嫣</a><br>
+<a href="#" onclick="selectImg(7)">安以轩</a><br>
+<hr width=700>
+<img id="girlImg" src="images/meinv0.jpg">
+</center>
+</BODY>
+</HTML>
+
+
+
+

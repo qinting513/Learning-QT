@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            /*font-family: "Helvetica","Arial",serif;*/
+            color: #333;
+            background-color: #ccc;
+            margin: 1em 10%;
+        }
+        h1 {
+            color: #333;
+            /*background-color: transparent;*/
+        }
+        a {
+            color: #c60;
+            /*background-color: transparent;*/
+            font-weight: bold;
+            text-decoration: none;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            float: left;
+            padding: 1em;
+            list-style: none;
+        }
+        #imagegallery {
+
+            list-style: none;
+        }
+
+        #imagegallery li {
+            margin: 0px 20px 20px 0px;
+            padding: 0px;
+            display: inline;
+        }
+
+        #imagegallery li a img {
+            border: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<h2>
+    美女画廊
+</h2>
+
+<ul id="imagegallery">
+    <li><a  href="images/1.jpg" title="美女A" onclick="showPic(this);return false;">
+        <img src="images/1-small.jpg" width="100"  alt="美女1" />
+    </a></li>
+    <li><a href="images/2.jpg" title="美女B" onclick="showPic(this);return false;">
+        <img src="images/2-small.jpg" width="100" alt="美女2" />
+    </a></li>
+    <li><a href="images/3.jpg" title="美女C" onclick="showPic(this);return false;">
+        <img src="images/3-small.jpg" width="100" alt="美女3" />
+    </a></li>
+    <li><a href="images/4.jpg" title="美女D" onclick="showPic(this);return false;">
+        <img src="images/4-small.jpg" width="100" alt="美女4" />
+    </a></li>
+</ul>
+
+<!-- 在html元素中是取消点击的意思
+比如说<a href="http://www.baidu.com" onclick="return false">百度</a>
+这个链接直接点击的话无效~~~右键"在新窗口中打开"就有效 -->
+<a href="http://www.baidu.com" onclick="return false">百度</a>
+<div style="clear:both"></div>
+<!-- alt 没有图片，显示的文字 -->
+<img id="image" src="images/placeholder.png" alt="" width="450px" />
+<p id="des">选择一个图片</p>
+
+<script>
+    function showPic(link) {
+        //切换图片
+        var img = document.getElementById("image");
+        img.src = link.href;
+        //改变p中的内容
+        var p = document.getElementById("des");
+        //innerText
+        p.innerHTML = link.title;
+    }
+
+</script>
+</body>
+</html>
+
+<!-- 作业：增加背景音乐，当前大图显示第1张图片则播放第一首歌，依次类推 -->
+
+
+
+

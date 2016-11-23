@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+
+    //构造函数  不带参数 创建狗这个类
+    // 类 是对对象的抽象、概括
+    var Dog = function(){
+        // 狗这个类 具有的属性
+        this.name = null;
+        this.height = null;
+        this.age = null;
+
+        //  狗这个类 具有的行为
+        this.eat = function(meat){
+           console.log(this.name + '------吃'+ meat);
+        };
+        this.run = function(){
+            console.log(this.name + '------跑');
+        }
+    };
+
+    // 批量产生对象
+    var dog1 = new Dog();
+    dog1.name = 'wangcai';
+    dog1.height = 1.55;
+    dog1.eat('五花肉');
+    
+    var dog2 = new Dog();
+    dog2.name = 'lulu';
+    dog2.eat('骨头');
+    dog2.height = 1.00;
+
+    console.log(dog1, dog2);
+
+    //构造函数  带参数
+
+//    var Dog = function(name, height, age){
+//    this.name = name;
+//    this.height = height;
+//    this.age = age;
+//    this.eat = function(meat){
+//        console.log(this.name + '------吃'+ meat);
+//    };
+//    this.run = function(){
+//        console.log(this.name + '------跑');
+//    }
+//    };
+//
+//    var dog1 = new Dog('wangcai', 1.44, 10);
+//    var dog2 = new Dog('ahuang', 0.11);
+//
+//    console.log(dog1, dog2);
+
+// 作业：创建 "人" 这个类，有 名字、年龄、体重 这几个属性，有吃饭、睡觉、玩的行为
+
+
+</script>
+</body>
+</html>

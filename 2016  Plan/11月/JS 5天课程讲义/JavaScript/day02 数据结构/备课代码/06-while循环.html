@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>while循环</title>
+</head>
+<body>
+<!-- 
+while (条件)   //只要条件是真的，代码就会执行
+  {
+     需要执行的代码
+  }
+  -->
+
+  <script type="text/javascript">
+  	
+  var sum = 0 ;	
+  var i = 0;
+  while (i<100)
+  {
+     i ++;
+     sum = sum + i;
+     document.write(i);
+     document.write("<br/>");
+     if(sum >= 1000) {
+     	alert(i);
+     	break;
+     }
+  }
+   alert(sum);
+
+var cars = ["BMW","Volvo","Saab","Ford"];
+var i=0;
+while (cars[i])   // 只要不是0 就是真的
+{
+document.write(cars[i] + "<br>");
+i++;
+}
+   // 作业： 如果所有的数的和大于1000，则停止循环，并弹框显示此时i的值
+  </script>
+
+</body>
+</html>

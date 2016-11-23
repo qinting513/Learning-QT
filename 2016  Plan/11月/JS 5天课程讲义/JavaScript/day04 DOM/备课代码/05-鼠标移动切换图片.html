@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+
+<script>
+   function mOver(obj)
+{
+  obj.src = "images/p2.jpg";
+}
+
+function mOut(obj)
+{
+obj.src = "images/p1.jpg";
+}
+
+</script>
+</head>
+
+<body>
+
+<!-- 作业： 移动到上面时，切换图片，移走时，切换回来 -->
+<img src="p1.jpg" onmouseover="mOver(this)" onmouseout="mOut(this)" width=400px height=600px>
+
+</body>
+</html>

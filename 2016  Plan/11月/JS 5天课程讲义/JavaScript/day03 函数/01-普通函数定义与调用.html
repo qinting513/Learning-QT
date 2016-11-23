@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>函数定义</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+ // 这是一个无返回值的求和函数， 有2个参数a和b
+   function add1(a,b){
+      var sum = a + b;
+      console.log("无返回值函数结果：" + sum); 
+   }
+
+	/* 1.为什么有函数：
+	    把能实现特定功能的某些代码，封装成一个函数，以便重复调用
+	    有了函数就可以把一个程序分成多个模块交给不同的人来做，以此来降低程序开发的周期
+
+	    2.函数的定义: 使用关键字 function来定义函数，functionName 表示函数名
+	     // 形式参数列表 不需要标明类型
+			function functionName(parameters)
+			{
+				  执行的代码
+				  // 如果有返回值，则须用return 返回结果
+			}
+	*/
+   
+   // 1.函数的声明 （定义）
+   // 函数的定义格式 ：
+   //          function 函数名（参数列表）
+   //          {
+   //           // 函数体  
+   //            函数没有返回类型
+   //          }
+   function add0(){
+     console.log("这是一个没有参数，没有返回值的函数");
+   }
+
+ 
+    // 这是一个有返回值的求和函数， 有2个参数a和b
+   function mul(a,b){
+      // var sum = a + b;
+      // return sum;
+      return a * b;
+   }
+
+   // 2.函数的调用
+   // 函数声明后不会立即执行，会在我们需要的时候调用到。
+   	add0();
+   	add1(6,9);
+   	var result = mul(6,9); //可用一个变量接收返回值，打印出来
+    console.log("有返回值函数结果：" + result);
+
+    // 根据需要，看需不需要有返回值， 比如 计算  3 + 4 * 5
+     var  mulResult = mul(4,5);
+     // var  allResult = add1(3,mulResult);
+      // 我需要在这个位置弹框显示出来，则，add1 这个就需要有返回值
+   	
+   
+    // 作业： 写出 减法、乘法、除法，余数的函数
+    function sub(num1,num2)
+    {
+      var result = num1 - num2;
+      console.log(result);
+    }
+
+    function mul(num1,num2)
+    {
+     var result = num1 * num2;
+      console.log(result);
+    }
+
+    function div(num1,num2)
+    {
+      var result = num1 / num2;
+      console.log(result);
+    } 
+ 
+      //   把4个方法整合到一个方法里
+     function operationFunc(num1,num2,operator){
+          switch (operator)
+          {
+            case "+" :
+            {
+              return num1 + num2;
+            }
+            case "-" : 
+            {
+              return num1 - num2;
+            }
+            case "*" : 
+            {
+              return num1 * num2;
+            }
+            case "/" : 
+            {
+              if (num2 != 0){
+                return num1 / num2;
+              }else{
+                return "除数不能为0";
+              }
+            }
+
+            default : 
+            return "运算符不是加减乘除！";
+
+          }
+     }
+
+     var result = operationFunc(2,0,"/");
+     alert(result);
+
+</script>
+
+</body>
+</html>

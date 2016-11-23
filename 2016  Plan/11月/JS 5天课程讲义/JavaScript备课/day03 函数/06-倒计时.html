@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      body{
+        text-align: center;
+      }
+        img{
+            margin: 50px;
+            display: none;
+        }
+
+        .time{
+            margin: 50px;
+            font-size: 200px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- 图片 -->
+<!-- <img name="icon" src="music/gao.jpg"> -->
+<img id="gaoyuanyuan" src="music/gao.jpg">
+<!-- 时间 -->
+<div class="time">10</div>
+
+
+<!-- 倒计时，时间到，则显示图片出来 -->
+<script type="text/javascript">
+    // 拿到对应的标签
+    // var img = document.getElementsByName('icon')[0];
+    var img = document.getElementById('gaoyuanyuan');
+    var div = document.getElementsByClassName('time')[0];
+
+ function countDown(){
+         div.innerHTML = div.innerHTML -1;
+         // 判断
+         if(div.innerHTML == '0'){
+            // 清除计时器
+             clearInterval(timer);
+            // 隐藏div
+             div.style.display = 'none';
+            // 显示图片
+             img.style.display = 'inline-block';
+         }
+     }
+     
+     // 1. 函数作为参数，传人函数名，即可调用该函数。
+    var timer = setInterval(countDown,1000);
+
+   //    2. 匿名函数
+   // var timer = setInterval(function(){
+   //       div.innerHTML = div.innerHTML -1;
+   //       // 判断
+   //       if(div.innerHTML == '0'){
+   //          // 清除计时器
+   //           clearInterval(timer);
+   //          // 隐藏div
+   //           div.style.display = 'none';
+   //          // 显示图片
+   //           img.style.display = 'inline-block';
+   //       }
+   //   }, 1000);
+
+</script>
+</body>
+</html>
+
+<!-- 作业： 整合代码，倒计时完全后，才出现音乐列表-->
+
+
+
+
+

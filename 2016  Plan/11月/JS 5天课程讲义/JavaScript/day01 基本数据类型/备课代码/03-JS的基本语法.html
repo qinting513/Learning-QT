@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+    // 数据类型   typeof 查看真实类型
+    // 1.number 数字类型
+    var number = 1.0;
+    // 2.string 字符串类型 
+    var man = 'jack'; // string 用单引号引起来
+    var woman = 'rose'; // string
+
+    var newName = man + woman;
+    console.log(newName);
+
+    var note = '不要怂，拿起键盘就是干';
+     note = '9月30号告诉女神，国庆8天假期，女神回了一个字："香"。看不懂就没敢回她。结果假期结束至今，女神没搭理过我，究竟错在哪了？';   
+   
+    // 3.boolean 布尔类型 false true 
+    var result = false;   // 你看懂了吗？
+    if(result)    // 神评论： 看不懂就去开房,反正我是看不懂，所以我就去开房了
+    {
+       console.log('看不懂就去开房,反正我是看不懂，所以我就去开房了');
+    }else
+    {
+        console.log('既然看懂了，更应该去开房啊！');
+    }
+    // 4.Undefined 这个值表示变量不含有值。可以通过将变量的值设置为 null 来清空变量
+    var num ;// undefined
+    num = 'aaa'; // string
+    num = null;   // null类型
+
+    console.log(man, woman, result, num);
+    console.log(typeof man,typeof woman, typeof result,typeof num);
+
+
+    // 运算是从左往右, 任何类型遇到string都会被转为string
+    //JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型
+    var str1 = 10 + 10 + '10' + '10'; // 201010
+    var str2 = '10' + '10' + 10 + 10; // 10101010
+    var str3 = (10 + 10) + '10' + '10';// 201010
+    var str4 = 10 + 10 + '10' + 10; // 201010
+    console.log(str2);
+ 
+    // 一个变量对应一个值，但是如果我有多个值，我想用一个变量保存，如何保存呢？
+    // 作用：Array 对象用于在单个的变量中存储多个值
+
+   //5.Array 数组类型  可以存放很多元素 数组中可以放任何类型的数据
+   // var arr = new Array(element0, element1, ..., elementn);
+    var numbers = [man, 10, 'hhh', result, "num", ['rrr', 10]];
+  
+  /****** 如果不用引号引用起来，则被浏览器解析成变量来使用，所以字符串要用双引号括起来 *******/
+
+    // 数组通过下标进行取值、赋值操作 
+    alert(numbers[0]); 
+    alert(numbers.length);
+
+     /* 　　出差在外，住在旅馆。
+　　       遂一小姐发来消息: 天津 安徽 江西？ 
+　       　机智如我，马上领会了她的意思，很想回复：湖南 江西！
+           但是一摸兜，只能回复: 海南！
+　　        她回了一个白眼：那你就自己 山东 吧！ */
+
+    //5.1 创建数组的第一种方式
+    var nv =["天津","安微","江西"]; 
+    console.log(nv); 
+  
+    //5.2 创建数组的第2种方式
+    var nan = new Array();
+        nan[0]="湖南";
+        nan[1]="江西";
+        console.log(nan);
+    //5.3 创建数组的第3种方式
+    var reply = ["海南","山东"];
+    console.log(reply);
+
+     // 一男对一女说：“我请你吃饭!”女说：“改日吧!”
+
+    // 昨天在微博看了一个搞笑的街头采访，女主持人去问路人，以前单纯的你看到哪些词语，会觉得很污，
+
+     // 史上知名八大坚夫银妇：锄禾日当午，造血干细胞，清明上河图，弯弓射大雕，复方草珊瑚，平方差公式，班长兼学委，还有一个......完全搞不懂！
+      // 弯弓射大雕，仙剑奇侠传，王朝干红酒，重阳插茱萸，黄河入海流，起舞弄清影，白鹭上青天，梨花压海棠，曲径通幽处，锄禾日当午，造血干细胞，清明上河图，复方草珊瑚，平方差公式，班长兼学委
+
+    //  谁发明了婴儿这种外星生物，完全无法沟通，裸机一部，没配任何文档。待机极短，2小时一充，并且无法退货。——可是，你们很喜欢开发过程
+
+   // 作业：分别用2种方式创建2个数组，第一个数组初始化内容为你的3个女神的名字，第二个数组初始化为2个汽车品牌的名字 
+
+    
+
+     console.log(numbers.length);
+    // 遍历
+   for(var i=0; i< numbers.length; i++){
+       console.log(numbers[i]);
+   }
+
+ // (5) 对象类型   对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义，类似于字典。属性由逗号分隔：
+    var dog = {
+       name : 'jackey',
+       age : 10
+    };
+    console.log(dog.name)
+    console.log(dog.name + '-' + dog.age)
+    
+    var dog2 = {
+       name : 'hhh',
+       age  : 10,
+       height : 1.55  //(身高已经超过郭敬明了)
+    };
+    console.log(typeof dog2);
+
+   
+</script>
+</head>
+<body>
+<table border="1px">
+    <th>数据类型</th>
+    <th>说明</th>
+    <th>举例</th>
+    <tr> 
+         <td>number</td> 
+         <td>包括整数、小数</td>
+         <td>10,2.0</td>
+    </tr>
+
+    <tr> 
+         <td>string</td> 
+         <td>字符串类型,可以用双引号和单引号引住内容（建议使用单引号）</td>
+         <td>"jack"</td>
+    </tr>
+
+    <tr> 
+         <td>boolean</td>
+         <td>只有真、假</td> 
+         <td>false,true</td>
+
+    </tr>
+
+    <tr> 
+         <td>数组</td> 
+         <td>数组可以装任意类型</td>
+         <td>['java',10,3.0,false,true]</td>
+    </tr>
+
+     <tr> 
+         <td>对象</td> 
+         <td>对象类型，一个key对应一个Value</td>
+         <td>var dog = { name : 'jack',age : 10};</td>
+    </tr>
+
+</table>
+<p>注意点：<br/>
+JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型<br/>
+var x                // x 为 undefined <br/>
+var x = 6;           // x 为数字        <br/>
+var x = "Bill";      // x 为字符串      <br/>
+</p>
+
+</body>
+</html>

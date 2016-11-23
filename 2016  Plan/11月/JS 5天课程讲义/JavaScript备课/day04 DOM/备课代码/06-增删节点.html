@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<style type="text/css">
+		#pp {
+			color:red;
+		  }
+	</style>
+</head>
+<body>
+	<div id="div1">
+	<p id="p1">这是一个段落。</p>
+	<p id="p2">这是另一个段落。</p>
+	</div>
+ 
+    <video src="love.mp3" autoplay style="display: none"></video>
+
+<script>
+/*
+   创建新的 HTML 元素
+   如需向 HTML DOM 添加新元素，您必须首先创建该元素（元素节点），然后向一个已存在的元素追加该元素。
+*/
+// 增加元素
+var para=document.createElement("p");
+para.id = "pp"; // 设置id名
+var node=document.createTextNode("这是新段落,字体要改为红色。");
+para.appendChild(node);
+
+var element=document.getElementById("div1");
+element.appendChild(para);
+
+
+
+
+// 删除元素
+// var parent=document.getElementById("div1");
+// var child=document.getElementById("p1");
+// parent.removeChild(child);
+
+/*提示：如果能够在不引用父元素的情况下删除某个元素，就太好了。
+不过很遗憾。DOM 需要清楚您需要删除的元素，以及它的父元素。
+这是常用的解决方案：找到您希望删除的子元素，然后使用其 parentNode 属性来找到父元素*/
+
+</script>
+
+</body>
+</html>

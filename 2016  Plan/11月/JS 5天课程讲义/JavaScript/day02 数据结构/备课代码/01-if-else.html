@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>if - else </title>
+
+</head>
+<body>
+
+    <h2>JS里有3大结构：</h2>
+        <div>
+        <p>1.顺序结构 代码从上到下逐行执行</p>
+        <p>2.选择结构 if..else  switch，条件满足哪一条，就进入哪一个分支</p>
+        <p>3.循环结构  for  while</p>  
+       </div>
+ <input type="text" id="num1" >
+ <input type="text" id="num2" >
+ <input type='button' value="点我，我告诉你能去干嘛！"  onclick="clickBtn()">
+
+ <script type="text/javascript">
+ 
+// 条件语句用于基于不同的条件来执行不同的动作。
+	/* 
+		if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码
+		if...else 语句 - 当条件为 true 时执行代码，当条件为 false 时执行其他代码
+		if...else if....else 语句- 使用该语句来选择多个代码块之一来执行
+		switch 语句 - 使用该语句来选择多个代码块之一来执行
+
+		if (condition) condition 可以是数值，也可以是表达式，
+		{
+		    当条件为 true 时执行的代码
+		}
+
+		if (condition)
+		{
+			当条件为 true 时执行的代码
+		}
+		else
+		{
+			当条件不为 true 时执行的代码
+		}
+
+	*/
+
+	var money = 20;
+	if (money > 10) {
+        console.log("我有大于等于10块钱，可以去吃顿好吃的了");
+	}
+
+	if (money > 1000 ) {
+		console.log("可以去瞟了");
+	}else{
+       console.log("钱不够多，只能回去睡觉吧");
+	}
+
+  // 比较逻辑运算 用于测试true或者false
+// 1.比较运算符
+var boyAge = 22;
+var  girlAge = 18;
+// 等于 ==
+// 不等于 !=
+if (boyAge == girlAge) { console.log("男孩女孩同睡")}; 
+if (boyAge != girlAge) { console.log("男孩女孩不同睡")}; 
+if (boyAge > girlAge)  { console.log("男孩年龄大于女孩年龄")};
+if (boyAge < girlAge)  { console.log("男孩年龄小于女孩年龄")};
+if (boyAge >= girlAge) { console.log("男孩年龄大于或者等于女孩年龄")};
+if (boyAge <= girlAge) { console.log("男孩年龄小于或者等于女孩年龄")};
+
+
+// 2. 逻辑运算符  
+// &&  可以理解为并且， && 两边的表达式同时满足条件的时候，结果是true，否则为false
+// ||  可以理解为或者，|| 两边的表达式任意一个满足条件的时候，结果是true，否则为false
+// !   如果y是0，!y则是true，如果y是大于0，!y则是false
+ var x = 5;
+ var y = 2;
+ if(x < 10 && y >1 ) 
+  {  
+    console.log("x小于10，并且 y 大于1 ");  
+   }
+ if(x == 15 || y == 5) 
+ {
+  console.log("x的值等于15，或者 y的值等于5");
+}
+ if(!y){ 
+  console.log("如果y是0，!y则是true");
+ }
+ else{
+   console.log("如果y是大于0，!y则是false")
+};
+
+// 国庆节，输入你钱包里的钱，看看能去干什么
+    function clickBtn()
+    {
+    	// 1. 获取到输入的值式多少 2.转化为number类型 3.进行if的比较，满足哪一个条件，则进入到某一个分支，进行打印出来
+       // console.log("============");
+   　　 var num1 = document.getElementById("num1").value;
+   　　 var num2 = document.getElementById("num2").value;
+        console.log(num1,typeof num1);
+
+       var floatNum1 = parseFloat(num1); // 将字符串转化为number类型
+       console.log(floatNum1,typeof floatNum1);
+
+   		if(floatNum1 < 100){
+   			alert("没有钱，你只能在家");
+   		}else if ( floatNum1 > 100 && floatNum1 <= 1000) {
+   			alert("可以去开个房"); 
+   		}else if (floatNum1 > 1000 && floatNum1 <= 10000){
+   			alert("可以去东莞玩几天,洗个脚,按个摩");   
+   		}else if (floatNum1 > 10000){
+   			alert("土豪，请我们班的去搓一顿呗");
+   		}
+    }
+    
+    // 作业：
+
+</script>
+  <!--  简单的计算器 - -->
+
+</body>
+
+</html>

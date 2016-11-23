@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<title>数据类型</title>
+   <script type="text/javascript">
+    // js中定义变量必须用var，格式: var 变量名 = 变量的值（或者先不初始化）
+   	//1. number (包括所有的数字（整数、小数) ) 
+   	var month = 30; //number  
+   	var money = 10000; //number
+   	console.log(money,month);
+   	console.log(typeof month,typeof money);
+    
+    // 你们谁还记得小学一年级学了什么吗？  加减乘除！
+    var  n1 = 6;
+    var  n2 = 9;
+    console.log(n1+n2); 
+    console.log(n1-n2);
+    console.log(n1*n2);
+    console.log(n1/n2);
+    console.log(money / month); // 每天的工资
+    console.log(money % month); // 取余数
+
+   	/* 2. 函数的定义格式 ：
+            function 函数名（参数列表）
+            {
+             // 函数体  
+              函数没有返回类型
+            }
+   	*/
+   	// 声明一个函数
+   	function sum(num1,num2)   // 形式参数列表 不需要标明类型
+   	{
+   		var total = num1 + num2;
+   		alert(total);
+   	} 
+
+    //调用函数
+    sum(2,4);
+
+    // 作业： 写出 减法、乘法、除法
+    function sub(num1,num2)
+    {
+      var result = num1 - num2;
+      console.log(result);
+    }
+
+    function mul(num1,num2)
+    {
+     var result = num1 * num2;
+      console.log(result);
+    }
+
+    function div(num1,num2)
+    {
+      var result = num1 / num2;
+      console.log(result);
+    }
+    // 小学毕业了
+   </script>
+</head>
+<body>
+
+</body>
+</html>

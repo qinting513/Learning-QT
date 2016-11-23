@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>比较逻辑运算符</title>
+</head>
+<body>
+
+<script type="text/javascript">
+// 比较逻辑运算 用于测试true或者false
+
+// 1.比较运算符
+var boyAge = 22;
+var  girlAge = 18;
+// 等于 ==
+// 不等于 !=
+if (boyAge == girlAge) { console.log("男孩女孩同睡")}; 
+if (boyAge != girlAge) { console.log("男孩女孩不同睡")}; 
+if (boyAge > girlAge)  { console.log("男孩年龄大于女孩年龄")};
+if (boyAge < girlAge)  { console.log("男孩年龄小于女孩年龄")};
+if (boyAge >= girlAge) { console.log("男孩年龄大于或者等于女孩年龄")};
+if (boyAge <= girlAge) { console.log("男孩年龄小于或者等于女孩年龄")};
+
+
+// 2. 逻辑运算符  
+// &&  可以理解为并且， && 两边的表达式同时满足条件的时候，结果是true，否则为false
+// ||  可以理解为或者，|| 两边的表达式任意一个满足条件的时候，结果是true，否则为false
+// !   如果y是0，!y则是true，如果y是大于0，!y则是false
+ var x = 5;
+ var y = 2;
+ if(x < 10 && y >1 ) 
+ 	{  
+ 		console.log("x小于10，并且 y 大于1 ");  
+ 	 }
+ if(x == 15 || y == 5) 
+ {
+ 	console.log("x的值等于15，或者 y的值等于5");
+}
+ if(!y){ 
+ 	console.log("如果y是0，!y则是true");
+ }
+ else{
+   console.log("如果y是大于0，!y则是false")
+};
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+<p>上面的段落已被一段脚本修改。</p>
+
+<!-- <h1 id="id1">My Heading 1</h1>
+<button type="button" onclick="document.getElementById('id1').style.color='red'">改变颜色</button> -->
+
+<script>
+/* 如需改变 HTML 元素的样式:
+    document.getElementById(id).style.property=new style */
+
+    document.getElementById("p2").style.color="blue";
+    document.getElementById("p2").style.fontFamily="Arial";
+    document.getElementById("p2").style.fontSize="larger";
+
+</script>
+
+</body>
+</html>

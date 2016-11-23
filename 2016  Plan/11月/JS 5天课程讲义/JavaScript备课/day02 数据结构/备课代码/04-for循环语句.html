@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+// 如果您希望一遍又一遍地运行相同的代码，并且每次的值都不同，那么使用循环是很方便的。
+
+/*
+JavaScript 支持不同类型的循环：
+for - 循环代码块一定的次数
+for/in - 循环遍历对象的属性
+while - 当指定的条件为 true 时循环指定的代码块
+do/while - 同样当指定的条件为 true 时循环指定的代码块
+*/
+
+/* for ( 初始值; 执行循环的条件; 每次循环条件变化)
+  {
+     被执行的代码块
+  }
+   */
+
+       // for(var i = 0; i < 100; i++) {
+       //     console.log(i);
+       // }
+
+//1 打印1到100
+//2 打印1到100的和
+//    var sum = 0;
+//    for (var i=1; i <= 100; i++) {
+////        sum = sum + i;
+//        sum += i;
+////        console.log(sum);
+////        console.log(i);
+//    }
+//    console.log(sum);
+
+//3 求1-100之间所有数的和、平均值
+//    var sum = 0, avg;
+//    for (var i = 1; i <= 100; i++) {
+//        sum += i;
+//    }
+//    avg = sum / 100;
+//    console.log(avg);
+//    console.log(sum);
+
+//4 求1-100之间所有偶数的和、所有奇数的和
+//    var evenSum = 0;//偶数
+//    var oddSum = 0; //奇数
+//    for (var i = 1; i <= 100; i++) {
+//        //判断奇偶数
+//        if (i % 2 == 0) {
+//            //偶数
+//            evenSum += i;
+//        }else{
+//            //奇数
+//            oddSum += i;
+//        }
+//    }
+//    console.log(evenSum);
+//    console.log(oddSum);
+
+
+
+var persons = ["潘金莲","李瓶儿","春梅"]; 
+
+
+for(i in persons)
+{
+    console.log(i+persons[i]);
+}
+
+
+// break 与 continue 
+   var sum = 0;
+   for (var i=1; i <= 10; i++) {
+   
+    if(i == 5 ){
+          break;
+          // continue;
+       }
+
+//        sum = sum + i;
+       sum += i;
+
+   }
+   console.log(sum);
+
+// 作业： 考察continue ，从1加到100，但是 50～60之间的数，不进行相加
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

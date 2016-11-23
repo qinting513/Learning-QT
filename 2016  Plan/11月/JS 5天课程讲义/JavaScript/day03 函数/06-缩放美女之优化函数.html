@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE>放大、缩小、重置图片</TITLE>
+</STYLE>
+<script>
+var zoomLevel = 0; 
+var currentWidth = 0; 
+var currentHeight = 0; 
+var originalWidth = 0; 
+var originalHeight = 0; 
+
+
+function initial(){ 
+    var img = document.getElementsByName("myImage")[0];
+
+    currentWidth = img.width; 
+    currentHeight = img.height; 
+    originalWidth = currentWidth; 
+    originalHeight = currentHeight; 
+    update(); 
+} 
+
+// 放大  获取到标签
+function zoomIn(){ 
+    var img = document.getElementsByName("myImage")[0];
+
+    img.width = currentWidth*1.2; 
+    img.height = currentHeight*1.2; 
+    zoomLevel = zoomLevel + 1; 
+    update(); 
+} 
+
+function zoomOut(){ 
+    var img = document.getElementsByName("myImage")[0];
+
+    img.width = currentWidth/1.2; 
+    img.height = currentHeight/1.2; 
+    zoomLevel = zoomLevel - 1; 
+    update(); 
+} 
+
+function resetImage(){ 
+    var img = document.getElementsByName("myImage")[0];
+    img.width = originalWidth; 
+    img.height = originalHeight; 
+    zoomLevel = 0; 
+    update(); 
+} 
+function update(){ 
+    var img = document.getElementsByName("myImage")[0];
+    currentWidth = img.width; 
+    currentHeight = img.height; 
+    zoomsize.innerText = "倍数：" + zoomLevel; 
+    imgsize.innerText = "当前尺寸：" + currentWidth + "x" + currentHeight; 
+} 
+ // 作业 ： if else 改成switch 格式的
+</script>
+</HEAD>
+
+<BODY>
+
+<body onload="initial()"> 
+</div> 
+    <p> 
+    <input type="button" value="  放大图片  " onclick="zoomIn()"> 
+    <input type="button" value="  缩小图片  " onclick="zoomOut()"> 
+    <input type="button" value="  重置图片  " onclick="resetImage()"> 
+    <span  id="zoomsize"></span> <span id="imgsize"></span>
+    </p> 
+    <!-- //引入本地图片  -->
+    <img name="myImage" src="images/meinv1.jpg" alt="pic"/>     
+</body> 
+</BODY>
+</HTML>

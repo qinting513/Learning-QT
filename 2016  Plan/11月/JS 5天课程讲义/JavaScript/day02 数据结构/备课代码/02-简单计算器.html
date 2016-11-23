@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+　<head>
+  　<meta charset="utf-8">　
+　  <title>简单计算器</title>
+ 　</head>
+  　<body >
+　　　<input type="text" id="num1" />
+  　　<select id="select">　　　　　　
+   　　　　<option value="+">+</option>
+   　　　　<option value="-">-</option>
+   　　　　<option value="*">*</option>
+   　　　　<option value="/">/</option>
+  　　<input type="text" id="num2" />
+  　　</select>
+  　　<input type='button' value="  =  "  onclick="count()">
+  　　<!--通过 = 按钮来调用创建的函数，得到结果-->
+  　　<input type='text' id='result'>
+ </body>
+
+　　<script type="text/javascript">
+
+ 　　//制做简单计算器
+  　　　　function count() {
+    
+   　　　　var num1 = document.getElementById("num1").value;
+   　　　　var num2 = document.getElementById("num2").value;
+          console.log(num1,typeof num1);
+          var n1 =  parseFloat(num1);
+          var n2 = parseFloat(num2);
+          console.log(n1,n2,typeof n1,typeof n2);
+
+          //最后完善：
+          // if(n2 == 0){
+          // 	alert("分母不能为0");
+          // }
+
+  
+   　　　　var s=document.getElementById("select").value;
+   　　　　var z;
+           // parseFloat() 函数可解析一个字符串，并返回一个浮点数。
+           // parseInt() 
+          if(s == "+"){
+            　z= n1 + n2; 
+          }else if(s == "-"){
+              z= n1 - n2;
+          }else if(s == "*"){
+              z=n1*n2;
+          }else if(s == "/"){
+              z=n1/n2;
+          }
+          document.getElementById("result").value = z;
+
+           /*  break    语句用于跳出循环。
+               continue 用于忽略此次循环，执行下一轮循环*/
+    // 　　　　 switch(s)
+    //           {
+    //      　　　　 case "+":                    
+    //       　　　　　　　　　z=n1+n2; break;
+    //       　　　　case "-":
+    //   　　　　　　　　　　  z=n1-n2; break;
+    //      　　　　 case "*":
+    //                      z=n1*n2; break;
+    //       　　　　case "/":
+    //                      z=n1/n2; break;
+    //  　　　　　　}
+    //  　　　　　　document.getElementById("result").value=z;
+  　　　　　　}
+ 　　　　</script>
+</html>

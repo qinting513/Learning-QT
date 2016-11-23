@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE>给网页加上背景音乐，选择音效功能</TITLE>
+<STYLE>
+/*<!--样式单 -->*/
+a{ 
+	font-size:20px;
+	color:blue;
+	font-family:Vineta BT
+}
+a:link{text-decoration:none;}
+a:hover{text-decoration:none;color:red }
+
+</STYLE>
+<script>
+
+//所有的音乐数组
+var musics = ["music/s01.mp3","music/s02.mp3","music/s03.mp3","music/s04.mp3","music/s05.mp3","music/s06.mp3"];
+
+ //记录当前的索引值
+// var currentIndex = 0; 
+function clicksound(i)
+{
+    var audio = document.getElementById("bgMusic");
+    audio.src = musics[i];
+	audio.play(); 
+}
+
+</script>
+</HEAD>
+
+<BODY>
+<!-- 铃声地址 http://www.haolingsheng.com -->
+<audio id="bgMusic" src="music/s01.mp3" type="audio/mp3"></audio>
+<!--autoplay 自动播放-->
+
+<center>
+<a href="#" onclick="clicksound(0)">小黄人</a><br>
+<a href="#" onclick="clicksound(1)">DJ版</a><br>
+<a href="#" onclick="clicksound(2)">演员</a><br>
+<a href="#" onclick="clicksound(3)">我以为</a><br>
+<a href="#" onclick="clicksound(4)">痛彻心扉</a><br>
+<a href="#" onclick="clicksound(5)">恋爱大过天</a><br>
+<hr width=700>
+<div>鼠标单击上面的内容时,就会播放那首歌！</div>
+</center>
+</BODY>
+</HTML>
+
+<!-- 作业： 界面有5首歌，选择哪一首歌，就可以播放那一首歌！ -->
+
+
+
+

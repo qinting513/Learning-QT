@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    
+        //把百分制转换成ABCDE
+//
+        //switch  判断相等的时候用的是全等 ===
+//        var a = 10;
+//        switch (a) {
+//            case 10:
+//                console.log("10");
+//            case 20:
+//                console.log("20");
+//            case 30:
+//                console.log("30");
+//            default:
+//                console.log("haha");
+//                break;
+//        }
+
+        //把百分制转换成ABCDE
+        var score = 66;
+        score = parseInt(score/10);
+
+        switch (score) {
+            case 10:
+            case 9:
+                console.log("A");
+                break;
+            case 8:
+                console.log("B");
+                break;
+            case 7:
+                console.log("C");
+                break;
+            case 6:
+                console.log("D");
+                break;
+            default:
+                console.log("E");
+                break;
+        }
+        // 注意：JS的switch的参数可以为任意类型
+//          胸围=身高 X 0.51 ( 如：身高160cm的标准胸围=160cm X 0.51=81.6cm )
+// 　       腰围=身高 X 0.34 ( 如：身高160cm的标准腰围=160cm X 0.34=54.4cm )
+//          臀围=身高 X 0.542 ( 如：身高160cm的标准臀围=160cm X 0.542=86.72cm )
+        // 输入名字，知道三围
+        var x="小泽";
+        switch(x)
+        {
+        case "小泽":   alert("小泽玛丽亚：B90 W60 H85");break;
+        case "波多":   alert("波多野结衣：B88 W59 H85");break;
+        case "林志玲": alert("林志玲：B89 W61 H91");break;
+        default:alert("找不到你想要的美女。。。");
+        }
+
+        // 作业，将计算器那个demo 改成用switch case的代码
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

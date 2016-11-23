@@ -1,0 +1,30 @@
+<html>
+<meta charset="UTF-8">
+
+<p id="aa"></p>
+
+<div style="display:none" id="w">JS实现类似打印的效果（一个字一个字显示）我就是来测试一下是否可以一个字一个字的跳出来，没有其它的意思。。。。啦啦啦。。。 
+   某公司经常加班，然后有个人猝死了，后来来了一个妹子，坐那个位子，大家都没告诉她猝死的事。某天晚上加班，妹子有段代码不会写，就让男朋友远程帮忙写，然后去吃饭了。然后，产品经理路过她位子的时候，看了一眼她电脑，发现电脑在自动一行一行的写代码。第二天，那个产品经理就辞职了 。。
+
+</div>
+
+<script >
+
+var index=0;
+//innerHTML 属性 用于设置或返回id类型为w的的开始和结束标签之间的内容
+var word=document.getElementById("w").innerHTML;
+console.log(word)
+function printf()
+{
+	// console.log( word.substring(0,index++) );
+	var str = word.substring(0,index++);
+    document.getElementById("aa").innerHTML = str;
+}
+
+setInterval(printf, 1000);
+
+</script>
+
+</html>
+
+<!-- 作业：一个字一个字的减少 -->

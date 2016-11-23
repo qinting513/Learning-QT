@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE>给网页加上背景音乐，选择音效功能</TITLE>
+<STYLE>
+/*<!--样式单 -->*/
+a{ 
+	font-size:20px;
+	color:blue;
+	font-family:Vineta BT
+}
+a:link{text-decoration:none;}
+a:hover{text-decoration:none;color:red }
+
+</STYLE>
+<script>
+
+//所有的音乐数组
+var musics = ["music/s01.mp3","music/s02.mp3","music/s03.mp3","music/s04.mp3"];
+ //记录当前的索引值
+var currentIndex = 0; 
+function clicksound(i)
+{
+    var audio = document.getElementById("bgMusic");
+	 switch (i) 
+	 {
+	 	case 1 : 
+	 	{
+	 		audio.play();  // 播放或继续的功能
+	 		break;
+	 	}
+
+	 	case 2 : 
+	 	{
+	 		audio.pause();
+	 		break;
+	 	}
+
+	 	case 3 : 
+	 	{
+	 		audio.pause();
+ 	        audio.currentTime = 0;
+	 		break;
+	 	}
+
+	 	case 4 : 
+	 	{
+	 		currentIndex--;
+	 		if(currentIndex < 0){
+	 			currentIndex = 3;
+	 		}
+	 		audio.src = musics[currentIndex];
+	 		audio.play(); 
+	 		break;
+	 	}
+
+	 	case 5 : 
+	 	{ 
+	 		currentIndex++;
+	 		if(currentIndex > 3){
+	 			currentIndex = 0;
+	 		}
+	 		audio.src = musics[currentIndex];
+	 		audio.play(); 
+	 		break;
+	 	}
+	 	
+	 }
+ 	
+}
+
+</script>
+</HEAD>
+
+<BODY>
+<!-- 铃声地址 http://www.haolingsheng.com -->
+<audio id="bgMusic" src="music/s02.mp3" type="audio/mp3"></audio>
+<!--autoplay 自动播放-->
+
+<center>
+<a href="#" onclick="clicksound(1)">播放</a><br>
+<a href="#" onclick="clicksound(2)">暂停</a><br>
+<a href="#" onclick="clicksound(3)">停止</a><br>
+<a href="#" onclick="clicksound(4)">上一首</a><br>
+<a href="#" onclick="clicksound(5)">下一首</a><br>
+<hr width=700>
+<div>鼠标单击上面的内容时,会有动感的背景音效</div>
+</center>
+</BODY>
+</HTML>
+
+<!-- 作业： 整合起来： 上面有5首歌，选择哪一首歌，就可以播放那一首歌！
+                     下面有播放选择的按钮，按钮能实现这些播放、暂停、上下一首等功能 -->
+
+
+

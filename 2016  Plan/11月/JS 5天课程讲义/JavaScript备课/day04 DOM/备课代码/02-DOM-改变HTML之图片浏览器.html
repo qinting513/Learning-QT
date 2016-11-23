@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script language =javascript > 
+var curIndex=0; 
+//时间间隔 单位毫秒 
+var timeInterval=1000; 
+var arr=new Array(); 
+// arr[0]="p1.jpg"; 
+// arr[1]="p2.jpg"; 
+// arr[2]="p3.jpg"; 
+// arr[3]="p4.jpg"; 
+// arr[4]="p5.jpg"; 
+// arr[5]="p6.jpg"; 
+// arr[6]="p7.jpg"; 
+for(var i=0; i<13; i++){
+  arr[i] = "p"+i+".jpg";
+}
+setInterval(changeImg,timeInterval); 
+function changeImg() 
+{ 
+    var obj=document.getElementById("showpic"); 
+    console.log(arr.length-1);
+    if (curIndex==arr.length-1) 
+    { 
+        curIndex=0; 
+    } 
+    else 
+    { 
+         curIndex+=1; 
+    } 
+    obj.src="images/"+arr[curIndex]; 
+} 
+</script> 
+
+<img src="images/p1.jpg" width="400" height="600" id="showpic" /> 
+</body>
+</html>

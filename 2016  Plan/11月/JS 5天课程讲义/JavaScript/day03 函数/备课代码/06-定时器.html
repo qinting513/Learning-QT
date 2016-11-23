@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+var c=0
+var t
+function timedCount()
+{
+    document.getElementById('txt').value=c;
+    c=c+1;
+    t=setTimeout("timedCount()",1000);
+}
+</script>
+</head>
+
+<body>
+
+<div>
+<input type="button" value="开始计时！" onClick="timedCount()">
+<input type="text" id="txt">
+</div>
+
+<p>请点击上面的按钮。输入框会从 0 开始一直进行计时。</p>
+
+<!-- 作业 ：写一个5秒的倒计时，倒计时到0时，弹出框显示倒计时时间到. -->
+
+</body>
+
+</html>

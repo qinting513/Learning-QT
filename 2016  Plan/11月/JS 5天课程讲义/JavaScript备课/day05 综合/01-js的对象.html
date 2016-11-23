@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //对象的作用：封装一些数据
+    //你有对象了吗？ 喜欢就上，不行就硬上，你不硬你怎么上！
+    // 写一个dog
+  var dog = {
+      name : 'aaa',
+      age : 20
+  };
+ // 提出问题，狗对象只有属性没有行为？
+    // this 代表所在当前的对象
+    var dog = {
+       name : 'wangcai',
+       height : 1.55,
+       age : 15,
+       friends : ['lulu', 'xixi'],
+       run : function(){
+           console.log(this.name + '-----在操场上跑步');
+       },
+       eat : function(meat){
+           console.log(this.name + '-----吃'+ meat);
+       }
+    }
+
+// 如何查看对象里的内容
+   console.log(dog.age+'------');
+   console.log(dog.friends[0]);
+// 快速遍历 把这个对象里所有的key对应的值打印出来
+   for(var pname in dog){
+      console.log(pname, dog[pname]);
+   }
+
+ 
+
+//  提出问题，如何调用狗对象的方法？
+      dog.run();
+      dog.eat('五花肉'); // 传肉进去---狗跑起来，吃起来
+
+ // 提出这种对象存在问题，不能量产？
+
+
+</script>
+</body>
+</html>

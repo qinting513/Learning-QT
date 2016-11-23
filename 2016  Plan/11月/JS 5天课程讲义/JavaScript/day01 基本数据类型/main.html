@@ -1,0 +1,332 @@
+
+
+<!-- ********************* demo1 *********************************** -->
+<html>
+<head>
+    <!-- 编码方式，不写 中文就会乱码-->
+    <meta charset="UTF-8">
+
+	<title> 输出HelloJavaScript</title>
+	<!-- 行内样式 -->
+	<script>
+		// 弹框 样式1 可用于阻塞程序往下执行，可以查看结果
+		 alert('Hello JavaScript');
+     alert(1000);
+
+    // 控制台打印输出 ，可以查看结果 ，查看如何发简历给百度求职
+		console.log('javascript 我来了');  
+		console.log('我要成为JavaScript大牛');
+
+	</script>
+
+	<!-- 外部样式 -->
+	<script src="main.js" ></script>
+  
+</head>
+
+<body>
+  <h2>Hello JavaScript</h2>
+    <!-- 复习html -->
+	<h3>总结:</h3>
+    <p>html 、css 中注释的格式： <!-- 注释部分 --> </p>
+    <p>js中的注格式： //单行注释  或者  ／*多行注释*/ </p>
+	   
+   <!-- css中推荐使用单引号 -->
+   <!-- <button onclick="alert("10000")">;   -->
+
+   <!-- 注意 在开发中经常把javaScript放在body的最后面，
+        因为代码是从上到下一行行执行的-->
+  <script>
+  	  console.log('JavaScript 从入门到放弃！');
+  </script>
+</body>
+
+</html>
+
+<!-- 休息 写作业1： 打印星形，正方形 -->
+<!-- 讲解作业 ：看注释 -->
+
+
+<!-- ********************* demo2 *********************************** -->
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>数据类型</title>
+   <script type="text/javascript">
+
+    // 1> js中定义变量必须用var，格式: var 变量名 = 变量的值（或者先不初始化）
+    // 2> 每句语句后面要有分号
+    // 3> 专业名词： 
+          //  标识符： 就是变量、函数的名字，命名规则：(通俗易懂，见名知意) 
+                // 1.第一个字符必须是字母、下划线(_)或美元符号($)
+                // 2.其他字符，可以是数字、字母、美元符号或者下划线
+                // 建议驼峰命名法  JavaScript 
+          //  关键字： 具有特殊用途， 比如var ，系统执行到这行，说明开始定义一个变量
+                   // 关键字是这门语言保留的，不能用做标识符
+                    // var if else for typeof  function 后面慢慢学到
+    //1. number (包括所有的数字（整数、小数) ) 
+    var month = 30; //number  
+    var money = 10000; //number
+    console.log(money,month);
+    console.log(typeof month,typeof money);
+    
+    // 你们谁还记得小学一年级学了什么吗？  加减乘除！
+    var  n1 = 6;
+    var  n2 = 9;
+    console.log(n1+n2); 
+    console.log(n1-n2);
+    console.log(n1*n2);
+    console.log(n1/n2);
+    console.log(money / month); // 每天的工资
+    console.log(n1 % n2); // 取余数
+   </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!-- ********************* demo3 基本数据类型 *********************************** -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+    // 数据类型   typeof 查看真实类型
+    // 1.number 数字类型
+    var number = 1.0;
+  
+  
+   // JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型
+   // 2.Undefined 这个值表示变量不含有值。可以通过将变量的值设置为 null 来清空变量
+    var num ;// undefined：表示变量没有有值，在内存中没地址
+    num = null;   // null类型：来清空变量，但在内存中有地址
+    num = 'aaa'; // string
+
+// 3.string 字符串类型
+    var man = 'jack'; // string 用单引号引起来
+    var woman = 'rose'; // string
+    var newName = man + woman;
+    console.log(newName);
+
+    console.log(man, woman, result, num);
+    console.log(typeof man,typeof woman, typeof result,typeof num);
+
+    var note = '不要怂，拿起键盘就是干';
+     note = '9月30号告诉女神，国庆8天假期，女神回了一个字："香"。看不懂就没敢回她。结果假期结束至今，女神没搭理过我，究竟错在哪了？';   
+     console.log(note)
+
+    // 4.boolean 布尔类型 false true 
+    var result = false;   // 你看懂了吗？
+    if(result)    // 神评论： 看不懂就去开房,反正我是看不懂，所以我就去开房了
+    {
+       console.log('看不懂就去开房,反正我是看不懂，所以我就去开房了');
+    }else
+    {
+        console.log('既然看懂了，更应该去开房啊！');
+    } 
+
+    // ----------  讲 字符串操作！！  -----------
+
+   //5.Array 数组类型  可以存放很多元素 数组中可以放任何类型的数据
+    var numbers = [man, 10, 'hhh', result, num, ['rrr', 10]];
+    //数组下标是基于零的，所以数组里第一个元素是 [0]，第二个是 [1]，以此类推
+    alert(numbers[0]);
+
+     /* 　　出差在外，住在旅馆。
+　　       遂一小姐发来消息: 天津 安徽 江西？
+　       　机智如我，马上领会了她的意思，很想回复：湖南 江西！
+           但是一摸兜，只能回复: 海南！
+　　        她回了一个白眼：那你就自己 山东 吧！ */
+    //5.1 创建数组的第一种方式
+    var nv =["天津","安微","江西","?"];  
+    //5.2 创建数组的第2种方式
+    var nan = new Array();
+        nan[0]="湖南";
+        nan[1]="江西";
+        nan[2]="!";
+    //5.3 创建数组的第3种方式
+    var huifu = new Array("海南");
+        huifu = new Array("山东");
+   // 作业：用3种方式 创建数组，数组里面有你们的女神的名字
+
+
+     console.log(numbers[5]);
+    // 遍历
+   for(var i=0; i< numbers.length; i++){
+       console.log(numbers[i]);
+   }
+
+ // (5) 对象类型   对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义，类似于字典。属性由逗号分隔：
+    var dog = {
+       name : 'jackey',
+       age : 10
+    };
+    console.log(dog.name)
+    console.log(dog.name + '-' + dog.age)
+    
+    var dog2 = {
+       name : 'hhh',
+       age  : 10,
+       height : 1.55  //(身高已经超过郭敬明了)
+    };
+    console.log(typeof dog2);
+
+</script>
+</head>
+<body>
+<table border="1px">
+    <th>数据类型</th>
+    <th>说明</th>
+    <th>举例</th>
+    <tr> 
+         <td>number</td> 
+         <td>包括整数、小数</td>
+         <td>10,2.0</td>
+    </tr>
+
+    <tr> 
+         <td>string</td> 
+         <td>字符串类型,可以用双引号和单引号引住内容（建议使用单引号）</td>
+         <td>"jack"</td>
+    </tr>
+
+    <tr> 
+         <td>boolean</td>
+         <td>只有真、假</td> 
+         <td>false,true</td>
+
+    </tr>
+
+    <tr> 
+         <td>数组</td> 
+         <td>数组可以装任意类型</td>
+         <td>['java',10,3.0,false,true]</td>
+    </tr>
+
+     <tr> 
+         <td>对象</td> 
+         <td>对象类型，一个key对应一个Value</td>
+         <td>var dog = { name : 'jack',age : 10};</td>
+    </tr>
+
+</table>
+<p>注意点：<br/>
+JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型<br/>
+var x                // x 为 undefined <br/>
+var x = 6;           // x 为数字        <br/>
+var x = "Bill";      // x 为字符串      <br/>
+</p>
+
+</body>
+</html>
+
+
+
+<!-- ********************* demo4 字符串操作 *********************************** -->
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+  <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//1. 字符串的拼接： man+woman
+     // 运算是从左往右, 任何类型遇到string都会被转为string
+    //JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型
+    var str1 = 10 + 10 + '10' + '10'; // 201010
+    var str2 = '10' + '10' + 10 + 10; // 10101010
+    var str3 = (10 + 10) + '10' + '10';// 201010
+    var str4 = 10 + 10 + '10' + 10; // 201010
+    console.log(str1);
+    console.log(str2);
+    console.log(str3);
+    console.log(str4);
+
+//2. 字符串截取
+  var note = '9月30号告诉女神，国庆8天假期，女神回了一个字："香"。看不懂就没敢回她。结果假期结束至今，女神没搭理过我，究竟错在哪了？';  
+     console.log(note.substring(0,8)); // 注意小写substring
+
+//3.简单的求 字符串长度
+   var str = "123456"
+       str = "女神"
+  console.log(str.length)
+
+</script>
+</body>
+</html>
+
+
+<!-- ********************* demo5 打印 *********************************** -->
+<html>
+<meta charset="UTF-8">
+
+<p id="aa"></p>
+
+<div style="display:none" id="w">JS实现类似打印的效果（一个字一个字显示）我就是来测试一下是否可以一个字一个字的跳出来，没有其它的意思。。。。啦啦啦。。。 
+   某公司经常加班，然后有个人猝死了，后来来了一个妹子，坐那个位子，大家都没告诉她猝死的事。某天晚上加班，妹子有段代码不会写，就让男朋友远程帮忙写，然后去吃饭了。然后，产品经理路过她位子的时候，看了一眼她电脑，发现电脑在自动一行一行的写代码。第二天，那个产品经理就辞职了 。。
+
+</div>
+
+<script >
+
+var index=0;
+//innerHTML 属性 用于设置或返回id类型为w的的开始和结束标签之间的内容
+var word=document.getElementById("w").innerHTML;
+console.log(word) ;
+setInterval(printf, 1000);
+function printf()
+{
+  // console.log( word.substring(0,index++) );
+  var str = word.substring(0,index++);
+    document.getElementById("aa").innerHTML = str;
+}
+
+
+
+</script>
+
+</html>
+
+<!-- 作业1.：从末尾一个字一个字的减少 -->
+<!-- 作业2.：打印出来完后，等3秒时间，从末尾一个字一个字的减少，循环做 -->
+
+<!-- ********************* demo6 反向打印 *********************************** -->
+<html>
+<meta charset="UTF-8">
+
+<p id="aa"></p>
+
+<div  id="wo">JS实现类似打印的效果（一个字一个字显示）我就是来测试一下是否可以一个字一个字的跳出来，没有其它的意思。。。。啦啦啦。。。 
+   某公司经常加班，然后有个人猝死了，后来来了一个妹子，坐那个位子，大家都没告诉她猝死的事。某天晚上加班，妹子有段代码不会写，就让男朋友远程帮忙写，然后去吃饭了。然后，产品经理路过她位子的时候，看了一眼她电脑，发现电脑在自动一行一行的写代码。第二天，那个产品经理就辞职了 。。
+</div>
+
+<script >
+
+var t = setInterval(printf, 50);
+
+function printf()
+{
+
+  //innerHTML 属性 用于设置或返回id类型为w的的开始和结束标签之间的内容
+var word=document.getElementById("wo").innerHTML;
+
+var totalLength = word.length;
+    totalLength--;
+  if (totalLength == 0) {
+    clearTimeout(t);
+  }
+  var str = word.substring(0,totalLength);
+  console.log(str);
+    document.getElementById("wo").innerHTML = str;
+}
+
+</script>
+
+</html>
+

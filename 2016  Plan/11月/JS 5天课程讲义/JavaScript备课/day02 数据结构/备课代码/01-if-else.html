@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>if - else </title>
+
+</head>
+<body>
+
+    <h2>3大结构：</h2>
+        <div>
+        <p>1.顺序结构 代码从上到下逐行执行</p>
+        <p>2.选择结构 if..else  switch</p>
+        <p>3.循环结构  for  while</p>  
+       </div>
+ <input type="text" id="num1" >
+ <input type='button' value="点我，我告诉你能去干嘛！"  onclick="clickBtn()">
+
+ <script type="text/javascript">
+// 条件语句用于基于不同的条件来执行不同的动作。
+	/*
+		if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码
+		if...else 语句 - 当条件为 true 时执行代码，当条件为 false 时执行其他代码
+		if...else if....else 语句- 使用该语句来选择多个代码块之一来执行
+		switch 语句 - 使用该语句来选择多个代码块之一来执行
+
+		if (condition)
+		{
+		    当条件为 true 时执行的代码
+		}
+
+		if (condition)
+		{
+			当条件为 true 时执行的代码
+		}
+		else
+		{
+			当条件不为 true 时执行的代码
+		}
+
+	*/
+
+	var money = 20;
+	if (money > 10) {
+        console.log("我有10块钱，可以去吃顿好吃的了");
+	}
+
+	if (money > 1000 ) {
+		console.log("可以去瞟了");
+	}else{
+       console.log("钱不够多，只能回去睡觉吧");
+	}
+
+// 国庆节，输入你钱包里的钱，看看能去干什么
+    function clickBtn()
+    {
+    	console.log("============");
+   　　var num1 = document.getElementById("num1").value;
+   		if(num1 < 100){
+   			alert("没有钱，你只能在家");
+   		}else if ( num1 > 100 && num1 <= 1000) {
+   			alert("可以去开个房"); 
+   		}else if (num1 > 1000 && num1 <= 10000){
+   			alert("可以去淡水玩几天,洗个脚,按个摩");   
+   		}else if (num1 > 10000){
+   			alert("土豪，请我们班的去搓一顿呗");
+   		}
+    }
+    
+
+</script>
+  <!--  简单的计算器 - -->
+
+</body>
+
+</html>

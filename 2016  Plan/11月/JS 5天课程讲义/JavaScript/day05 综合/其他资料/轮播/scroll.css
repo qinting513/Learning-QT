@@ -1,0 +1,49 @@
+*{ 
+ margin: 0; 
+ padding: 0; 
+} 
+#wrapper{ 
+ position: relative; 
+ width: 600px; 
+ margin: 50px auto; 
+ overflow: hidden; 
+} 
+#pointer{ 
+ clear: both; 
+ position: absolute; 
+ right: 250px; 
+ bottom: 15px; 
+ width: 180px; 
+ height: 2px; 
+} 
+#pointer span{ 
+ display: block; 
+ box-sizing: border-box; 
+ float: left; 
+ width: 50px; 
+ height: 1.5px; 
+ margin-right: 10px; 
+ border-radius: .5px; 
+ background: #fff; 
+ opacity: .5; 
+ -webkit-opacity: .5; 
+ -moz-opacity: .5; 
+ filter:alpha(opacity=50); 
+} 
+#pointer .active{ 
+ opacity: .8; 
+ -webkit-opacity: .8; 
+ -moz-opacity: .8; 
+ filter:alpha(opacity=80); 
+} 
+#box{ 
+ position: relative; 
+ width: 1200px; 
+ clear: both; 
+} 
+img{ 
+ display: block; 
+ float: left; 
+ width: 600px; 
+ height: 337px; 
+}

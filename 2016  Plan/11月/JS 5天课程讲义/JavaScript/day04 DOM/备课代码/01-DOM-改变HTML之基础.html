@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<style type="text/css">
+		#image {
+			width: 300px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+   
+   <p id="p1">Hello World!</p>
+   <input type="button" onclick="changePicture()" value="切换图片"><br/>
+   <img id="image"  src="p1.jpg">
+
+<script>
+      //  1> 改变 HTML 输出流
+     //在 JavaScript 中，document.write() 可用于直接向 HTML 输出流写内容。
+     // document.write("hello JavaScript");
+
+      // 2> 改变 HTML 内容
+     // 修改 HTML 内容的最简单的方法时使用 innerHTML 属性
+     //格式： document.getElementById(id).innerHTML=new HTML
+     // document.getElementById("p1").innerHTML="大王派我来巡山。。。";
+
+     // var element=document.getElementById("p1");
+     //    element.innerHTML="和公司新来的美女一起出差，晚上住酒店，开了两间房。躺在床上的时候手机响了，美女发信息过来“11世界9”。不明白她想表达的什么意思，我就回了个“晚安”就睡了。我是不是错过了什么？";
+
+        //3.改变 HTML 属性
+        /*  如需改变 HTML 元素的属性，请使用这个语法：
+        document.getElementById(id).attribute=new value  */
+        function changePicture(){
+          var image = document.getElementById("image")
+           // image.src="images/p2.jpg";  
+               console.log(image.src);
+              // lastIndexOf  如果有, 任一正数, 没有, -1
+              // indexOf
+            if(image.src.lastIndexOf('p1.jpg') != -1){
+                 image.src = 'images/p3.jpg';
+             }else{
+                 image.src = 'images/p1.jpg';
+             }
+        }
+
+        // 作业： 图片浏览器
+</script>
+
+</body>
+</html>
