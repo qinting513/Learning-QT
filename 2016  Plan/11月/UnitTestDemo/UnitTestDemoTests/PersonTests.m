@@ -92,6 +92,8 @@
          */
     }
     
+// 异步测试 要用到这个类    XCTestExpectation 
+    
 }
 
 - (void)testPerformanceExample {

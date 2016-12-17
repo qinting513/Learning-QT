@@ -23,8 +23,6 @@ static AFHTTPSessionManager *_manager = nil;
 
 + (void)GET:(NSString *)url parameters:(NSDictionary *)params success:(ResquestSuccessBlock)success failure:(ResquestFailureBlock)failure
 {
-    
-    
         [ [self sharedManager] GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             NSLog(@"responseObject:  %@",responseObject);
             !success ? :  success(responseObject);

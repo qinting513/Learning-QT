@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66403FC07100508F4546868B /* libPods-Chuye.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED89BDBDE62A41B3F6345091 /* libPods-Chuye.a */; };
+		B70ABCF21DF3C94600CEEEEF /* UINavigationController+HMObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = B70ABCF11DF3C94600CEEEEF /* UINavigationController+HMObjcSugar.m */; };
 		B70E1A901D641629000229A0 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B70E1A6F1D641629000229A0 /* AFHTTPSessionManager.m */; };
 		B70E1A911D641629000229A0 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B70E1A721D641629000229A0 /* AFNetworkReachabilityManager.m */; };
 		B70E1A921D641629000229A0 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B70E1A741D641629000229A0 /* AFSecurityPolicy.m */; };
@@ -136,7 +137,6 @@
 		B7D9346C1D685EC2002BFF27 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D9346B1D685EC2002BFF27 /* FriendViewController.m */; };
 		B7D9346E1D685F27002BFF27 /* FriendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D9346D1D685F27002BFF27 /* FriendHeaderView.xib */; };
 		B7D934711D685F41002BFF27 /* FriendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D934701D685F41002BFF27 /* FriendHeaderView.m */; };
-		B7D934751D68B827002BFF27 /* mov.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7D934741D68B827002BFF27 /* mov.bundle */; };
 		B7D934781D68B9EA002BFF27 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D934771D68B9EA002BFF27 /* WelcomeViewController.m */; };
 		B7EAF3EF1D6306A000A82660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF3EE1D6306A000A82660 /* main.m */; };
 		B7EAF3F21D6306A000A82660 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF3F11D6306A000A82660 /* AppDelegate.m */; };
@@ -178,6 +178,8 @@
 
 /* Begin PBXFileReference section */
 		1FEDFC5B445ACDA54F4F234B /* Pods-Chuye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chuye/Pods-Chuye.release.xcconfig"; sourceTree = "<group>"; };
+		B70ABCF01DF3C94600CEEEEF /* UINavigationController+HMObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HMObjcSugar.h"; sourceTree = "<group>"; };
+		B70ABCF11DF3C94600CEEEEF /* UINavigationController+HMObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HMObjcSugar.m"; sourceTree = "<group>"; };
 		B70E1A6E1D641629000229A0 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		B70E1A6F1D641629000229A0 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		B70E1A701D641629000229A0 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -413,7 +415,6 @@
 		B7D9346D1D685F27002BFF27 /* FriendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendHeaderView.xib; sourceTree = "<group>"; };
 		B7D9346F1D685F41002BFF27 /* FriendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendHeaderView.h; sourceTree = "<group>"; };
 		B7D934701D685F41002BFF27 /* FriendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendHeaderView.m; sourceTree = "<group>"; };
-		B7D934741D68B827002BFF27 /* mov.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mov.bundle; sourceTree = "<group>"; };
 		B7D934761D68B9EA002BFF27 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		B7D934771D68B9EA002BFF27 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		B7EAF3EA1D6306A000A82660 /* Chuye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chuye.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -771,6 +772,8 @@
 				B7CEC1CE1D66AA91009AB9E2 /* QTVerticalButton.m */,
 				B70E1AA71D644BBB000229A0 /* NSObject+AFNetworking.h */,
 				B70E1AA81D644BBB000229A0 /* NSObject+AFNetworking.m */,
+				B70ABCF01DF3C94600CEEEEF /* UINavigationController+HMObjcSugar.h */,
+				B70ABCF11DF3C94600CEEEEF /* UINavigationController+HMObjcSugar.m */,
 				B70E1AAB1D644BBB000229A0 /* NSObject+ViewModel.h */,
 				B70E1AAC1D644BBB000229A0 /* NSObject+ViewModel.m */,
 				B70E1AAD1D644BBB000229A0 /* NSString+YX.h */,
@@ -1161,7 +1164,6 @@
 		B7EAF40E1D63076300A82660 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B7D934741D68B827002BFF27 /* mov.bundle */,
 				B7EAF3F91D6306A000A82660 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -1441,7 +1443,6 @@
 				B7EAF3FD1D6306A000A82660 /* LaunchScreen.storyboard in Resources */,
 				B7CEC20B1D670538009AB9E2 /* Favorites.txt in Resources */,
 				B74D41FF1D6AF31D002C4010 /* AttentionTableViewCell.xib in Resources */,
-				B7D934751D68B827002BFF27 /* mov.bundle in Resources */,
 				B7D9346E1D685F27002BFF27 /* FriendHeaderView.xib in Resources */,
 				B70E1AEB1D6452CD000229A0 /* LICENSE in Resources */,
 				B7D934651D685B43002BFF27 /* AddFriendCell.xib in Resources */,
@@ -1526,6 +1527,7 @@
 				B732786F1D69926E00B41CAB /* TopicWorksV2.m in Sources */,
 				B717AC421D656847002F6FE1 /* Works.m in Sources */,
 				B7C1D4001D635BB5009D1E82 /* NSObject+Parse.m in Sources */,
+				B70ABCF21DF3C94600CEEEEF /* UINavigationController+HMObjcSugar.m in Sources */,
 				B70E1A921D641629000229A0 /* AFSecurityPolicy.m in Sources */,
 				B7C1D41D1D6368AC009D1E82 /* RecommendBannerViewController.m in Sources */,
 				B7EAF4971D630F9900A82660 /* UIView+WebCacheOperation.m in Sources */,

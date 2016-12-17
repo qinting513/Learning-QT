@@ -44,7 +44,7 @@
     if([readVersion isEqualToString:version]){
         [self window];
     }else{
-        [self welcomeWindow];
+//        [self welcomeWindow];
         [self window];
     }
     return YES;
